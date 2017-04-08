@@ -1,0 +1,293 @@
+<resources>
+
+    <!-- Main/Login application strings. -->
+    <string name="app_name">QuizApp</string>
+    <string name="welcome_message"></string>
+    <string name="startButton">Start</string>
+    <string name="a"></string>
+    <string name ="Name">Name</string>
+    <string name ="SelectNQuestions">Choose the number of Questions</string>
+    <string name ="nQ4" translatable="false">4</string>
+    <string name ="nQ5" translatable="false">5</string>
+    <string name ="nQ6" translatable="false">6</string>
+
+    <!-- Category Selection strings. -->
+
+    <string name ="chooseCategory">Please, choose a Category</string>
+    <string name ="chooseCategoryWName">, choose a Category</string>
+    <string name ="geo">Geography</string>
+    <string name ="hist">History</string>
+    <string name ="vgames">VideoGames</string>
+    <string name ="science">Science and Technology</string>
+    <string name ="sports">Sports</string>
+    <string name ="entr">Entertainment</string>
+    <string name ="random">Random Category</string>
+
+    <!-- History Questions strings. -->
+
+    <string name ="HT1">Which of these battles never happened?</string>
+
+    <string name ="HT1a">Battle of Catalaunic Fields</string>
+    <string name ="HT1b">Battle of Poltava</string>
+    <string name ="HT1c">Battle of The Glorious First of June</string>
+    <string name ="HT1d">Battle of Uganda</string>
+
+    <string name ="HT2">How long was the 100 year War?</string>
+
+    <string name ="HT2a" translatable="false">105</string>
+    <string name ="HT2b" translatable="false">100</string>
+    <string name ="HT2c" translatable="false">116</string>
+    <string name ="HT2d" translatable="false">98</string>
+
+    <string name ="HT3">In which year did Western Roman Empire fall?</string>
+
+    <string name ="HT3a" translatable="false">476</string>
+    <string name ="HT3b" translatable="false">210</string>
+    <string name ="HT3c" translatable="false">795</string>
+    <string name ="HT3d" translatable="false">1492</string>
+
+    <string name ="HT4">Which of this WW2 operations really happened?</string>
+
+    <string name ="HT4a">Operation White Cheese</string>
+    <string name ="HT4b">Operation Little Saturn</string>
+    <string name ="HT4c">Paukenschlag Operation</string>
+    <string name ="HT4d">Operation Barbarossa</string>
+
+    <string name ="HT5">In which year did WW1 begin?</string>
+
+    <string name ="HT5a" translatable="false">1913</string>
+    <string name ="HT5b" translatable="false">1914</string>
+    <string name ="HT5c" translatable="false">1915</string>
+    <string name ="HT5d" translatable="false">1916</string>
+
+    <string name ="HT6">What did the assault of the Bastille trigger?</string>
+
+    <string name ="HT6a">Napoleonic Wars</string>
+    <string name ="HT6b">French Revolution</string>
+    <string name ="HT6c">The death of Luis XV</string>
+    <string name ="HT6d">Russian Revolution</string>
+
+    <string name ="HT7">What was the bloodiest battle in History?</string>
+
+    <string name ="HT7a">The Battle of Verdun</string>
+    <string name ="HT7b">The Battle of Stalingrad</string>
+    <string name ="HT7c">The Battle of Leningrad</string>
+    <string name ="HT7d">The Battle of Somme</string>
+
+
+
+
+    <!-- SciTech Questions strings. -->
+
+    <string name ="ST1">What is the boiling point of Gold?</string>
+
+    <string name ="ST1a" translatable="false">3200 ºC</string>
+    <string name ="ST1b" translatable="false">100ºC</string>
+    <string name ="ST1c" translatable="false">2700 ºC</string>
+    <string name ="ST1d" translatable="false">1536ºC</string>
+
+    <string name ="ST2">Which of the following Computer Architectures is the precursor of Modern Computers?</string>
+
+    <string name ="ST2a" translatable="false">Harvard</string>
+    <string name ="ST2b" translatable="false">Von Braun</string>
+    <string name ="ST2c" translatable="false">Von Neumann</string>
+    <string name ="ST2d" translatable="false">Oxford</string>
+
+    <string name ="ST3">Nowerdays, What is the most used Operative System?</string>
+
+    <string name ="ST3a" translatable="false">Windows</string>
+    <string name ="ST3b" translatable="false">Linux</string>
+    <string name ="ST3c" translatable="false">Android</string>
+    <string name ="ST3d" translatable="false">IOS</string>
+
+    <string name ="ST4">Which of the following companies belong to Elon Musk?</string>
+
+    <string name ="ST4a" translatable="false">PayPal</string>
+    <string name ="ST4b" translatable="false">Virgin</string>
+    <string name ="ST4c" translatable="false">Tesla Motors</string>
+    <string name ="ST4d" translatable="false">Amazon</string>
+
+    <string name ="ST5">What is Light Speed?</string>
+
+    <string name ="ST5a" translatable="false">3x10^8 Km/s</string>
+    <string name ="ST5b" translatable="false">0.3x10^8m/s</string>
+    <string name ="ST5c" translatable="false">0,3Gm/s</string>
+    <string name ="ST5d" translatable="false">4x10^8m/s</string>
+
+
+    <!-- Geography Questions strings. -->
+
+    <string name ="GT1">What is the capital of Castilla y León?</string>
+
+    <string name ="GT1a" translatable="false">León</string>
+    <string name ="GT1b" translatable="false">Valladolid</string>
+    <string name ="GT1c" translatable="false">Burgos</string>
+    <string name ="GT1d">None</string>
+
+    <string name ="GT2">Where is Cochinchina?</string>
+
+    <string name ="GT2a" translatable="false">Vietnam</string>
+    <string name ="GT2b" translatable="false">China</string>
+    <string name ="GT2c" translatable="false">India</string>
+    <string name ="GT2d" translatable="false">Laos</string>
+
+    <string name ="GT3">What is the highest mountain in the World?</string>
+    <string name ="TypeName">Just type the name</string>
+
+
+    <string name ="GT4">What is the longest river in the World?</string>
+
+    <string name ="GT4a">Amazon</string>
+    <string name ="GT4b">Nile</string>
+    <string name ="GT4c" translatable="false">Yangtze</string>
+    <string name ="GT4d" translatable="false">Congo</string>
+
+    <string name ="GT5">What is the greatest desert in the world?</string>
+
+    <string name ="GT5a">Antartic Desert</string>
+    <string name ="GT5b">Australian Desert</string>
+    <string name ="GT5c" translatable="false">Gobi</string>
+    <string name ="GT5d" translatable="false">Sahara</string>
+
+
+    <!-- Videogames Questions strings. -->
+
+    <string name ="VGT1">What does RPG stands for?</string>
+
+    <string name ="VGT1a" translatable="false">Role Play Game</string>
+    <string name ="VGT1b" translatable="false">Role Playable Game</string>
+    <string name ="VGT1c" translatable="false">Real Play Game</string>
+    <string name ="VGT1d">None of them</string>
+
+    <string name ="VGT2">What is the name of Assassins Creed main character?</string>
+
+    <string name ="VGT2a" translatable="false">Echio Auditore</string>
+    <string name ="VGT2b" translatable="false">Desmond Moles</string>
+    <string name ="VGT2c" translatable="false">Altaïr Ibn-La Ahad</string>
+    <string name ="VGT2d" translatable="false">Malik Al-Sayf</string>
+
+
+    <string name ="VGT3">What saga does Lara Croft belong?</string>
+
+    <string name ="VGT3a" translatable="false">GTA</string>
+    <string name ="VGT3b" translatable="false">Tomb Raider</string>
+    <string name ="VGT3c" translatable="false">Uncharted</string>
+    <string name ="VGT3d" translatable="false">Monkey Island</string>
+
+    <string name ="VGT4">Which of the following games are SandBox?</string>
+
+    <string name ="VGT4a" translatable="false">Minecraft</string>
+    <string name ="VGT4b" translatable="false">Red Dead Redemption</string>
+    <string name ="VGT4c" translatable="false">GTA</string>
+    <string name ="VGT4d" translatable="false">League of Legends</string>
+
+
+    <!-- Sports Questions strings. -->
+
+    <string name ="SPT1">What is the team with more Championship of Spain?</string>
+
+    <string name ="SPT1a" translatable="false">F.C. Barcelona</string>
+    <string name ="SPT1b" translatable="false">Real Madrid</string>
+    <string name ="SPT1c" translatable="false">Valencia C.F.</string>
+    <string name ="SPT1d" translatable="false">Sevilla C.F.</string>
+
+    <string name ="SPT2">Who is the player with more NBA rings?</string>
+
+    <string name ="SPT2a" translatable="false">Scottie Pippen</string>
+    <string name ="SPT2b" translatable="false">Michael Jordan</string>
+    <string name ="SPT2c" translatable="false">Bill Russell</string>
+    <string name ="SPT2d" translatable="false">Kobe Bryant</string>
+
+    <string name ="SPT4">Who has the 100M running World Record?</string>
+
+    <string name ="SPT4a" translatable="false">	Tyson Gay</string>
+    <string name ="SPT4b" translatable="false">Francis Obikwelu</string>
+    <string name ="SPT4c" translatable="false">Usain Bolt</string>
+    <string name ="SPT4d" translatable="false">Yohan Blake</string>
+
+    <string name ="SPT3">Who is the best player of NBA history?</string>
+
+    <string name ="SPT3a" translatable="false">Manu Ginnobili</string>
+    <string name ="SPT3b" translatable="false">Michael Jordan</string>
+    <string name ="SPT3c" translatable="false">Kobe Bryant</string>
+    <string name ="SPT3d" translatable="false">Lebron James</string>
+
+    <string name ="SPT5">Who has runned more F1 GP?</string>
+
+    <string name ="SPT5a" translatable="false">Jenson Button</string>
+    <string name ="SPT5b" translatable="false">Michael Schumacher</string>
+    <string name ="SPT5c" translatable="false">Fernando Alonso</string>
+    <string name ="SPT5d" translatable="false">Rubens Barrichelo</string>
+
+    <string name ="SPT7">Which LoL Team has wonned more times the World Championship?</string>
+
+    <string name ="SPT7a" translatable="false">Fnatic</string>
+    <string name ="SPT7b" translatable="false">SKT T1</string>
+    <string name ="SPT7c" translatable="false">Samsung Galaxy</string>
+    <string name ="SPT7d" translatable="false">TSM</string>
+
+    <string name ="SPT6">Which of this player has wonned more times the LCS?</string>
+
+    <string name ="SPT6a" translatable="false">Bjergsen</string>
+    <string name ="SPT6b" translatable="false">Rekkles</string>
+    <string name ="SPT6c" translatable="false">YellowStar</string>
+    <string name ="SPT6d" translatable="false">xPeke</string>
+
+
+
+
+    <!-- Entertainment Questions -->
+
+    <string name ="ETT1">Which of these movies are not from Tarantino?</string>
+
+    <string name ="ETT1a" translatable="false">Pulp Fiction</string>
+    <string name ="ETT1b" translatable="false">My Bests Friends Birthday</string>
+    <string name ="ETT1c" translatable="false">Kill Bill vol.3</string>
+    <string name ="ETT1d">Inglourious Basterds</string>
+
+    <string name ="ETT2">Who did write Iliad?</string>
+
+    <string name ="ETT2a">Euripides</string>
+    <string name ="ETT2b">Homer</string>
+    <string name ="ETT2c">Sophocles</string>
+    <string name ="ETT2d">ARISTOPHANES</string>
+
+    <string name ="ETT3">Which of these movies has more Oscar´s Nominations?</string>
+
+    <string name ="ETT3a" translatable="false">Mary Poppins</string>
+    <string name ="ETT3b" translatable="false">Titanic</string>
+    <string name ="ETT3c">Lord Of The Rings: The fellowship of The Ring</string>
+    <string name ="ETT3d" translatable="false">Forrest Gump</string>
+
+    <string name ="ETT4">Who is the most awarded singer of the History?</string>
+
+    <string name ="ETT4a" translatable="false">Julio Iglesias</string>
+    <string name ="ETT4b" translatable="false">Adele</string>
+    <string name ="ETT4c" translatable="false">Michael Jackson</string>
+    <string name ="ETT4d" translatable="false">Stevie Wonder</string>
+
+    <string name ="ETT5">In which of these movies does not Samuel L. Jackson  appear?</string>
+
+    <string name ="ETT5a" translatable="false">Jackie Brown</string>
+    <string name ="ETT5b" translatable="false">Matrix</string>
+    <string name ="ETT5c" translatable="false">Star Wars</string>
+    <string name ="ETT5d" translatable="false">Jumper</string>
+
+    <string name ="ETT6">Who sold more albums</string>
+
+    <string name ="ETT6a" translatable="false">The Beattles</string>
+    <string name ="ETT6b" translatable="false">Michael Jackson</string>
+    <string name ="ETT6c" translatable="false">Julio Iglesias</string>
+    <string name ="ETT6d" translatable="false">Elvis Presley</string>
+
+
+    <!-- Category Selection strings. -->
+
+    <string name ="submit">Submit</string>
+    <string name ="continAc">Continue</string>
+
+    <string name ="finalMesg">Here are your results so far:</string>
+    <string name ="finalMesgWN">, here are your results so far:</string>
+    <string name ="mainPage">RESTART</string>
+
+</resources>

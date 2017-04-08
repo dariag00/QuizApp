@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background = "#f4d802">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id = "@+id/finalMsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop = "16dp"
+            android:paddingBottom = "16dp"
+            android:gravity = "center"
+            android:text="@string/finalMesg"/>
+
+        <View
+            android:layout_marginBottom = "16dp"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#000000"
+            android:layout_marginRight = "16dp"
+            android:layout_marginLeft = "16dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id = "@+id/geography"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:onClick = "selected"
+                    android:paddingLeft ="15dp"
+                    android:gravity="center"
+                    android:layout_marginRight = "20dp"
+                    android:drawableLeft="@drawable/geography"
+                    android:background="@drawable/round_shape_button" />
+
+                <RatingBar
+                    android:id="@+id/geoRatingBar"
+                    android:layout_marginRight="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars = "5"
+                    android:rating="0"
+                    android:isIndicator = "true"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id = "@+id/history"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:onClick = "selected"
+                    android:paddingLeft ="15dp"
+                    android:gravity="center"
+                    android:layout_marginRight = "20dp"
+                    android:drawableLeft="@drawable/prueba"
+                    android:background="@drawable/round_history" />
+
+                <RatingBar
+                    android:id="@+id/histRatingBar"
+                    android:layout_marginRight="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars = "5"
+                    android:rating="0"
+                    android:isIndicator = "true"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id = "@+id/sports"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:onClick = "selected"
+                    android:paddingLeft ="15dp"
+                    android:gravity="center"
+                    android:layout_marginRight = "20dp"
+                    android:drawableLeft="@drawable/sports"
+                    android:background="@drawable/music" />
+
+                <RatingBar
+                    android:id="@+id/sportsRatingBar"
+                    android:layout_marginRight="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars = "5"
+                    android:rating="0"
+                    android:isIndicator = "true"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id = "@+id/videogames"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:onClick = "selected"
+                    android:paddingLeft ="15dp"
+                    android:gravity="center"
+                    android:layout_marginRight = "20dp"
+                    android:drawableLeft="@drawable/gamesicon"
+                    android:background="@drawable/round_videogames" />
+
+                <RatingBar
+                    android:id="@+id/vGRatingBar"
+                    android:layout_marginRight="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars = "5"
+                    android:rating="0"
+                    android:isIndicator = "true"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id = "@+id/entert"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:onClick = "selected"
+                    android:paddingLeft ="15dp"
+                    android:gravity="center"
+                    android:layout_marginRight = "20dp"
+                    android:drawableLeft="@drawable/cultureicon"
+                    android:background="@drawable/round_language" />
+
+                <RatingBar
+                    android:id="@+id/entRatingBar"
+                    android:layout_marginRight="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars = "5"
+                    android:rating="0"
+                    android:isIndicator = "true"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id = "@+id/science"
+                    android:layout_width="65dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:onClick = "selected"
+                    android:paddingLeft ="15dp"
+                    android:gravity="center"
+                    android:layout_marginRight = "20dp"
+                    android:drawableLeft="@drawable/atomic"
+                    android:background="@drawable/science" />
+
+                <RatingBar
+                    android:id="@+id/sciRatingBar"
+                    android:layout_marginRight="16dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars = "5"
+                    android:rating="0"
+                    android:isIndicator = "true"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_marginTop = "16dp"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#000000"
+            android:layout_marginRight = "16dp"
+            android:layout_marginLeft = "16dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation = "horizontal"
+            android:layout_marginRight = "16dp"
+            android:layout_marginLeft = "16dp">
+
+            <Button
+                android:id = "@+id/tw"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:onClick = "link"
+                android:paddingLeft ="30dp"
+                android:gravity="center"
+                android:layout_marginRight = "20dp"
+                android:drawableLeft="@drawable/twitter"
+                android:background="@drawable/round_history" />
+            <Button
+                android:id = "@+id/playAg"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:onClick = "mainP"
+                android:gravity="center"
+                android:layout_marginRight = "20dp"
+                android:text="@string/mainPage"
+                android:background="@drawable/random" />
+
+        </LinearLayout>
+
+
+            />
+
+    </LinearLayout>
+    
+    
+</ScrollView>
