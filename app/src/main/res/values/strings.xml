@@ -2,9 +2,7 @@
 
     <!-- Main/Login application strings. -->
     <string name="app_name">QuizApp</string>
-    <string name="welcome_message"></string>
     <string name="startButton">Start</string>
-    <string name="a"></string>
     <string name ="Name">Name</string>
     <string name ="SelectNQuestions">Choose the number of Questions</string>
     <string name ="nQ4" translatable="false">4</string>
@@ -28,7 +26,7 @@
     <string name ="HT1">Which of these battles never happened?</string>
 
     <string name ="HT1a">Battle of Catalaunic Fields</string>
-    <string name ="HT1b">Battle of Poltava</string>
+    <string name ="HT1b">Battle of Normandy</string>
     <string name ="HT1c">Battle of The Glorious First of June</string>
     <string name ="HT1d">Battle of Uganda</string>
 
@@ -254,19 +252,19 @@
     <string name ="SPT2c" translatable="false">Bill Russell</string>
     <string name ="SPT2d" translatable="false">Kobe Bryant</string>
 
-    <string name ="SPT4">Who has the 100M running World Record?</string>
-
-    <string name ="SPT4a" translatable="false">	Tyson Gay</string>
-    <string name ="SPT4b" translatable="false">Francis Obikwelu</string>
-    <string name ="SPT4c" translatable="false">Usain Bolt</string>
-    <string name ="SPT4d" translatable="false">Yohan Blake</string>
-
     <string name ="SPT3">Who is the best player of NBA history?</string>
 
     <string name ="SPT3a" translatable="false">Manu Ginnobili</string>
     <string name ="SPT3b" translatable="false">Michael Jordan</string>
     <string name ="SPT3c" translatable="false">Kobe Bryant</string>
     <string name ="SPT3d" translatable="false">Lebron James</string>
+
+    <string name ="SPT4">Who has the 100M running World Record?</string>
+
+    <string name ="SPT4a" translatable="false">	Tyson Gay</string>
+    <string name ="SPT4b" translatable="false">Francis Obikwelu</string>
+    <string name ="SPT4c" translatable="false">Usain Bolt</string>
+    <string name ="SPT4d" translatable="false">Yohan Blake</string>
 
     <string name ="SPT5">Who has runned more F1 GP?</string>
 
@@ -278,9 +276,9 @@
     <string name ="SPT6">Who has won the most medals in the Olympic Games?</string>
 
     <string name ="SPT6a" translatable="false">Michael Phelps</string>
-    <string name ="SPT6b" translatable="false">Rekkles</string>
-    <string name ="SPT6c" translatable="false">YellowStar</string>
-    <string name ="SPT6d" translatable="false">xPeke</string>
+    <string name ="SPT6b" translatable="false">Usain Bolt</string>
+    <string name ="SPT6c" translatable="false">Carl Lewis</string>
+    <string name ="SPT6d" translatable="false">Sawao Kato</string>
 
     <string name ="SPT7">Which of the following sports is not a Olympic Sport?</string>
 

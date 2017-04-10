@@ -246,7 +246,7 @@
                     android:text="@string/SPT6"
                     style="@style/TextViewCardStyle"/>
                 <ImageView
-                    android:src="@drawable/lcs"
+                    android:src="@drawable/medal"
                     style="@style/ImageCardStyle" />
 
                 <RadioGroup style="@style/RadioGroupQStyle">
@@ -281,7 +281,7 @@
                     android:text="@string/SPT7"
                     style="@style/TextViewCardStyle"/>
                 <ImageView
-                    android:src="@drawable/worlds"
+                    android:src="@drawable/olympics"
                     style="@style/ImageCardStyle" />
 
                 <RadioGroup style="@style/RadioGroupQStyle">

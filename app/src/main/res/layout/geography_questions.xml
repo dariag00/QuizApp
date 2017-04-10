@@ -108,7 +108,7 @@
                     android:text="@string/GT2"
                     style="@style/TextViewCardStyle"/>
                 <ImageView
-                    android:src="@drawable/waterloo"
+                    android:src="@drawable/cochin"
                     style="@style/ImageCardStyle" />
 
                 <RadioGroup style="@style/RadioGroupQStyle">
@@ -240,7 +240,7 @@
                     android:text="@string/GT6"
                     style="@style/TextViewCardStyle"/>
                 <ImageView
-                    android:src="@drawable/desert"
+                    android:src="@drawable/population"
                     style="@style/ImageCardStyle" />
 
                 <RadioGroup style="@style/RadioGroupQStyle">
@@ -276,7 +276,7 @@
                     android:text="@string/GT7"
                     style="@style/TextViewCardStyle"/>
                 <ImageView
-                    android:src="@drawable/desert"
+                    android:src="@drawable/language"
                     style="@style/ImageCardStyle" />
 
                 <RadioGroup style="@style/RadioGroupQStyle">
@@ -312,28 +312,25 @@
                     android:text="@string/GT8"
                     style="@style/TextViewCardStyle"/>
                 <ImageView
-                    android:src="@drawable/desert"
+                    android:src="@drawable/eu"
                     style="@style/ImageCardStyle" />
 
-                <RadioGroup style="@style/RadioGroupQStyle">
-
-                    <RadioButton
-                        android:id="@+id/g8a"
-                        android:text="@string/GT8a"
-                        style="@style/RButtonQStyle"/>
-                    <RadioButton
-                        android:id="@+id/g8b"
-                        android:text="@string/GT8b"
-                        style="@style/RButtonQStyle"/>
-                    <RadioButton
-                        android:id="@+id/g8c"
-                        android:text="@string/GT8c"
-                        style="@style/RButtonQStyle"/>
-                    <RadioButton
-                        android:id="@+id/g8d"
-                        android:text="@string/GT8d"
-                        style="@style/RButtonQStyle"/>
-                </RadioGroup>
+                <CheckBox
+                    android:id="@+id/gch1"
+                    android:text="@string/GT8a"
+                    style="@style/checkBoxStyle"/>
+                <CheckBox
+                    android:id="@+id/gch2"
+                    android:text="@string/GT8b"
+                    style="@style/checkBoxStyle" />
+                <CheckBox
+                    android:id="@+id/gch3"
+                    android:text="@string/GT8c"
+                    style="@style/checkBoxStyle"/>
+                <CheckBox
+                    android:id="@+id/gch4"
+                    style="@style/checkBoxStyle"
+                    android:text="@string/GT8d" />
             </LinearLayout>
         </android.support.v7.widget.CardView>
 

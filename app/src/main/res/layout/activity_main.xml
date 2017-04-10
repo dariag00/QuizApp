@@ -12,7 +12,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background = "#f4d802"
-    tools:context="com.example.android.quizapp.MainActivity">
+    tools:context="com.example.android.quizapp.com.klosote.android.quizapp.MainActivity">
 
     <ImageView
         style="@style/MainImageView"

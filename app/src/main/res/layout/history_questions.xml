@@ -256,7 +256,7 @@
                     android:text="@string/HT6"
                     style="@style/TextViewCardStyle"/>
                 <ImageView
-                    android:src="@drawable/wwtwo"
+                    android:src="@drawable/bastille"
                     style="@style/ImageCardStyle" />
 
                 <RadioGroup style="@style/RadioGroupQStyle">
@@ -328,7 +328,7 @@
                     android:text="@string/HT8"
                     style="@style/TextViewCardStyle"/>
                 <ImageView
-                    android:src="@drawable/bloodbattle"
+                    android:src="@drawable/empire"
                     style="@style/ImageCardStyle" />
 
                 <RadioGroup style="@style/RadioGroupQStyle">

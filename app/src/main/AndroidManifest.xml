@@ -10,7 +10,7 @@
         android:theme="@style/AppTheme"
         android:hardwareAccelerated="false"
         android:largeHeap="true">
-        <activity android:name=".MainActivity">
+        <activity android:name="com.klosote.android.quizapp.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -18,72 +18,72 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".CategorySelection">
+        <activity android:name="com.klosote.android.quizapp.CategorySelection">
             <intent-filter>
-                <action android:name="com.example.android.quizapp.CategorySelection" />
+                <action android:name="com.klosote.android.quizapp.CategorySelection" />
 
                 <category android:name="android.intent.category.DEFAULT" />
 
             </intent-filter>
         </activity>
 
-        <activity android:name=".ScienceQuestions">
+        <activity android:name="com.klosote.android.quizapp.ScienceQuestions">
             <intent-filter>
-                <action android:name="com.example.android.quizapp.ScienceQuestions" />
+                <action android:name="com.klosote.android.quizapp.ScienceQuestions" />
 
                 <category android:name="android.intent.category.DEFAULT" />
 
             </intent-filter>
         </activity>
 
-        <activity android:name=".EnterQuestions">
+        <activity android:name="com.klosote.android.quizapp.EnterQuestions">
             <intent-filter>
-                <action android:name="com.example.android.quizapp.EnterQuestions" />
+                <action android:name="com.klosote.android.quizapp.EnterQuestions" />
 
                 <category android:name="android.intent.category.DEFAULT" />
 
             </intent-filter>
         </activity>
 
-        <activity android:name=".HistoryQuestions">
+        <activity android:name="com.klosote.android.quizapp.HistoryQuestions">
             <intent-filter>
-                <action android:name="com.example.android.quizapp.HistoryQuestions" />
+                <action android:name="com.klosote.android.quizapp.HistoryQuestions" />
 
                 <category android:name="android.intent.category.DEFAULT" />
 
             </intent-filter>
         </activity>
 
-        <activity android:name=".GeographyQuestions">
+        <activity android:name="com.klosote.android.quizapp.GeographyQuestions">
             <intent-filter>
-                <action android:name="com.example.android.quizapp.GeographyQuestions" />
+                <action android:name="com.klosote.android.quizapp.GeographyQuestions" />
 
                 <category android:name="android.intent.category.DEFAULT" />
 
             </intent-filter>
         </activity>
 
-        <activity android:name=".SportsQuestions">
+        <activity android:name="com.klosote.android.quizapp.SportsQuestions">
             <intent-filter>
-                <action android:name="com.example.android.quizapp.SportsQuestions" />
+                <action android:name="com.klosote.android.quizapp.SportsQuestions" />
 
                 <category android:name="android.intent.category.DEFAULT" />
 
             </intent-filter>
         </activity>
 
-        <activity android:name=".VGamesQuestions">
+        <activity android:name="com.klosote.android.quizapp.VGamesQuestions">
             <intent-filter>
-                <action android:name="com.example.android.quizapp.VGamesQuestions" />
+                <action android:name="com.klosote.android.quizapp.VGamesQuestions" />
 
                 <category android:name="android.intent.category.DEFAULT" />
 
             </intent-filter>
         </activity>
 
-        <activity android:name=".FinalActivity">
+        <activity android:name="com.klosote.android.quizapp.FinalActivity">
             <intent-filter>
-                <action android:name="com.example.android.quizapp.FinalActivity" />
+                <action android:name="com.klosote.android.quizapp.FinalActivity" />
 
                 <category android:name="android.intent.category.DEFAULT" />
 
