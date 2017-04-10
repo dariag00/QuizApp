@@ -18,17 +18,63 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".questions">
+        <activity android:name=".CategorySelection">
             <intent-filter>
-                <action android:name="com.example.android.quizapp.questions" />
+                <action android:name="com.example.android.quizapp.CategorySelection" />
 
                 <category android:name="android.intent.category.DEFAULT" />
 
             </intent-filter>
         </activity>
-        <activity android:name=".CategorySelection">
+
+        <activity android:name=".ScienceQuestions">
             <intent-filter>
-                <action android:name="com.example.android.quizapp.CategorySelection" />
+                <action android:name="com.example.android.quizapp.ScienceQuestions" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".EnterQuestions">
+            <intent-filter>
+                <action android:name="com.example.android.quizapp.EnterQuestions" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".HistoryQuestions">
+            <intent-filter>
+                <action android:name="com.example.android.quizapp.HistoryQuestions" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".GeographyQuestions">
+            <intent-filter>
+                <action android:name="com.example.android.quizapp.GeographyQuestions" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".SportsQuestions">
+            <intent-filter>
+                <action android:name="com.example.android.quizapp.SportsQuestions" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".VGamesQuestions">
+            <intent-filter>
+                <action android:name="com.example.android.quizapp.VGamesQuestions" />
 
                 <category android:name="android.intent.category.DEFAULT" />
 

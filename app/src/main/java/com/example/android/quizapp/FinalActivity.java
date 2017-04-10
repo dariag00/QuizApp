@@ -11,8 +11,6 @@ import android.widget.RatingBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import static android.content.Intent.FLAG_ACTIVITY_CLEAR_TOP;
-
 /**
  * Created by Diego on 05/04/2017.
  */
@@ -75,7 +73,7 @@ public class FinalActivity extends AppCompatActivity {
 
         switch(category){
 
-            case "geo":
+            case "geography":
 
                 pr = ((float)nA/(float)nQ) * 5;
                 br = (RatingBar) findViewById(R.id.geoRatingBar);
@@ -87,7 +85,7 @@ public class FinalActivity extends AppCompatActivity {
                 }
 
                 break;
-            case "hist":
+            case "history":
 
                 pr = ((float)nA/(float)nQ) * 5;
                 br = (RatingBar) findViewById(R.id.histRatingBar);
@@ -154,56 +152,91 @@ public class FinalActivity extends AppCompatActivity {
     public void selected(View view){
         Intent intent;
         String category;
-        intent = new Intent("com.example.android.quizapp.questions");
-        intent.putExtra("hisP", maxH);
-        intent.putExtra("sciP", maxS);
-        intent.putExtra("geoP", maxG);
-        intent.putExtra("entP", maxE);
-        intent.putExtra("spoP", maxSpt);
-        intent.putExtra("vgP", maxVG);
 
         switch (view.getId()){
 
             case R.id.geography:
+                intent = new Intent("com.example.android.quizapp.GeographyQuestions");
                 category = "geography";
                 intent.putExtra("Category", category);
                 intent.putExtra("Name", name);
                 intent.putExtra("nQuestions", nQ);
+                intent.putExtra("hisP", maxH);
+                intent.putExtra("sciP", maxS);
+                intent.putExtra("geoP", maxG);
+                intent.putExtra("entP", maxE);
+                intent.putExtra("spoP", maxSpt);
+                intent.putExtra("vgP", maxVG);
                 startActivity(intent);
                 break;
             case R.id.history:
+                intent = new Intent("com.example.android.quizapp.HistoryQuestions");
                 category = "history";
                 intent.putExtra("Category", category);
                 intent.putExtra("Name", name);
                 intent.putExtra("nQuestions", nQ);
+                intent.putExtra("hisP", maxH);
+                intent.putExtra("sciP", maxS);
+                intent.putExtra("geoP", maxG);
+                intent.putExtra("entP", maxE);
+                intent.putExtra("spoP", maxSpt);
+                intent.putExtra("vgP", maxVG);
                 startActivity(intent);
                 break;
-            case R.id.entert:
+            case R.id.entertainment:
+                intent = new Intent("com.example.android.quizapp.EnterQuestions");
                 category = "entertainment";
                 intent.putExtra("Category", category);
                 intent.putExtra("Name", name);
                 intent.putExtra("nQuestions", nQ);
+                intent.putExtra("hisP", maxH);
+                intent.putExtra("sciP", maxS);
+                intent.putExtra("geoP", maxG);
+                intent.putExtra("entP", maxE);
+                intent.putExtra("spoP", maxSpt);
+                intent.putExtra("vgP", maxVG);
                 startActivity(intent);
                 break;
             case R.id.sports:
+                intent = new Intent("com.example.android.quizapp.SportsQuestions");
                 category = "sports";
                 intent.putExtra("Category", category);
                 intent.putExtra("Name", name);
                 intent.putExtra("nQuestions", nQ);
+                intent.putExtra("hisP", maxH);
+                intent.putExtra("sciP", maxS);
+                intent.putExtra("geoP", maxG);
+                intent.putExtra("entP", maxE);
+                intent.putExtra("spoP", maxSpt);
+                intent.putExtra("vgP", maxVG);
                 startActivity(intent);
                 break;
             case R.id.science:
+                intent = new Intent("com.example.android.quizapp.ScienceQuestions");
                 category = "science";
                 intent.putExtra("Category", category);
                 intent.putExtra("Name", name);
                 intent.putExtra("nQuestions", nQ);
+                intent.putExtra("hisP", maxH);
+                intent.putExtra("sciP", maxS);
+                intent.putExtra("geoP", maxG);
+                intent.putExtra("entP", maxE);
+                intent.putExtra("spoP", maxSpt);
+                intent.putExtra("vgP", maxVG);
                 startActivity(intent);
                 break;
             case R.id.videogames:
+                intent = new Intent("com.example.android.quizapp.VGamesQuestions");
                 category = "videogames";
                 intent.putExtra("Category", category);
                 intent.putExtra("Name", name);
                 intent.putExtra("nQuestions", nQ);
+                intent.putExtra("hisP", maxH);
+                intent.putExtra("sciP", maxS);
+                intent.putExtra("geoP", maxG);
+                intent.putExtra("entP", maxE);
+                intent.putExtra("spoP", maxSpt);
+                intent.putExtra("vgP", maxVG);
                 startActivity(intent);
                 break;
 
@@ -215,25 +248,18 @@ public class FinalActivity extends AppCompatActivity {
         }
     }
 
-    public void link(){
+    public void link(View view){
 
-        Intent intent = null;
-        try {
-            // get the Twitter app if possible
-            this.getPackageManager().getPackageInfo("com.twitter.android", 0);
-            intent = new Intent(Intent.ACTION_VIEW, Uri.parse("twitter://user?user_id=IAmKlose_"));
-            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-        } catch (Exception e) {
-            // no Twitter app, revert to browser
-            intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://twitter.com/IAmKlose_"));
-        }
-        this.startActivity(intent);
+        String url = "https://twitter.com/IAmKlose_";
+        Intent i = new Intent(Intent.ACTION_VIEW);
+        i.setData(Uri.parse(url));
+        startActivity(i);
 
     }
 
-    public void mainP(){
-        Intent i = new Intent(FinalActivity.this, MainActivity.class);
-        i.setFlags(FLAG_ACTIVITY_CLEAR_TOP);
+    public void mainP(View view){
+        Intent i=new Intent(this, MainActivity.class);
+        i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(i);
     }
 

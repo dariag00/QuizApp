@@ -144,6 +144,7 @@
         <item name="android:scaleType">centerCrop</item>
         <item name="android:adjustViewBounds">true</item>
         <item name="android:gravity">center</item>
+        <item name="android:contentDescription">"Image to be shown in the card"</item>
         <item name="android:layout_marginBottom">15dp</item>
     </style>
 

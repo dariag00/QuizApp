@@ -74,6 +74,13 @@
     <string name ="HT7c">The Battle of Leningrad</string>
     <string name ="HT7d">The Battle of Somme</string>
 
+    <string name ="HT8">Under the reign of who had the Spanish empire its maximum splendor?</string>
+
+    <string name ="HT8a">Charles I</string>
+    <string name ="HT8b">Philip I</string>
+    <string name ="HT8c">Charles II</string>
+    <string name ="HT8d">Philip II</string>
+
 
 
 
@@ -114,6 +121,19 @@
     <string name ="ST5c" translatable="false">0,3Gm/s</string>
     <string name ="ST5d" translatable="false">4x10^8m/s</string>
 
+    <string name ="ST6">How many planets does the solar system have?</string>
+
+    <string name ="ST6a" translatable="false">7</string>
+    <string name ="ST6b" translatable="false">8</string>
+    <string name ="ST6c" translatable="false">9</string>
+    <string name ="ST6d" translatable="false">10</string>
+
+    <string name ="ST7">Which of the following is a primary pigment color?</string>
+
+    <string name ="ST7a" translatable="false">Cyan</string>
+    <string name ="ST7b">Purple</string>
+    <string name ="ST7c">Red</string>
+    <string name ="ST7d">Green</string>
 
     <!-- Geography Questions strings. -->
 
@@ -149,6 +169,28 @@
     <string name ="GT5c" translatable="false">Gobi</string>
     <string name ="GT5d" translatable="false">Sahara</string>
 
+    <string name ="GT6">What is Earths second largest continent by population?</string>
+
+    <string name ="GT6a">Africa</string>
+    <string name ="GT6b">America</string>
+    <string name ="GT6c" translatable="false">Asia</string>
+    <string name ="GT6d">Europe</string>
+
+    <string name ="GT7">What is the most spoken Language in the World?</string>
+
+    <string name ="GT7a">Spanish</string>
+    <string name ="GT7b">English</string>
+    <string name ="GT7c">Chinese</string>
+    <string name ="GT7d" translatable="false">Hindi</string>
+
+    <string name ="GT8">Which of the following countries doesnt belong to the Europen Union?</string>
+
+    <string name ="GT8a">Switzerland</string>
+    <string name ="GT8b">Finland</string>
+    <string name ="GT8c">Greece</string>
+    <string name ="GT8d" translatable="false">Liechtenstein</string>
+
+
 
     <!-- Videogames Questions strings. -->
 
@@ -180,6 +222,20 @@
     <string name ="VGT4b" translatable="false">Red Dead Redemption</string>
     <string name ="VGT4c" translatable="false">GTA</string>
     <string name ="VGT4d" translatable="false">League of Legends</string>
+
+    <string name ="VGT5">Which of this player has wonned more times the LCS?</string>
+
+    <string name ="VGT5a" translatable="false">Bjergsen</string>
+    <string name ="VGT5b" translatable="false">Rekkles</string>
+    <string name ="VGT5c" translatable="false">YellowStar</string>
+    <string name ="VGT5d" translatable="false">xPeke</string>
+
+    <string name ="VGT6">Which LoL Team has wonned more times the World Championship?</string>
+
+    <string name ="VGT6a" translatable="false">Fnatic</string>
+    <string name ="VGT6b" translatable="false">SKT T1</string>
+    <string name ="VGT6c" translatable="false">Samsung Galaxy</string>
+    <string name ="VGT6d" translatable="false">TSM</string>
 
 
     <!-- Sports Questions strings. -->
@@ -219,19 +275,20 @@
     <string name ="SPT5c" translatable="false">Fernando Alonso</string>
     <string name ="SPT5d" translatable="false">Rubens Barrichelo</string>
 
-    <string name ="SPT7">Which LoL Team has wonned more times the World Championship?</string>
+    <string name ="SPT6">Who has won the most medals in the Olympic Games?</string>
 
-    <string name ="SPT7a" translatable="false">Fnatic</string>
-    <string name ="SPT7b" translatable="false">SKT T1</string>
-    <string name ="SPT7c" translatable="false">Samsung Galaxy</string>
-    <string name ="SPT7d" translatable="false">TSM</string>
-
-    <string name ="SPT6">Which of this player has wonned more times the LCS?</string>
-
-    <string name ="SPT6a" translatable="false">Bjergsen</string>
+    <string name ="SPT6a" translatable="false">Michael Phelps</string>
     <string name ="SPT6b" translatable="false">Rekkles</string>
     <string name ="SPT6c" translatable="false">YellowStar</string>
     <string name ="SPT6d" translatable="false">xPeke</string>
+
+    <string name ="SPT7">Which of the following sports is not a Olympic Sport?</string>
+
+    <string name ="SPT7a" translatable="false">BMX</string>
+    <string name ="SPT7b">Football</string>
+    <string name ="SPT7c" translatable="false">Golf</string>
+    <string name ="SPT7d" translatable="false">Softball</string>
+
 
 
 
