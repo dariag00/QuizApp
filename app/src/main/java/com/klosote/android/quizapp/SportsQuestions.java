@@ -69,6 +69,7 @@ public class SportsQuestions extends AppCompatActivity{
         CardView sp5  = (CardView) findViewById(R.id.sp5);
         CardView sp6  = (CardView) findViewById(R.id.sp6);
         CardView sp7  = (CardView) findViewById(R.id.sp7);
+        CardView sp8  = (CardView) findViewById(R.id.sp8);
 
         sp1.setVisibility(GONE);
         sp2.setVisibility(GONE);
@@ -77,8 +78,9 @@ public class SportsQuestions extends AppCompatActivity{
         sp5.setVisibility(GONE);
         sp6.setVisibility(GONE);
         sp7.setVisibility(GONE);
+        sp8.setVisibility(GONE);
 
-        chooseRandomQuestions(nQ,7);
+        chooseRandomQuestions(nQ,8);
         for(int el : selected){
             switch (el){
                 case 1:
@@ -102,6 +104,9 @@ public class SportsQuestions extends AppCompatActivity{
                 case 7:
                     sp7.setVisibility(VISIBLE);
                     break;
+                case 8:
+                    sp8.setVisibility(VISIBLE);
+                    break;
 
             }
         }
@@ -123,6 +128,7 @@ public class SportsQuestions extends AppCompatActivity{
         CardView sp5  = (CardView) findViewById(R.id.sp5);
         CardView sp6  = (CardView) findViewById(R.id.sp6);
         CardView sp7  = (CardView) findViewById(R.id.sp7);
+        CardView sp8  = (CardView) findViewById(R.id.sp8);
 
         if(sp1.getVisibility() == VISIBLE){
 
@@ -223,18 +229,18 @@ public class SportsQuestions extends AppCompatActivity{
             RadioButton c = (RadioButton) findViewById(R.id.sp5c);
             RadioButton d = (RadioButton) findViewById(R.id.sp5d);
 
-            b.setBackgroundColor(Color.parseColor("#42f45c"));
+            d.setBackgroundColor(Color.parseColor("#42f45c"));
 
             if(a.isChecked()){
                 a.setBackgroundColor(Color.parseColor("#f44141"));
             }
-            if(d.isChecked()){
+            if(b.isChecked()){
                 b.setBackgroundColor(Color.parseColor("#f44141"));
             }
             if(c.isChecked()){
                 c.setBackgroundColor(Color.parseColor("#f44141"));
             }
-            if(b.isChecked()){
+            if(d.isChecked()){
                 corrAns ++;
             }
 
@@ -279,6 +285,30 @@ public class SportsQuestions extends AppCompatActivity{
             }
             if(c.isChecked()){
                 c.setBackgroundColor(Color.parseColor("#f44141"));
+            }
+            if(d.isChecked()){
+                d.setBackgroundColor(Color.parseColor("#f44141"));
+            }
+
+        }
+
+        if(sp8.getVisibility() == VISIBLE){
+
+            RadioButton a = (RadioButton) findViewById(R.id.sp8a);
+            RadioButton b = (RadioButton) findViewById(R.id.sp8b);
+            RadioButton c = (RadioButton) findViewById(R.id.sp8c);
+            RadioButton d = (RadioButton) findViewById(R.id.sp8d);
+
+            c.setBackgroundColor(Color.parseColor("#42f45c"));
+
+            if(a.isChecked()){
+                a.setBackgroundColor(Color.parseColor("#f44141"));
+            }
+            if(c.isChecked()){
+                corrAns ++;
+            }
+            if(b.isChecked()){
+                b.setBackgroundColor(Color.parseColor("#f44141"));
             }
             if(d.isChecked()){
                 d.setBackgroundColor(Color.parseColor("#f44141"));

@@ -37,14 +37,14 @@ public class MainActivity extends AppCompatActivity {
             nQuestions = 6;
         }else{
             //Sends a warning to select the number of Questions
-
             Context context = getApplicationContext();
-            Toast.makeText(context,"Tienes que elegir un numero de preguntas", Toast.LENGTH_LONG).show();
+            Toast.makeText(context,R.string.chooseQ, Toast.LENGTH_LONG).show();
 
         }
 
         if(nQuestions != 0){
             String name = edittext.getText().toString();
+            name = name.trim();
             Intent intent = new Intent(this, CategorySelection.class);
             intent.putExtra("Name", name);
             intent.putExtra("nQuestions", nQuestions);

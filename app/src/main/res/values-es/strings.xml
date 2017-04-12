@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">QuizApp</string>
     <string name="startButton">Empezar</string>
     <string name="Name">Nombre</string>
     <string name="GT1">¿Cuál es la capital de Castilla y León?</string>
@@ -12,7 +11,7 @@
     <string name="GT4b">Nilo</string>
     <string name="HT1">¿Cuál de estas batallas nunca tuvo lugar?</string>
     <string name="HT1a">Batalla de los Campos Cataláunicos</string>
-    <string name="HT1b">Batalla de Poltava</string>
+    <string name="HT1b">Batalla de Normandía</string>
     <string name="HT1c">Batalla del Glorioso Primero de Junio</string>
     <string name="HT2">¿Cuánto duró la Guerra de los 100 años?</string>
     <string name="HT3">¿En qué año cayó el Imperio Romano de Occidente?</string>
@@ -106,4 +105,16 @@
     <string name="VGT5">¿Cuál es el jugador que mas veces ha ganado la LCS?</string>
     <string name="VGT6">¿Que equipo ha ganado mas veces el Campeonato Mundial de LoL?</string>
     <string name="ST6">¿Cuántos planetas tiene el Sistema Solar?</string>
+    <string name="HT10">¿Qué conquistador famoso del siglo 5 D.C fue conocido como \"El Azote de Dios\"?</string>
+    <string name="HT10a">Anibal Barca</string>
+    <string name="HT10b">Julio Cesar</string>
+    <string name="HT10c">Atila el Huno</string>
+    <string name="HT9">¿En qué año cayó el muro de Berlín?</string>
+    <string name="ST10">¿Cuántos bits son un Byte?</string>
+    <string name="ST8">¿Que significa WWW?</string>
+    <string name="ST9">¿Quién fundó Apple?</string>
+    <string name="SPT8">¿Qué jugador posee el record de más puntos anotados en un partido de la NBA?</string>
+    <string name="errorCategory">Error al elegir la categoría</string>
+    <string name="chooseQ">Por favor, elige el número de preguntas</string>
+    <string name="fMsg">Puedes seleccionar otra categoria pulsando en uno de los botones que se encuentran al lado de tu clasificación.\n¡Gracias por usarme y no te olvides de visitar mis RRSS a través del boton que hay debajo para estar informado de todo lo que ocurre con la app!</string>
 </resources>

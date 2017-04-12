@@ -29,33 +29,14 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
-                <View
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:layout_height="2dp"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="16dp"
-                    android:background="#808182" />
+                <View style="@style/ViewLeftQ" />
 
                 <TextView
                     android:id="@+id/CatName"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
                     android:text = "@string/hist"
-                    android:layout_weight="2"
-                    android:paddingTop="8dp"
-                    android:paddingBottom="8dp"
-                    android:textStyle ="bold"
-                    android:textSize="25sp"
-                    android:gravity = "center"/>
+                    style="@style/QuestionsMainTextView"/>
 
-                <View
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:layout_height="2dp"
-                    android:layout_gravity="center"
-                    android:layout_marginRight="16dp"
-                    android:background="#808182" />
+                <View style="@style/ViewR" />
 
             </LinearLayout>
 
@@ -348,6 +329,78 @@
                     <RadioButton
                         android:id="@+id/h8d"
                         android:text="@string/HT8d"
+                        style="@style/RButtonQStyle"/>
+                </RadioGroup>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/hist9"
+            card_view:cardCornerRadius="15dp"
+            card_view:cardElevation="10dp"
+            style="@style/CardViewStyle">
+            <LinearLayout style="@style/CardLinearStyle">
+                <TextView
+                    android:text="@string/HT9"
+                    style="@style/TextViewCardStyle"/>
+                <ImageView
+                    android:src="@drawable/berlin"
+                    style="@style/ImageCardStyle" />
+
+                <RadioGroup style="@style/RadioGroupQStyle">
+
+                    <RadioButton
+                        android:id="@+id/h9a"
+                        android:text="@string/HT9a"
+                        style="@style/RButtonQStyle"/>
+                    <RadioButton
+                        android:id="@+id/h9b"
+                        android:text="@string/HT9b"
+                        style="@style/RButtonQStyle"/>
+                    <RadioButton
+                        android:id="@+id/h9c"
+                        android:text="@string/HT9c"
+                        style="@style/RButtonQStyle"/>
+                    <RadioButton
+                        android:id="@+id/h9d"
+                        android:text="@string/HT9d"
+                        style="@style/RButtonQStyle"/>
+                </RadioGroup>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/hist10"
+            card_view:cardCornerRadius="15dp"
+            card_view:cardElevation="10dp"
+            style="@style/CardViewStyle">
+            <LinearLayout style="@style/CardLinearStyle">
+                <TextView
+                    android:text="@string/HT10"
+                    style="@style/TextViewCardStyle"/>
+                <ImageView
+                    android:src="@drawable/attila"
+                    style="@style/ImageCardStyle" />
+
+                <RadioGroup style="@style/RadioGroupQStyle">
+
+                    <RadioButton
+                        android:id="@+id/h10a"
+                        android:text="@string/HT10a"
+                        style="@style/RButtonQStyle"/>
+                    <RadioButton
+                        android:id="@+id/h10b"
+                        android:text="@string/HT10b"
+                        style="@style/RButtonQStyle"/>
+                    <RadioButton
+                        android:id="@+id/h10c"
+                        android:text="@string/HT10c"
+                        style="@style/RButtonQStyle"/>
+                    <RadioButton
+                        android:id="@+id/h10d"
+                        android:text="@string/HT10d"
                         style="@style/RButtonQStyle"/>
                 </RadioGroup>
             </LinearLayout>

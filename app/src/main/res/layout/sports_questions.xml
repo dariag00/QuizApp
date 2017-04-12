@@ -28,33 +28,14 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
-                <View
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:layout_height="2dp"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="16dp"
-                    android:background="#808182" />
+                <View style="@style/ViewLeftQ" />
 
                 <TextView
                     android:id="@+id/CatName"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
                     android:text = "@string/sports"
-                    android:layout_weight="2"
-                    android:paddingTop="8dp"
-                    android:paddingBottom="8dp"
-                    android:textStyle ="bold"
-                    android:textSize="25sp"
-                    android:gravity = "center"/>
+                    style="@style/QuestionsMainTextView"/>
 
-                <View
-                    android:layout_width="0dp"
-                    android:layout_weight="1"
-                    android:layout_height="2dp"
-                    android:layout_gravity="center"
-                    android:layout_marginRight="16dp"
-                    android:background="#808182" />
+                <View style="@style/ViewR" />
 
             </LinearLayout>
         </android.support.v7.widget.CardView>
@@ -301,6 +282,42 @@
                     <RadioButton
                         android:id="@+id/sp7d"
                         android:text="@string/SPT7d"
+                        style="@style/RButtonQStyle"/>
+                </RadioGroup>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/sp8"
+            card_view:cardCornerRadius="15dp"
+            card_view:cardElevation="10dp"
+            style="@style/CardViewStyle">
+            <LinearLayout style="@style/CardLinearStyle">
+                <TextView
+                    android:text="@string/SPT8"
+                    style="@style/TextViewCardStyle"/>
+                <ImageView
+                    android:src="@drawable/puntos"
+                    style="@style/ImageCardStyle" />
+
+                <RadioGroup style="@style/RadioGroupQStyle">
+
+                    <RadioButton
+                        android:id="@+id/sp8a"
+                        android:text="@string/SPT8a"
+                        style="@style/RButtonQStyle"/>
+                    <RadioButton
+                        android:id="@+id/sp8b"
+                        android:text="@string/SPT8b"
+                        style="@style/RButtonQStyle"/>
+                    <RadioButton
+                        android:id="@+id/sp8c"
+                        android:text="@string/SPT8c"
+                        style="@style/RButtonQStyle"/>
+                    <RadioButton
+                        android:id="@+id/sp8d"
+                        android:text="@string/SPT8d"
                         style="@style/RButtonQStyle"/>
                 </RadioGroup>
             </LinearLayout>

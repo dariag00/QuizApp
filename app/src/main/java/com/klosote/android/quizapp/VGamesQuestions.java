@@ -193,7 +193,7 @@ public class VGamesQuestions extends AppCompatActivity{
             CheckBox c = (CheckBox) findViewById(R.id.vch3);
             CheckBox d = (CheckBox) findViewById(R.id.vch4);
 
-            d.setBackgroundColor(Color.parseColor("#42f45c"));
+            c.setBackgroundColor(Color.parseColor("#42f45c"));
             b.setBackgroundColor(Color.parseColor("#42f45c"));
 
             if (a.isChecked()) {

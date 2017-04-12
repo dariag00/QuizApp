@@ -38,12 +38,16 @@
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_gravity">center</item>
+        <item name="android:textSize">@dimen/RBMActTextSize</item>
     </style>
 
     <style name="GeneralButton">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginTop">@dimen/GenButtonMargin</item>
+        <item name="android:textSize">@dimen/GenButtonTextSize</item>
+        <item name="android:padding">@dimen/GenButtonPadding</item>
     </style>
 
     <style name="MainImageView">
@@ -52,8 +56,8 @@
         <item name="android:scaleType">fitCenter</item>
         <item name="android:adjustViewBounds">true</item>
         <item name="android:layout_gravity">center</item>
-        <item name="android:paddingTop">40dp</item>
-        <item name="android:paddingBottom">16dp</item>
+        <item name="android:paddingTop">@dimen/MainImageViewpadTop</item>
+        <item name="android:paddingBottom">@dimen/MainImageViewpadBot</item>
     </style>
 
     <style name="QuestionsTextStyle">
@@ -61,15 +65,16 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:fontFamily">sans-serif-condensed</item>
         <item name="android:layout_gravity">center</item>
-        <item name="android:textSize">19sp</item>
-        <item name="android:paddingRight">16dp</item>
-        <item name="android:paddingBottom">16dp</item>
+        <item name="android:textSize">@dimen/questionsTextSize</item>
+        <item name="android:paddingRight">@dimen/questionsVpad</item>
+        <item name="android:paddingBottom">@dimen/questionsVpad</item>
     </style>
 
     <style name="EditTextStyle">
-        <item name="android:paddingLeft">16dp</item>
-        <item name="android:paddingRight">16dp</item>
-        <item name="android:paddingBottom">16dp</item>
+        <item name="android:paddingLeft">@dimen/EditTextVpad</item>
+        <item name="android:paddingRight">@dimen/EditTextVpad</item>
+        <item name="android:paddingBottom">@dimen/EditTextVpad</item>
+        <item name="android:textSize">@dimen/EditTextSize</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
     </style>
@@ -79,8 +84,8 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:fontFamily">sans-serif-condensed</item>
         <item name="android:layout_gravity">center</item>
-        <item name="android:textSize">30sp</item>
-        <item name="android:paddingBottom">16dp</item>
+        <item name="android:textSize">@dimen/AppNameTextSize</item>
+        <item name="android:paddingBottom">@dimen/AppNamepadding</item>
     </style>
 
     <style name="RadioGroupMainActivity">
@@ -88,25 +93,25 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:orientation">horizontal</item>
         <item name="android:gravity">center</item>
-        <item name="android:paddingRight">16dp</item>
-        <item name="android:layout_marginLeft">50dp</item>
+        <item name="android:paddingRight">@dimen/RGrouppRight</item>
+        <item name="android:layout_marginLeft">@dimen/RGroupLayoutLeft</item>
     </style>
 
     <style name="CardViewStyle">
         <item name="android:layout_gravity">center</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginTop">20dp</item>
-        <item name="android:layout_marginBottom">20dp</item>
-        <item name="android:layout_margin">20dp</item>
+        <item name="android:layout_marginTop">@dimen/CardViewL</item>
+        <item name="android:layout_marginBottom">@dimen/CardViewL</item>
+        <item name="android:layout_margin">@dimen/CardViewL</item>
     </style>
 
     <style name="CatNameCardStyle">
         <item name="android:layout_gravity">center</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginTop">20dp</item>
-        <item name="android:layout_margin">20dp</item>
+        <item name="android:layout_marginTop">@dimen/CardViewL</item>
+        <item name="android:layout_margin">@dimen/CardViewL</item>
     </style>
 
     <style name="CardLinearStyle">
@@ -119,48 +124,223 @@
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:orientation">vertical</item>
-        <item name="android:paddingLeft">25dp</item>
-        <item name="android:paddingBottom">16dp</item>
+        <item name="android:paddingLeft">@dimen/RGroupQpL</item>
+        <item name="android:paddingBottom">@dimen/RGroupQpB</item>
     </style>
 
     <style name="RButtonQStyle">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_gravity">start</item>
+        <item name="android:textSize">@dimen/RbuttonQTextSize</item>
     </style>
 
     <style name="TextViewCardStyle">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_height">@dimen/TextViewCardHeight</item>
         <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/QuestTitleSize</item>
         <item name="android:gravity">center</item>
-        <item name="android:layout_marginLeft">20dp</item>
-        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:layout_marginLeft">@dimen/TextViewCardMargin</item>
+        <item name="android:layout_marginRight">@dimen/TextViewCardMargin</item>
+        <item name="android:layout_marginBottom">@dimen/TextViewCardMarginBot</item>
     </style>
 
     <style name="ImageCardStyle">
-        <item name="android:layout_width">345dp</item>
-        <item name="android:layout_height">200dp</item>
+        <item name="android:layout_width">@dimen/ImageViewCardWidth</item>
+        <item name="android:layout_height">@dimen/ImageViewCardHeight</item>
         <item name="android:scaleType">centerCrop</item>
         <item name="android:adjustViewBounds">true</item>
         <item name="android:gravity">center</item>
         <item name="android:contentDescription">"Image to be shown in the card"</item>
-        <item name="android:layout_marginBottom">15dp</item>
+        <item name="android:layout_marginBottom">@dimen/ImageViewCardB</item>
     </style>
 
     <style name="questButton">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:gravity">center</item>
-        <item name="android:layout_margin">16dp</item>
+        <item name="android:textSize">@dimen/QuestButtonTextSize</item>
+        <item name="android:layout_margin">@dimen/QuestionButtonL</item>
         <item name="android:background">@drawable/submit</item>
     </style>
 
     <style name="checkBoxStyle">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/CheckBoxTextSize</item>
         <item name="android:textAppearance">?android:textAppearanceMedium</item>
-        <item name="android:layout_marginLeft">25dp</item>
-        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:layout_marginLeft">@dimen/CheckBoxLL</item>
+        <item name="android:layout_marginBottom">@dimen/CheckBoxLB</item>
+    </style>
+
+    <style name="CategoryTextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/CSTextPadding</item>
+        <item name="android:paddingBottom">@dimen/CSTextPadding</item>
+        <item name="android:textSize">@dimen/CSTextSize</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="LinearCategory">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">@dimen/LinearMarginCS</item>
+        <item name="android:layout_marginLeft">@dimen/LinearMarginCS</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="ViewLineCategory">
+        <item name="android:layout_marginBottom">@dimen/FVCSmargin</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/Vheight</item>
+        <item name="android:background">#000000</item>
+        <item name="android:layout_marginRight">@dimen/FVCSmargin</item>
+        <item name="android:layout_marginLeft">@dimen/FVCSmargin</item>
+    </style>
+
+    <style name="ButtonCategoryS">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/ButtonCSelectionmargin</item>
+        <item name="android:paddingRight">@dimen/ButtonCSelectionpadding</item>
+        <item name="android:paddingLeft">@dimen/ButtonCSelectionpadding</item>
+        <item name="android:paddingTop">@dimen/ButtonCSelectionpaddingTop</item>
+        <item name="android:paddingBottom">@dimen/ButtonCSelectionpaddingTop</item>
+        <item name="android:textSize">@dimen/ButtonCSelectionTextSize</item>
+    </style>
+
+    <style name="FinalViewCategoryS">
+        <item name="android:layout_marginTop">@dimen/FVCSmargin</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/Vheight</item>
+        <item name="android:background">#000000</item>
+        <item name="android:layout_marginRight">@dimen/FVCSmargin</item>
+        <item name="android:layout_marginLeft">@dimen/FVCSmargin</item>
+    </style>
+
+    <style name="QuestionsMainTextView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:paddingTop">@dimen/TextQVpadding</item>
+        <item name="android:paddingBottom">@dimen/TextQVpadding</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/TextQView</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="ViewLeftQ">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">@dimen/ViewHeightQ</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginLeft">@dimen/ViewMarginQ</item>
+        <item name="android:background">#808182</item>
+    </style>
+
+    <style name="ViewR">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">@dimen/ViewHeightQ</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginRight">@dimen/ViewMarginQ</item>
+        <item name="android:background">#808182</item>
+    </style>
+
+    <!--FinalView Styles-->
+
+    <style name="FVTextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/FVTextViewpadding</item>
+        <item name="android:paddingBottom">@dimen/FVTextViewpadding</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/FVTextViewTextSize</item>
+    </style>
+
+    <style name="FVViewTop">
+        <item name="android:layout_marginBottom">@dimen/FVViewmargin</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/FVViewheight</item>
+        <item name="android:background">#000000</item>
+        <item name="android:layout_marginRight">@dimen/FVViewmargin</item>
+        <item name="android:layout_marginLeft">@dimen/FVViewmargin</item>
+
+    </style>
+
+    <style name="FVViewBot">
+        <item name="android:layout_marginTop">@dimen/FVViewmargin</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/FVViewheight</item>
+        <item name="android:background">#000000</item>
+        <item name="android:layout_marginRight">@dimen/FVViewmargin</item>
+        <item name="android:layout_marginLeft">@dimen/FVViewmargin</item>
+    </style>
+
+    <style name="FVLinearLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">@dimen/FVLinear</item>
+        <item name="android:layout_marginLeft">@dimen/FVLinear</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="FVButton">
+        <item name="android:layout_width">@dimen/FVButtonWidth</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/FVButtonMarg</item>
+        <item name="android:layout_marginBottom">@dimen/FVButtonMarg</item>
+        <item name="android:layout_marginLeft">@dimen/FVButtonMarg</item>
+        <item name="android:paddingLeft">@dimen/FVButtonPLeft</item>
+        <item name="android:paddingRight">@dimen/FVButtonPadd</item>
+        <item name="android:paddingTop">@dimen/FVButtonPadd</item>
+        <item name="android:paddingBottom">@dimen/FVButtonPadd</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginRight">@dimen/FVButtonRight</item>
+    </style>
+
+    <style name="ButtRatLinearStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="RatingBar">
+        <item name="android:layout_marginRight">@dimen/RatingMargin</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:numStars">5</item>
+        <item name="android:rating">0</item>
+        <item name="android:paddingTop">@dimen/RatingMarginP</item>
+        <item name="android:isIndicator">true</item>
+    </style>
+
+    <style name="TwitterButton" parent="FVButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/FVButtonMarg</item>
+        <item name="android:layout_marginBottom">@dimen/FVButtonMarg</item>
+        <item name="android:layout_marginLeft">@dimen/FVButtonMarg</item>
+        <item name="android:drawableLeft">@drawable/twitter</item>
+        <item name="android:paddingLeft">@dimen/TwitterPadding</item>
+        <item name="android:background">@drawable/round_history</item>
+
+    </style>
+
+    <style name="RestartButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/FVButtonMarg</item>
+        <item name="android:layout_marginBottom">@dimen/FVButtonMarg</item>
+        <item name="android:layout_marginLeft">@dimen/FVButtonMarg</item>
+        <item name="android:padding">@dimen/RestartPad</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginRight">@dimen/FVButtonRight</item>
+        <item name="android:background">@drawable/random</item>
+        <item name="android:textSize">@dimen/FVButtonTSize</item>
     </style>
 </resources>

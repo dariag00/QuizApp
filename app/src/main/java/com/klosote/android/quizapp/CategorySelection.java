@@ -156,7 +156,7 @@ public class CategorySelection extends AppCompatActivity{
 
             default:
                 Context context = getApplicationContext();
-                Toast.makeText(context,"Error al elegir la categoría", Toast.LENGTH_LONG).show();
+                Toast.makeText(context,R.string.errorCategory, Toast.LENGTH_LONG).show();
                 break;
 
         }

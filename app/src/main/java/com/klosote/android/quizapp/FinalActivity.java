@@ -100,7 +100,7 @@ public class FinalActivity extends AppCompatActivity {
                 }
 
                 break;
-            case "enter":
+            case "entertainment":
 
                 pr = ((float)nA/(float)nQ) * 5;
                 br = (RatingBar) findViewById(R.id.entRatingBar);
@@ -112,7 +112,7 @@ public class FinalActivity extends AppCompatActivity {
                     }
 
                 break;
-            case "spt":
+            case "sports":
 
                 pr = ((float)nA/(float)nQ) * 5;
                 br = (RatingBar) findViewById(R.id.sportsRatingBar);
@@ -123,7 +123,7 @@ public class FinalActivity extends AppCompatActivity {
                 }
 
                 break;
-            case "sci":
+            case "science":
 
                 pr = ((float)nA/(float)nQ) * 5;
                 br = (RatingBar) findViewById(R.id.sciRatingBar);
@@ -135,7 +135,7 @@ public class FinalActivity extends AppCompatActivity {
                     }
 
                 break;
-            case "vgames":
+            case "videogames":
 
                 pr = ((float)nA/(float)nQ) * 5;
                 br = (RatingBar) findViewById(R.id.vGRatingBar);
@@ -185,7 +185,7 @@ public class FinalActivity extends AppCompatActivity {
                 intent.putExtra("vgP", maxVG);
                 startActivity(intent);
                 break;
-            case R.id.entertainment:
+            case R.id.entert:
                 intent = new Intent(this, EnterQuestions.class);
                 category = "entertainment";
                 intent.putExtra("Category", category);

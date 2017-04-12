@@ -69,6 +69,8 @@ public class HistoryQuestions extends AppCompatActivity{
         CardView h6  = (CardView) findViewById(R.id.hist6);
         CardView h7  = (CardView) findViewById(R.id.hist7);
         CardView h8  = (CardView) findViewById(R.id.hist8);
+        CardView h9  = (CardView) findViewById(R.id.hist9);
+        CardView h10  = (CardView) findViewById(R.id.hist10);
 
         h1.setVisibility(GONE);
         h2.setVisibility(GONE);
@@ -78,9 +80,11 @@ public class HistoryQuestions extends AppCompatActivity{
         h6.setVisibility(GONE);
         h7.setVisibility(GONE);
         h8.setVisibility(GONE);
+        h9.setVisibility(GONE);
+        h10.setVisibility(GONE);
 
 
-        chooseRandomQuestions(nQ,8);
+        chooseRandomQuestions(nQ,10);
         for(int el : selected){
             switch (el){
                 case 1:
@@ -107,6 +111,12 @@ public class HistoryQuestions extends AppCompatActivity{
                 case 8:
                     h8.setVisibility(VISIBLE);
                     break;
+                case 9:
+                    h9.setVisibility(VISIBLE);
+                    break;
+                case 10:
+                    h10.setVisibility(VISIBLE);
+                    break;
 
             }
         }
@@ -125,6 +135,8 @@ public class HistoryQuestions extends AppCompatActivity{
         CardView h6  = (CardView) findViewById(R.id.hist6);
         CardView h7  = (CardView) findViewById(R.id.hist7);
         CardView h8  = (CardView) findViewById(R.id.hist8);
+        CardView h9  = (CardView) findViewById(R.id.hist9);
+        CardView h10  = (CardView) findViewById(R.id.hist10);
 
         if(h1.getVisibility() == VISIBLE){
             //Solution is d
@@ -307,6 +319,52 @@ public class HistoryQuestions extends AppCompatActivity{
                 corrAns ++;
             }
             if(c.isChecked()){
+                c.setBackgroundColor(Color.parseColor("#f44141"));
+            }
+
+        }
+
+        if(h9.getVisibility() == VISIBLE){
+            //Solution is c
+            RadioButton a = (RadioButton) findViewById(R.id.h9a);
+            RadioButton b = (RadioButton) findViewById(R.id.h9b);
+            RadioButton c = (RadioButton) findViewById(R.id.h9c);
+            RadioButton d = (RadioButton) findViewById(R.id.h9d);
+            b.setBackgroundColor(Color.parseColor("#42f45c"));
+
+            if(a.isChecked()){
+                a.setBackgroundColor(Color.parseColor("#f44141"));
+            }
+            if(b.isChecked()){
+                b.setBackgroundColor(Color.parseColor("#f44141"));
+            }
+            if(b.isChecked()){
+                corrAns ++;
+            }
+            if(c.isChecked()){
+                c.setBackgroundColor(Color.parseColor("#f44141"));
+            }
+
+        }
+
+        if(h10.getVisibility() == VISIBLE){
+            //Solution is c
+            RadioButton a = (RadioButton) findViewById(R.id.h10a);
+            RadioButton b = (RadioButton) findViewById(R.id.h10b);
+            RadioButton c = (RadioButton) findViewById(R.id.h10c);
+            RadioButton d = (RadioButton) findViewById(R.id.h10d);
+            c.setBackgroundColor(Color.parseColor("#42f45c"));
+
+            if(a.isChecked()){
+                a.setBackgroundColor(Color.parseColor("#f44141"));
+            }
+            if(b.isChecked()){
+                b.setBackgroundColor(Color.parseColor("#f44141"));
+            }
+            if(c.isChecked()){
+                corrAns ++;
+            }
+            if(d.isChecked()){
                 d.setBackgroundColor(Color.parseColor("#f44141"));
             }
 

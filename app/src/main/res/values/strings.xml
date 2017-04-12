@@ -1,7 +1,7 @@
 <resources>
 
     <!-- Main/Login application strings. -->
-    <string name="app_name">QuizApp</string>
+    <string name="app_name" translatable="false">BrainsUp!</string>
     <string name="startButton">Start</string>
     <string name ="Name">Name</string>
     <string name ="SelectNQuestions">Choose the number of Questions</string>
@@ -79,6 +79,20 @@
     <string name ="HT8c">Charles II</string>
     <string name ="HT8d">Philip II</string>
 
+    <string name ="HT9">In what year did the Berlin Wall fall?</string>
+
+    <string name ="HT9a" translatable="false">1988</string>
+    <string name ="HT9b" translatable="false">1989</string>
+    <string name ="HT9c" translatable="false">1990</string>
+    <string name ="HT9d" translatable="false">1991</string>
+
+    <string name ="HT10">What famous 5th century A.D conqueror was known as The Scourge of God?</string>
+
+    <string name ="HT10a">Hannibal Barca</string>
+    <string name ="HT10b">Julius Caesar</string>
+    <string name ="HT10c">Atilla the Hun</string>
+    <string name ="HT10d" translatable="false">Vercingetorix</string>
+
 
 
 
@@ -132,6 +146,27 @@
     <string name ="ST7b">Purple</string>
     <string name ="ST7c">Red</string>
     <string name ="ST7d">Green</string>
+
+    <string name ="ST8">What does WWW stands for?</string>
+
+    <string name ="ST8a" translatable="false">World Wide Web</string>
+    <string name ="ST8b" translatable="false">Wave Wide Web</string>
+    <string name ="ST8c" translatable="false">World Wake Web</string>
+    <string name ="ST8d" translatable="false">World Wave Web</string>
+
+    <string name ="ST9">Who founded apple?</string>
+
+    <string name ="ST9a" translatable="false">Tim Cook</string>
+    <string name ="ST9b" translatable="false">Bill Gates</string>
+    <string name ="ST9c" translatable="false">Steve Jobs</string>
+    <string name ="ST9d" translatable="false">Elon Musk</string>
+
+    <string name ="ST10">How many bits make a Byte?</string>
+
+    <string name ="ST10a" translatable="false">4</string>
+    <string name ="ST10b" translatable="false">8</string>
+    <string name ="ST10c" translatable="false">16</string>
+    <string name ="ST10d" translatable="false">32</string>
 
     <!-- Geography Questions strings. -->
 
@@ -288,6 +323,14 @@
     <string name ="SPT7d" translatable="false">Softball</string>
 
 
+    <string name ="SPT8">" Which player has the record of the most points scored in a NBA match?"</string>
+
+    <string name ="SPT8a" translatable="false">James Harden</string>
+    <string name ="SPT8b" translatable="false">Kobe Bryant</string>
+    <string name ="SPT8c" translatable="false">Wilt Chamberlain</string>
+    <string name ="SPT8d" translatable="false">Michael Jordan</string>
+
+
 
 
 
@@ -336,7 +379,7 @@
     <string name ="ETT6d" translatable="false">Elvis Presley</string>
 
 
-    <!-- Category Selection strings. -->
+    <!--  Menu or Button strings. -->
 
     <string name ="submit">Submit</string>
     <string name ="continAc">Continue</string>
@@ -344,5 +387,9 @@
     <string name ="finalMesg">Here are your results so far:</string>
     <string name ="finalMesgWN">, here are your results so far:</string>
     <string name ="mainPage">RESTART</string>
+    <string name ="chooseQ">Please, select the number of questions</string>
+    <string name ="errorCategory">Error choosing category</string>
+
+    <string name="fMsg">You can select another category by clicking in one of the buttons above.\nThanks for using me and check my RSS on the button below to stay informed about the app!"</string>
 
 </resources>

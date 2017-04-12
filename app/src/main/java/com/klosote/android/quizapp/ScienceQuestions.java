@@ -69,6 +69,9 @@ public class ScienceQuestions extends AppCompatActivity{
         CardView s5  = (CardView) findViewById(R.id.sci5);
         CardView s6  = (CardView) findViewById(R.id.sci6);
         CardView s7  = (CardView) findViewById(R.id.sci7);
+        CardView s8  = (CardView) findViewById(R.id.sci8);
+        CardView s9  = (CardView) findViewById(R.id.sci9);
+        CardView s10  = (CardView) findViewById(R.id.sci10);
 
         s1.setVisibility(GONE);
         s2.setVisibility(GONE);
@@ -77,8 +80,11 @@ public class ScienceQuestions extends AppCompatActivity{
         s5.setVisibility(GONE);
         s6.setVisibility(GONE);
         s7.setVisibility(GONE);
+        s8.setVisibility(GONE);
+        s9.setVisibility(GONE);
+        s10.setVisibility(GONE);
 
-        chooseRandomQuestions(nQ,7);
+        chooseRandomQuestions(nQ,10);
         for(int el : selected){
             switch (el){
                 case 1:
@@ -102,6 +108,15 @@ public class ScienceQuestions extends AppCompatActivity{
                 case 7:
                     s7.setVisibility(VISIBLE);
                     break;
+                case 8:
+                    s8.setVisibility(VISIBLE);
+                    break;
+                case 9:
+                    s9.setVisibility(VISIBLE);
+                    break;
+                case 10:
+                    s10.setVisibility(VISIBLE);
+                    break;
             }
         }
 
@@ -123,6 +138,9 @@ public class ScienceQuestions extends AppCompatActivity{
         CardView s5 = (CardView) findViewById(R.id.sci5);
         CardView s6  = (CardView) findViewById(R.id.sci6);
         CardView s7 = (CardView) findViewById(R.id.sci7);
+        CardView s8 = (CardView) findViewById(R.id.sci8);
+        CardView s9 = (CardView) findViewById(R.id.sci9);
+        CardView s10 = (CardView) findViewById(R.id.sci10);
 
         if(s1.getVisibility() == VISIBLE){
             //Solution is d
@@ -225,18 +243,18 @@ public class ScienceQuestions extends AppCompatActivity{
             RadioButton c = (RadioButton) findViewById(R.id.s5c);
             RadioButton d = (RadioButton) findViewById(R.id.s5d);
 
-            b.setBackgroundColor(Color.parseColor("#42f45c"));
+            c.setBackgroundColor(Color.parseColor("#42f45c"));
 
             if(a.isChecked()){
                 a.setBackgroundColor(Color.parseColor("#f44141"));
             }
-            if(d.isChecked()){
+            if(b.isChecked()){
                 b.setBackgroundColor(Color.parseColor("#f44141"));
             }
-            if(b.isChecked()){
+            if(c.isChecked()){
                 corrAns ++;
             }
-            if(c.isChecked()){
+            if(d.isChecked()){
                 d.setBackgroundColor(Color.parseColor("#f44141"));
             }
 
@@ -256,13 +274,13 @@ public class ScienceQuestions extends AppCompatActivity{
                 a.setBackgroundColor(Color.parseColor("#f44141"));
             }
             if(d.isChecked()){
-                b.setBackgroundColor(Color.parseColor("#f44141"));
+                d.setBackgroundColor(Color.parseColor("#f44141"));
             }
             if(b.isChecked()){
                 corrAns ++;
             }
             if(c.isChecked()){
-                d.setBackgroundColor(Color.parseColor("#f44141"));
+                c.setBackgroundColor(Color.parseColor("#f44141"));
             }
 
 
@@ -278,16 +296,92 @@ public class ScienceQuestions extends AppCompatActivity{
             a.setBackgroundColor(Color.parseColor("#42f45c"));
 
             if(b.isChecked()){
+                b.setBackgroundColor(Color.parseColor("#f44141"));
+            }
+            if(d.isChecked()){
+                d.setBackgroundColor(Color.parseColor("#f44141"));
+            }
+            if(a.isChecked()){
+                corrAns ++;
+            }
+            if(c.isChecked()){
+                c.setBackgroundColor(Color.parseColor("#f44141"));
+            }
+
+
+        }
+
+        if(s8.getVisibility() == VISIBLE){
+            //Solution is c
+            RadioButton a = (RadioButton) findViewById(R.id.s8a);
+            RadioButton b = (RadioButton) findViewById(R.id.s8b);
+            RadioButton c = (RadioButton) findViewById(R.id.s8c);
+            RadioButton d = (RadioButton) findViewById(R.id.s8d);
+
+            a.setBackgroundColor(Color.parseColor("#42f45c"));
+
+            if(b.isChecked()){
+                b.setBackgroundColor(Color.parseColor("#f44141"));
+            }
+            if(d.isChecked()){
+                d.setBackgroundColor(Color.parseColor("#f44141"));
+            }
+            if(a.isChecked()){
+                corrAns ++;
+            }
+            if(c.isChecked()){
+                c.setBackgroundColor(Color.parseColor("#f44141"));
+            }
+
+
+        }
+
+        if(s9.getVisibility() == VISIBLE){
+            //Solution is c
+            RadioButton a = (RadioButton) findViewById(R.id.s9a);
+            RadioButton b = (RadioButton) findViewById(R.id.s9b);
+            RadioButton c = (RadioButton) findViewById(R.id.s9c);
+            RadioButton d = (RadioButton) findViewById(R.id.s9d);
+
+            c.setBackgroundColor(Color.parseColor("#42f45c"));
+
+            if(b.isChecked()){
+                b.setBackgroundColor(Color.parseColor("#f44141"));
+            }
+            if(d.isChecked()){
+                d.setBackgroundColor(Color.parseColor("#f44141"));
+            }
+            if(c.isChecked()){
+
+                corrAns ++;
+            }
+            if(a.isChecked()){
+                a.setBackgroundColor(Color.parseColor("#f44141"));
+            }
+
+
+        }
+
+        if(s10.getVisibility() == VISIBLE){
+            //Solution is c
+            RadioButton a = (RadioButton) findViewById(R.id.s10a);
+            RadioButton b = (RadioButton) findViewById(R.id.s10b);
+            RadioButton c = (RadioButton) findViewById(R.id.s10c);
+            RadioButton d = (RadioButton) findViewById(R.id.s10d);
+
+            b.setBackgroundColor(Color.parseColor("#42f45c"));
+
+            if(a.isChecked()){
                 a.setBackgroundColor(Color.parseColor("#f44141"));
             }
             if(d.isChecked()){
-                b.setBackgroundColor(Color.parseColor("#f44141"));
+                d.setBackgroundColor(Color.parseColor("#f44141"));
             }
             if(b.isChecked()){
                 corrAns ++;
             }
             if(c.isChecked()){
-                d.setBackgroundColor(Color.parseColor("#f44141"));
+                c.setBackgroundColor(Color.parseColor("#f44141"));
             }
 
 

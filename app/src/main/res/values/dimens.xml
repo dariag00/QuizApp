@@ -1,6 +1,5 @@
 <resources>
     <!-- Default screen margins, per the Android Design guidelines. -->
-    <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="appBarHeight">250dp</dimen>
     <dimen name="expandedText">38sp</dimen>
@@ -16,4 +15,105 @@
     <dimen name="fabMarginBottom">16dp</dimen>
     <dimen name="fabMarginBottom1">90dp</dimen>
     <dimen name="fabMarginBottom2">160dp</dimen>
+
+
+
+    <dimen name="activity_horizontal_margin">64dp</dimen>
+    <dimen name="MainImageViewpadTop">40dp</dimen>
+    <dimen name="MainImageViewpadBot">16dp</dimen>
+
+    <dimen name="questionsVpad">16dp</dimen>
+    <dimen name="questionsTextSize">19sp</dimen>
+
+    <dimen name="RBMActTextSize">18sp</dimen>
+
+    <dimen name="EditTextVpad">16dp</dimen>
+    <dimen name="EditTextSize">20sp</dimen>
+
+    <dimen name="AppNameTextSize">30sp</dimen>
+    <dimen name="AppNamepadding">16dp</dimen>
+
+    <dimen name="RGrouppRight">16dp</dimen>
+    <dimen name="RGroupLayoutLeft">50dp</dimen>
+
+    <dimen name="GenButtonTextSize">16sp</dimen>
+    <dimen name="GenButtonPadding">8dp</dimen>
+    <dimen name="GenButtonMargin">8dp</dimen>
+
+
+    <dimen name="CardViewL">20dp</dimen>
+
+    <dimen name = "RGroupQpL">25dp</dimen>
+    <dimen name = "RGroupQpB">16dp</dimen>
+
+    <dimen name = "TextViewCardHeight">50dp</dimen>
+    <dimen name = "TextViewCardMargin">20dp</dimen>
+    <dimen name = "TextViewCardMarginBot">8dp</dimen>
+
+    <dimen name = "ImageViewCardHeight">200dp</dimen>
+    <dimen name = "ImageViewCardWidth">345dp</dimen>
+    <dimen name = "ImageViewCardB">15dp</dimen>
+
+    <dimen name = "QuestionButtonL">16dp</dimen>
+
+    <dimen name = "CheckBoxLL">25dp</dimen>
+    <dimen name = "CheckBoxLB">8dp</dimen>
+
+    <!-- Category Selection -->
+
+    <dimen name = "FVCSmargin">16dp</dimen>
+    <dimen name = "Vheight">2dp</dimen>
+
+    <dimen name = "ButtonCSelectionTextSize">13sp</dimen>
+    <dimen name = "ButtonCSelectionmargin">8dp</dimen>
+    <dimen name = "ButtonCSelectionpadding">60dp</dimen>
+    <dimen name = "ButtonCSelectionpaddingTop">8dp</dimen>
+
+    <dimen name = "LinearMarginCS">8dp</dimen>
+
+    <dimen name ="CSTextSize">16sp</dimen>
+    <dimen name ="CSTextPadding">16dp</dimen>
+
+
+    <!--Questions Activities -->
+
+    <dimen name ="ViewHeightQ">2dp</dimen>
+    <dimen name ="ViewMarginQ">16sp</dimen>
+
+    <dimen name ="TextQView">18sp</dimen>
+    <dimen name ="TextQVpadding">8dp</dimen>
+
+    <dimen name = "CheckBoxTextSize">18sp</dimen>
+    <dimen name = "QuestTitleSize">16sp</dimen>
+    <dimen name = "RbuttonQTextSize">16sp</dimen>
+
+    <dimen name="QuestButtonTextSize">16sp</dimen>
+
+    <!--FinalActivity-->
+
+    <dimen name="FVTextViewpadding">16dp</dimen>
+    <dimen name="FVTextViewTextSize">14sp</dimen>
+
+    <dimen name="FVViewmargin">16dp</dimen>
+    <dimen name="FVViewheight">2dp</dimen>
+
+    <dimen name="FVLinear">8dp</dimen>
+
+    <dimen name="FVButtonMarg">6dp</dimen>
+    <dimen name="FVButtonRight">18dp</dimen>
+    <dimen name="FVButtonPLeft">6dp</dimen>
+    <dimen name="FVButtonPadd">0dp</dimen>
+    <dimen name="FVButtonWidth">45dp</dimen>
+    <dimen name="FVButtonTSize">16dp</dimen>
+
+    <dimen name="RatingMargin">0dp</dimen>
+    <dimen name="RatingMarginP">0dp</dimen>
+
+    <dimen name="TwitterPadding">26dp</dimen>
+    <dimen name="RestartPad">12dp</dimen>
+
+
+
+
+
 </resources>
