@@ -22,6 +22,7 @@ public class CategorySelection extends AppCompatActivity{
 
     int nQ;
     String name;
+    int beta;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +32,7 @@ public class CategorySelection extends AppCompatActivity{
         TextView welcome = (TextView) findViewById(R.id.welcomeMessage);
         name = getIntent().getStringExtra("Name"); // obtener valores de otra actividad
         nQ = getIntent().getIntExtra("nQuestions",0);
+        beta= getIntent().getIntExtra("beta",0);
         //welcome.setText(String.valueOf(nQ));
 
        if(!name.matches("")){
@@ -51,6 +53,7 @@ public class CategorySelection extends AppCompatActivity{
                 intent.putExtra("Category", category);
                 intent.putExtra("Name", name);
                 intent.putExtra("nQuestions", nQ);
+                intent.putExtra("beta", beta);
                 startActivity(intent);
                 break;
             case R.id.history:
@@ -59,6 +62,7 @@ public class CategorySelection extends AppCompatActivity{
                 intent.putExtra("Category", category);
                 intent.putExtra("Name", name);
                 intent.putExtra("nQuestions", nQ);
+                intent.putExtra("beta", beta);
                 startActivity(intent);
                 break;
             case R.id.entertainment:
@@ -67,6 +71,7 @@ public class CategorySelection extends AppCompatActivity{
                 intent.putExtra("Category", category);
                 intent.putExtra("Name", name);
                 intent.putExtra("nQuestions", nQ);
+                intent.putExtra("beta", beta);
                 startActivity(intent);
                 break;
             case R.id.sports:
@@ -75,6 +80,7 @@ public class CategorySelection extends AppCompatActivity{
                 intent.putExtra("Category", category);
                 intent.putExtra("Name", name);
                 intent.putExtra("nQuestions", nQ);
+                intent.putExtra("beta", beta);
                 startActivity(intent);
                 break;
             case R.id.science:
@@ -83,6 +89,7 @@ public class CategorySelection extends AppCompatActivity{
                 intent.putExtra("Category", category);
                 intent.putExtra("Name", name);
                 intent.putExtra("nQuestions", nQ);
+                intent.putExtra("beta", beta);
                 startActivity(intent);
                 break;
             case R.id.videogames:
@@ -91,6 +98,7 @@ public class CategorySelection extends AppCompatActivity{
                 intent.putExtra("Category", category);
                 intent.putExtra("Name", name);
                 intent.putExtra("nQuestions", nQ);
+                intent.putExtra("beta", beta);
                 startActivity(intent);
                 break;
             case R.id.random:

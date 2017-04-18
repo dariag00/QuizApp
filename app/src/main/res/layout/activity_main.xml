@@ -50,11 +50,22 @@
     </RadioGroup>
 
 
+
     <Button
         android:id="@+id/startButton"
         android:text="@string/startButton"
         android:onClick="begin"
         style="@style/GeneralButton" />
+
+    <CheckBox
+        android:id="@+id/betaCheckBox"
+        android:text="Ver todas las preguntas(Solo beta)"
+        style="@style/GeneralButton" />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/sign_in_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
 </LinearLayout>
     </ScrollView>

@@ -34,6 +34,7 @@ public class EnterQuestions extends AppCompatActivity{
     int corrAns;
     int nQ;
     String name;
+    int beta;
 
     float maxH, maxS, maxVG, maxE, maxSpt, maxG;
 
@@ -50,6 +51,7 @@ public class EnterQuestions extends AppCompatActivity{
         maxSpt = getIntent().getFloatExtra("spoP", 0);
         maxE = getIntent().getFloatExtra("entP", 0);
         maxVG = getIntent().getFloatExtra("vgP", 0);
+        beta= getIntent().getIntExtra("beta",0);
 
         super.onCreate(savedInstanceState);
 
@@ -70,36 +72,109 @@ public class EnterQuestions extends AppCompatActivity{
         CardView e4  = (CardView) findViewById(R.id.e4);
         CardView e5  = (CardView) findViewById(R.id.e5);
         CardView e6  = (CardView) findViewById(R.id.e6);
+        CardView e7  = (CardView) findViewById(R.id.e7);
+        CardView e8  = (CardView) findViewById(R.id.e8);
+        CardView e9  = (CardView) findViewById(R.id.e9);
+        CardView e10  = (CardView) findViewById(R.id.e10);
+        CardView e11  = (CardView) findViewById(R.id.e11);
+        CardView e12  = (CardView) findViewById(R.id.e12);
+        CardView e13  = (CardView) findViewById(R.id.e13);
+        CardView e14  = (CardView) findViewById(R.id.e14);
+        CardView e15  = (CardView) findViewById(R.id.e15);
+        CardView e16  = (CardView) findViewById(R.id.e16);
+        CardView e17  = (CardView) findViewById(R.id.e17);
+        CardView e18  = (CardView) findViewById(R.id.e18);
+        CardView e19  = (CardView) findViewById(R.id.e19);
+        CardView e20  = (CardView) findViewById(R.id.e20);
 
-        e1.setVisibility(GONE);
-        e2.setVisibility(GONE);
-        e3.setVisibility(GONE);
-        e4.setVisibility(GONE);
-        e5.setVisibility(GONE);
-        e6.setVisibility(GONE);
+        if(beta != 1) {
 
-        chooseRandomQuestions(nQ,6);
+            e1.setVisibility(GONE);
+            e2.setVisibility(GONE);
+            e3.setVisibility(GONE);
+            e4.setVisibility(GONE);
+            e5.setVisibility(GONE);
+            e6.setVisibility(GONE);
+            e7.setVisibility(GONE);
+            e8.setVisibility(GONE);
+            e9.setVisibility(GONE);
+            e10.setVisibility(GONE);
+            e11.setVisibility(GONE);
+            e12.setVisibility(GONE);
+            e13.setVisibility(GONE);
+            e14.setVisibility(GONE);
+            e15.setVisibility(GONE);
+            e16.setVisibility(GONE);
+            e17.setVisibility(GONE);
+            e18.setVisibility(GONE);
+            e19.setVisibility(GONE);
+            e20.setVisibility(GONE);
 
-        for(int el : selected){
-            switch (el){
-                case 1:
-                    e1.setVisibility(VISIBLE);
-                    break;
-                case 2:
-                    e2.setVisibility(VISIBLE);
-                    break;
-                case 3:
-                    e3.setVisibility(VISIBLE);
-                    break;
-                case 4:
-                    e4.setVisibility(VISIBLE);
-                    break;
-                case 5:
-                    e5.setVisibility(VISIBLE);
-                    break;
-                case 6:
-                    e6.setVisibility(VISIBLE);
-                    break;
+            chooseRandomQuestions(nQ, 20);
+
+            for (int el : selected) {
+                switch (el) {
+                    case 1:
+                        e1.setVisibility(VISIBLE);
+                        break;
+                    case 2:
+                        e2.setVisibility(VISIBLE);
+                        break;
+                    case 3:
+                        e3.setVisibility(VISIBLE);
+                        break;
+                    case 4:
+                        e4.setVisibility(VISIBLE);
+                        break;
+                    case 5:
+                        e5.setVisibility(VISIBLE);
+                        break;
+                    case 6:
+                        e6.setVisibility(VISIBLE);
+                        break;
+                    case 7:
+                        e7.setVisibility(VISIBLE);
+                        break;
+                    case 8:
+                        e8.setVisibility(VISIBLE);
+                        break;
+                    case 9:
+                        e9.setVisibility(VISIBLE);
+                        break;
+                    case 10:
+                        e10.setVisibility(VISIBLE);
+                        break;
+                    case 11:
+                        e11.setVisibility(VISIBLE);
+                        break;
+                    case 12:
+                        e12.setVisibility(VISIBLE);
+                        break;
+                    case 13:
+                        e13.setVisibility(VISIBLE);
+                        break;
+                    case 14:
+                        e14.setVisibility(VISIBLE);
+                        break;
+                    case 15:
+                        e15.setVisibility(VISIBLE);
+                        break;
+                    case 16:
+                        e16.setVisibility(VISIBLE);
+                        break;
+                    case 17:
+                        e17.setVisibility(VISIBLE);
+                        break;
+                    case 18:
+                        e18.setVisibility(VISIBLE);
+                        break;
+                    case 19:
+                        e19.setVisibility(VISIBLE);
+                        break;
+                    case 20:
+                        e20.setVisibility(VISIBLE);
+                        break;
+                }
             }
         }
 
@@ -118,6 +193,10 @@ public class EnterQuestions extends AppCompatActivity{
         CardView e4  = (CardView) findViewById(R.id.e4);
         CardView e5  = (CardView) findViewById(R.id.e5);
         CardView e6  = (CardView) findViewById(R.id.e6);
+        CardView e7  = (CardView) findViewById(R.id.e7);
+        CardView e8  = (CardView) findViewById(R.id.e8);
+        CardView e9  = (CardView) findViewById(R.id.e9);
+        CardView e10  = (CardView) findViewById(R.id.e10);
 
         if(e1.getVisibility() == VISIBLE){
             //Solution is c
@@ -251,6 +330,99 @@ public class EnterQuestions extends AppCompatActivity{
                 d.setBackgroundColor(Color.parseColor("#f44141"));
             }
         }
+
+        if(e7.getVisibility() == VISIBLE) {
+            //Solution is b
+            RadioButton a = (RadioButton) findViewById(R.id.e7a);
+            RadioButton b = (RadioButton) findViewById(R.id.e7b);
+            RadioButton c = (RadioButton) findViewById(R.id.e7c);
+            RadioButton d = (RadioButton) findViewById(R.id.e7d);
+
+            b.setBackgroundColor(Color.parseColor("#42f45c"));
+
+            if(a.isChecked()){
+                a.setBackgroundColor(Color.parseColor("#f44141"));
+            }
+            if(b.isChecked()){
+                corrAns ++;
+            }
+            if(c.isChecked()){
+                c.setBackgroundColor(Color.parseColor("#f44141"));
+            }
+            if(d.isChecked()){
+                d.setBackgroundColor(Color.parseColor("#f44141"));
+            }
+        }
+
+        if(e8.getVisibility() == VISIBLE) {
+            //Solution is b
+            RadioButton a = (RadioButton) findViewById(R.id.e8a);
+            RadioButton b = (RadioButton) findViewById(R.id.e8b);
+            RadioButton c = (RadioButton) findViewById(R.id.e8c);
+            RadioButton d = (RadioButton) findViewById(R.id.e8d);
+
+            c.setBackgroundColor(Color.parseColor("#42f45c"));
+
+            if(a.isChecked()){
+                a.setBackgroundColor(Color.parseColor("#f44141"));
+            }
+            if(c.isChecked()){
+                corrAns ++;
+            }
+            if(b.isChecked()){
+                b.setBackgroundColor(Color.parseColor("#f44141"));
+            }
+            if(d.isChecked()){
+                d.setBackgroundColor(Color.parseColor("#f44141"));
+            }
+        }
+
+        if(e9.getVisibility() == VISIBLE) {
+            //Solution is b
+            RadioButton a = (RadioButton) findViewById(R.id.e9a);
+            RadioButton b = (RadioButton) findViewById(R.id.e9b);
+            RadioButton c = (RadioButton) findViewById(R.id.e9c);
+            RadioButton d = (RadioButton) findViewById(R.id.e9d);
+
+            a.setBackgroundColor(Color.parseColor("#42f45c"));
+
+            if(b.isChecked()){
+                b.setBackgroundColor(Color.parseColor("#f44141"));
+            }
+            if(a.isChecked()){
+                corrAns ++;
+            }
+            if(c.isChecked()){
+                c.setBackgroundColor(Color.parseColor("#f44141"));
+            }
+            if(d.isChecked()){
+                d.setBackgroundColor(Color.parseColor("#f44141"));
+            }
+        }
+
+        if(e10.getVisibility() == VISIBLE) {
+            //Solution is b
+            RadioButton a = (RadioButton) findViewById(R.id.e10a);
+            RadioButton b = (RadioButton) findViewById(R.id.e10b);
+            RadioButton c = (RadioButton) findViewById(R.id.e10c);
+            RadioButton d = (RadioButton) findViewById(R.id.e10d);
+
+            c.setBackgroundColor(Color.parseColor("#42f45c"));
+
+            if(a.isChecked()){
+                a.setBackgroundColor(Color.parseColor("#f44141"));
+            }
+            if(c.isChecked()){
+                corrAns ++;
+            }
+            if(b.isChecked()){
+                b.setBackgroundColor(Color.parseColor("#f44141"));
+            }
+            if(d.isChecked()){
+                d.setBackgroundColor(Color.parseColor("#f44141"));
+            }
+        }
+
 
 
         Context context = getApplicationContext();

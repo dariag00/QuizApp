@@ -20,6 +20,11 @@ import java.util.Random;
 
 import static android.view.View.GONE;
 import static android.view.View.VISIBLE;
+import static com.example.android.quizapp.R.id.sp16;
+import static com.example.android.quizapp.R.id.sp17;
+import static com.example.android.quizapp.R.id.sp18;
+import static com.example.android.quizapp.R.id.sp19;
+import static com.example.android.quizapp.R.id.sp20;
 
 /**
  * Created by Diego on 10/04/2017.
@@ -33,6 +38,7 @@ public class SportsQuestions extends AppCompatActivity{
     int corrAns;
     int nQ;
     String name;
+    int beta;
 
     float maxH, maxS, maxVG, maxE, maxSpt, maxG;
 
@@ -48,6 +54,7 @@ public class SportsQuestions extends AppCompatActivity{
         maxSpt = getIntent().getFloatExtra("spoP", 0);
         maxE = getIntent().getFloatExtra("entP", 0);
         maxVG = getIntent().getFloatExtra("vgP", 0);
+        beta= getIntent().getIntExtra("beta",0);
 
         super.onCreate(savedInstanceState);
 
@@ -70,44 +77,110 @@ public class SportsQuestions extends AppCompatActivity{
         CardView sp6  = (CardView) findViewById(R.id.sp6);
         CardView sp7  = (CardView) findViewById(R.id.sp7);
         CardView sp8  = (CardView) findViewById(R.id.sp8);
+        CardView sp9  = (CardView) findViewById(R.id.sp9);
+        CardView sp10  = (CardView) findViewById(R.id.sp10);
+        CardView sp11  = (CardView) findViewById(R.id.sp11);
+        CardView sp12  = (CardView) findViewById(R.id.sp12);
+        CardView sp13  = (CardView) findViewById(R.id.sp13);
+        CardView sp14  = (CardView) findViewById(R.id.sp14);
+        CardView sp15  = (CardView) findViewById(R.id.sp15);
+        CardView sp16  = (CardView) findViewById(R.id.sp16);
+        CardView sp17  = (CardView) findViewById(R.id.sp17);
+        CardView sp18  = (CardView) findViewById(R.id.sp18);
+        CardView sp19  = (CardView) findViewById(R.id.sp19);
+        CardView sp20  = (CardView) findViewById(R.id.sp20);
 
-        sp1.setVisibility(GONE);
-        sp2.setVisibility(GONE);
-        sp3.setVisibility(GONE);
-        sp4.setVisibility(GONE);
-        sp5.setVisibility(GONE);
-        sp6.setVisibility(GONE);
-        sp7.setVisibility(GONE);
-        sp8.setVisibility(GONE);
+        if(beta != 1) {
 
-        chooseRandomQuestions(nQ,8);
-        for(int el : selected){
-            switch (el){
-                case 1:
-                    sp1.setVisibility(VISIBLE);
-                    break;
-                case 2:
-                    sp2.setVisibility(VISIBLE);
-                    break;
-                case 3:
-                    sp3.setVisibility(VISIBLE);
-                    break;
-                case 4:
-                    sp4.setVisibility(VISIBLE);
-                    break;
-                case 5:
-                    sp5.setVisibility(VISIBLE);
-                    break;
-                case 6:
-                    sp6.setVisibility(VISIBLE);
-                    break;
-                case 7:
-                    sp7.setVisibility(VISIBLE);
-                    break;
-                case 8:
-                    sp8.setVisibility(VISIBLE);
-                    break;
+            sp1.setVisibility(GONE);
+            sp2.setVisibility(GONE);
+            sp3.setVisibility(GONE);
+            sp4.setVisibility(GONE);
+            sp5.setVisibility(GONE);
+            sp6.setVisibility(GONE);
+            sp7.setVisibility(GONE);
+            sp8.setVisibility(GONE);
+            sp9.setVisibility(GONE);
+            sp10.setVisibility(GONE);
+            sp11.setVisibility(GONE);
+            sp12.setVisibility(GONE);
+            sp13.setVisibility(GONE);
+            sp14.setVisibility(GONE);
+            sp15.setVisibility(GONE);
+            sp16.setVisibility(GONE);
+            sp17.setVisibility(GONE);
+            sp18.setVisibility(GONE);
+            sp19.setVisibility(GONE);
+            sp20.setVisibility(GONE);
 
+
+
+
+            chooseRandomQuestions(nQ, 20);
+            for (int el : selected) {
+                switch (el) {
+                    case 1:
+                        sp1.setVisibility(VISIBLE);
+                        break;
+                    case 2:
+                        sp2.setVisibility(VISIBLE);
+                        break;
+                    case 3:
+                        sp3.setVisibility(VISIBLE);
+                        break;
+                    case 4:
+                        sp4.setVisibility(VISIBLE);
+                        break;
+                    case 5:
+                        sp5.setVisibility(VISIBLE);
+                        break;
+                    case 6:
+                        sp6.setVisibility(VISIBLE);
+                        break;
+                    case 7:
+                        sp7.setVisibility(VISIBLE);
+                        break;
+                    case 8:
+                        sp8.setVisibility(VISIBLE);
+                        break;
+                    case 9:
+                        sp9.setVisibility(VISIBLE);
+                        break;
+                    case 10:
+                        sp10.setVisibility(VISIBLE);
+                        break;
+                    case 11:
+                        sp11.setVisibility(VISIBLE);
+                        break;
+                    case 12:
+                        sp12.setVisibility(VISIBLE);
+                        break;
+                    case 13:
+                        sp13.setVisibility(VISIBLE);
+                        break;
+                    case 14:
+                        sp14.setVisibility(VISIBLE);
+                        break;
+                    case 15:
+                        sp15.setVisibility(VISIBLE);
+                        break;
+                    case 16:
+                        sp16.setVisibility(VISIBLE);
+                        break;
+                    case 17:
+                        sp17.setVisibility(VISIBLE);
+                        break;
+                    case 18:
+                        sp18.setVisibility(VISIBLE);
+                        break;
+                    case 19:
+                        sp19.setVisibility(VISIBLE);
+                        break;
+                    case 20:
+                        sp15.setVisibility(VISIBLE);
+                        break;
+
+                }
             }
         }
 
@@ -129,6 +202,8 @@ public class SportsQuestions extends AppCompatActivity{
         CardView sp6  = (CardView) findViewById(R.id.sp6);
         CardView sp7  = (CardView) findViewById(R.id.sp7);
         CardView sp8  = (CardView) findViewById(R.id.sp8);
+        CardView sp9  = (CardView) findViewById(R.id.sp9);
+        CardView sp10  = (CardView) findViewById(R.id.sp10);
 
         if(sp1.getVisibility() == VISIBLE){
 
@@ -298,6 +373,54 @@ public class SportsQuestions extends AppCompatActivity{
             RadioButton b = (RadioButton) findViewById(R.id.sp8b);
             RadioButton c = (RadioButton) findViewById(R.id.sp8c);
             RadioButton d = (RadioButton) findViewById(R.id.sp8d);
+
+            c.setBackgroundColor(Color.parseColor("#42f45c"));
+
+            if(a.isChecked()){
+                a.setBackgroundColor(Color.parseColor("#f44141"));
+            }
+            if(c.isChecked()){
+                corrAns ++;
+            }
+            if(b.isChecked()){
+                b.setBackgroundColor(Color.parseColor("#f44141"));
+            }
+            if(d.isChecked()){
+                d.setBackgroundColor(Color.parseColor("#f44141"));
+            }
+
+        }
+
+        if(sp9.getVisibility() == VISIBLE) {
+
+            RadioButton a = (RadioButton) findViewById(R.id.sp9a);
+            RadioButton b = (RadioButton) findViewById(R.id.sp9b);
+            RadioButton c = (RadioButton) findViewById(R.id.sp9c);
+            RadioButton d = (RadioButton) findViewById(R.id.sp9d);
+
+            d.setBackgroundColor(Color.parseColor("#42f45c"));
+
+            if(a.isChecked()){
+                a.setBackgroundColor(Color.parseColor("#f44141"));
+            }
+            if(d.isChecked()){
+                corrAns ++;
+            }
+            if(b.isChecked()){
+                b.setBackgroundColor(Color.parseColor("#f44141"));
+            }
+            if(c.isChecked()){
+                c.setBackgroundColor(Color.parseColor("#f44141"));
+            }
+
+        }
+
+        if(sp10.getVisibility() == VISIBLE) {
+
+            RadioButton a = (RadioButton) findViewById(R.id.sp10a);
+            RadioButton b = (RadioButton) findViewById(R.id.sp10b);
+            RadioButton c = (RadioButton) findViewById(R.id.sp10c);
+            RadioButton d = (RadioButton) findViewById(R.id.sp10d);
 
             c.setBackgroundColor(Color.parseColor("#42f45c"));
 

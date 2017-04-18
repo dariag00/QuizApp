@@ -1,7 +1,7 @@
 <resources>
 
     <!-- Main/Login application strings. -->
-    <string name="app_name" translatable="false">BrainsUp!</string>
+    <string name="app_name" translatable="false">TBA Quiz App</string>
     <string name="startButton">Start</string>
     <string name ="Name">Name</string>
     <string name ="SelectNQuestions">Choose the number of Questions</string>
@@ -93,6 +93,86 @@
     <string name ="HT10c">Atilla the Hun</string>
     <string name ="HT10d" translatable="false">Vercingetorix</string>
 
+    <string name ="HT11">¿En que año tuvo lugar el ataque a Pearl Harbor?</string>
+
+    <string name ="HT11a" translatable="false">1939</string>
+    <string name ="HT11b" translatable="false">1940</string>
+    <string name ="HT11c" translatable="false">1941</string>
+    <string name ="HT11d" translatable="false">1942</string>
+
+
+    <string name ="HT12">La caida del Imperio Romano de Occidente marcó el inicio de...</string>
+
+    <string name ="HT12a">La Edad Media</string>
+    <string name ="HT12b">La Edad Moderna</string>
+    <string name ="HT12c">La Edad Contemporanea</string>
+    <string name ="HT12d">La Edad Antigua</string>
+
+
+    <string name ="HT13">¿Dónde surgió la Democracia?</string>
+
+    <string name ="HT13a">Grecia</string>
+    <string name ="HT13b">Roma</string>
+    <string name ="HT13c">España</string>
+    <string name ="HT13d">Egipto</string>
+
+    <string name ="HT14">La caida del Imperio Romano de Oriente marcó el inicio de...</string>
+
+    <string name ="HT14a">La Edad Media</string>
+    <string name ="HT14b">La Edad Moderna</string>
+    <string name ="HT14c">La Edad Contemporanea</string>
+    <string name ="HT14d">La Edad Antigua</string>
+
+    <string name ="HT15">¿De que pais fue lider Joseph Stalin?</string>
+
+    <string name ="HT15a">Yugoslavia</string>
+    <string name ="HT15b">Polonia</string>
+    <string name ="HT15c">Rusia</string>
+    <string name ="HT15d">La Unión Sovietica</string>
+
+    <string name ="HT16">¿En qué año se firmo la primera constitución española?</string>
+
+    <string name ="HT16a">1976</string>
+    <string name ="HT16b">1812</string>
+    <string name ="HT16c">1808</string>
+    <string name ="HT16d">1939</string>
+
+    <string name ="HT17">¿Cuál de estos Imperios ha sido el Imperio contiguo mas extenso?</string>
+
+    <string name ="HT17a">Imperio Romano</string>
+    <string name ="HT17b">Imperio Británico</string>
+    <string name ="HT17c">Imperio chino Quing</string>
+    <string name ="HT17d">Imperio Mongol</string>
+
+    <string name ="HT18">¿En qué año se proclamó la Segunda República Española?</string>
+
+    <string name ="HT18a" translatable="false">1939</string>
+    <string name ="HT18b" translatable="false">1931</string>
+    <string name ="HT18c" translatable="false">1936</string>
+    <string name ="HT18d" translatable="false">1933</string>
+
+    <string name ="HT19">¿Qué evento marca el fin de la Prehistoria?</string>
+
+    <string name ="HT19a">El fuego</string>
+    <string name ="HT19b">La escritura</string>
+    <string name ="HT19c">La ganadería</string>
+    <string name ="HT19d">La orfebrería</string>
+
+    <string name ="HT20">¿En que año comenzó la Revolución Francesa?</string>
+
+    <string name ="HT20a" translatable="false">1789</string>
+    <string name ="HT20b" translatable="false">1798</string>
+    <string name ="HT20c" translatable="false">1808</string>
+    <string name ="HT20d" translatable="false">1766</string>
+
+    <string name ="HT21">¿Cuántas veces fue apuñalado Julio Cesar?</string>
+
+    <string name ="HT21a" translatable="false">18</string>
+    <string name ="HT21b" translatable="false">20</string>
+    <string name ="HT21c" translatable="false">22</string>
+    <string name ="HT21d" translatable="false">23</string>
+
+
 
 
 
@@ -168,6 +248,80 @@
     <string name ="ST10c" translatable="false">16</string>
     <string name ="ST10d" translatable="false">32</string>
 
+    <string name ="ST11">¿Cuántas caras tiene un icosaedro?</string>
+
+    <string name ="ST11a" translatable="false">20</string>
+    <string name ="ST11b" translatable="false">8</string>
+    <string name ="ST11c" translatable="false">16</string>
+    <string name ="ST11d" translatable="false">32</string>
+
+    <string name ="ST12">¿Dónde está el menisco?</string>
+
+    <string name ="ST12a">En el pie</string>
+    <string name ="ST12b">En la rodilla</string>
+    <string name ="ST12c">En la cabeza</string>
+    <string name ="ST12d">En la cadera</string>
+
+    <string name ="ST13">¿Qué marca creó el movil más vendido de la Historia?</string>
+
+    <string name ="ST13a" translatable="false">Apple</string>
+    <string name ="ST13b" translatable="false">Nokia</string>
+    <string name ="ST13c" translatable="false">Samsung</string>
+    <string name ="ST13d" translatable="false">HTC</string>
+
+    <string name ="ST14">¿Cual es el nombre común del compuesto NaCl?</string>
+
+    <string name ="ST14a">Azucar</string>
+    <string name ="ST14b">Sal</string>
+    <string name ="ST14c">Ácido</string>
+    <string name ="ST14d">Arena</string>
+
+    <string name ="ST15">¿Cuáles son las denominadas 4 Fuerzas de la Naturaleza?</string>
+
+    <string name ="ST15a">Nuclear Fuerte, Nuclear Débil, Electromagnética, Eléctrica</string>
+    <string name ="ST15b">Nuclear Fuerte, Electromotriz, Electromagnética, Eléctrica</string>
+    <string name ="ST15c">Nuclear Fuerte, Nuclear Débil, Electromagnética, Gravitatoria</string>
+    <string name ="ST15d">Nuclear Fuerte, Nuclear Débil, Electromotriz, Gravitatoria</string>
+
+    <string name ="ST16">¿Cual es el símbolo químico del Hierro?</string>
+
+    <string name ="ST16a" translatable="false">Hi</string>
+    <string name ="ST16b" translatable="false">He</string>
+    <string name ="ST16c" translatable="false">Fh</string>
+    <string name ="ST16d" translatable="false">Fe</string>
+
+    <string name ="ST17">¿Cuántos segundos tarda la sangre en recorrer el sistema circulatorio?</string>
+
+    <string name ="ST17a" translatable="false">21</string>
+    <string name ="ST17b" translatable="false">22</string>
+    <string name ="ST17c" translatable="false">23</string>
+    <string name ="ST17d" translatable="false">24</string>
+
+    <string name ="ST18">¿Qué dia creian los Mayas que se iba a terminar el Mundo?</string>
+
+    <string name ="ST18a">21 de Diciembre de 2012</string>
+    <string name ="ST18b">22 de Diciembre de 2012</string>
+    <string name ="ST18c">23 de Diciembre de 2012</string>
+    <string name ="ST18d">24 de Diciembre de 2012</string>
+
+    <string name ="ST19">¿Cuántos pares de cromosomas tiene el Ser Humano?</string>
+
+    <string name ="ST19a" translatable="false">21</string>
+    <string name ="ST19b" translatable="false">22</string>
+    <string name ="ST19c" translatable="false">23</string>
+    <string name ="ST19d" translatable="false">24</string>
+
+    <string name ="ST20">¿Cuántos axiomas tiene la Geometría Euclidea?</string>
+
+    <string name ="ST20a" translatable="false">21</string>
+    <string name ="ST20b" translatable="false">22</string>
+    <string name ="ST20c" translatable="false">23</string>
+    <string name ="ST20d" translatable="false">24</string>
+
+
+
+
+
     <!-- Geography Questions strings. -->
 
     <string name ="GT1">What is the capital of Castilla y León?</string>
@@ -223,6 +377,89 @@
     <string name ="GT8c">Greece</string>
     <string name ="GT8d" translatable="false">Liechtenstein</string>
 
+    <string name ="GT9">What is the capital city of Spain</string>
+
+    <string name ="GT9a" translatable="false">Madrid</string>
+    <string name ="GT9b" translatable="false">Barcelona</string>
+    <string name ="GT9c" translatable="false">Toledo</string>
+    <string name ="GT9d" translatable="false">Burgos</string>
+
+    <string name ="GT10">What is the capital city of USA?</string>
+
+    <string name ="GT10a" translatable="false">New Jersey</string>
+    <string name ="GT10b" translatable="false">Washington DC</string>
+    <string name ="GT10c">New York</string>
+    <string name ="GT10d" translatable="false">Dallas</string>
+
+    <string name ="GT11">¿Cuál de estos paises no tiene costa?</string>
+
+    <string name ="GT11b" translatable="false">Uruguay</string>
+    <string name ="GT11c" translatable="false">Bolivia</string>
+    <string name ="GT11d" translatable="false">Colombia</string>
+
+    <string name ="GT12">¿En que continente/s se encuentra Turquia?</string>
+
+    <string name ="GT12a">África</string>
+    <string name ="GT12b">Asia y Europa</string>
+    <string name ="GT12c" translatable="false">Asia</string>
+    <string name ="GT12d">África y Europa</string>
+
+    <string name ="GT13">¿En qué continente está Nepal?</string>
+
+    <string name ="GT13a">África</string>
+    <string name ="GT13b">America</string>
+    <string name ="GT13c">Europe</string>
+    <string name ="GT13d" translatable="false">Asia</string>
+
+    <string name ="GT14">¿Cuantas estrellas tiene la bandera de los EEUU?</string>
+
+    <string name ="GT14a" translatable="false">46</string>
+    <string name ="GT14b" translatable="false">47</string>
+    <string name ="GT14c" translatable="false">48</string>
+    <string name ="GT14d" translatable="false">50</string>
+
+    <string name ="GT15">¿Donde se encuentran las Lineas de Nazca?</string>
+
+    <string name ="GT15a">Perú</string>
+    <string name ="GT15b" translatable="false">Bolivia</string>
+    <string name ="GT15c" translatable="false">Colombia</string>
+    <string name ="GT15d">México</string>
+
+    <string name ="GT16">¿Cuantas comunidades autónomas hay en España?</string>6
+
+    <string name ="GT16a" translatable="false">12</string>
+    <string name ="GT16b" translatable="false">17</string>
+    <string name ="GT16c" translatable="false">18</string>
+    <string name ="GT16d" translatable="false">19</string>
+
+    <string name ="GT17">What is the capital city of Finland?</string>7
+
+    <string name ="GT17a">Roma</string>
+    <string name ="GT17b" translatable="false">Washington DC</string>
+    <string name ="GT17c">Stockholm</string>
+    <string name ="GT17d" translatable="false">Helsinki</string>
+
+    <string name ="GT18">¿A que pais pertenecen las islas Feroe?</string>
+
+    <string name ="GT18a">Reino Unido</string>
+    <string name ="GT18b">Francia</string>
+    <string name ="GT18c">Noruega</string>
+    <string name ="GT18d">Dinamarca</string>
+
+    <string name ="GT19">What percentaje of the planet is covered by water?</string>
+
+    <string name ="GT19a" translatable="false">67%</string>
+    <string name ="GT19b" translatable="false">86%</string>
+    <string name ="GT19c" translatable="false">71%</string>
+    <string name ="GT19d" translatable="false">90%</string>
+
+    <string name ="GT20">Where is Panama located?</string>
+
+    <string name ="GT20a">Africa</string>
+    <string name ="GT20b">South America</string>
+    <string name ="GT20c">Central America</string>
+    <string name ="GT20d">North America</string>
+
 
 
     <!-- Videogames Questions strings. -->
@@ -269,6 +506,35 @@
     <string name ="VGT6b" translatable="false">SKT T1</string>
     <string name ="VGT6c" translatable="false">Samsung Galaxy</string>
     <string name ="VGT6d" translatable="false">TSM</string>
+
+    <string name ="VGT7">What videogame does Link belong to?</string>
+
+    <string name ="VGT7a" translatable="false">Pokemon</string>
+    <string name ="VGT7b" translatable="false">The Legend Of Zelda</string>
+    <string name ="VGT7c" translatable="false">Super Mario</string>
+    <string name ="VGT7d" translatable="false">Final Fantasy</string>
+
+    <string name ="VGT8">How many generations does Pokemon currently have?</string>
+
+    <string name ="VGT8a" translatable="false">6</string>
+    <string name ="VGT8b" translatable="false">7</string>
+    <string name ="VGT8c" translatable="false">8</string>
+    <string name ="VGT8d" translatable="false">9</string>
+
+    <string name ="VGT9">What is the most sold videogame?</string>
+
+    <string name ="VGT9a" translatable="false">Mario Kart Wii</string>
+    <string name ="VGT9b" translatable="false">Wii Sports</string>
+    <string name ="VGT9c" translatable="false">Grand Theft Auto V</string>
+    <string name ="VGT9d" translatable="false">Super Mario Bros</string>
+
+    <string name ="VGT10">What is the most played game these days?</string>
+
+    <string name ="VGT10a" translatable="false">League of Legends</string>
+    <string name ="VGT10b" translatable="false">Dota 2</string>
+    <string name ="VGT10c" translatable="false">World of Warcraft</string>
+    <string name ="VGT10d" translatable="false">FIFA</string>
+
 
 
     <!-- Sports Questions strings. -->
@@ -323,13 +589,97 @@
     <string name ="SPT7d" translatable="false">Softball</string>
 
 
-    <string name ="SPT8">" Which player has the record of the most points scored in a NBA match?"</string>
+    <string name ="SPT8">Which player has the record of the most points scored in a NBA match?</string>
 
     <string name ="SPT8a" translatable="false">James Harden</string>
     <string name ="SPT8b" translatable="false">Kobe Bryant</string>
     <string name ="SPT8c" translatable="false">Wilt Chamberlain</string>
     <string name ="SPT8d" translatable="false">Michael Jordan</string>
 
+    <string name ="SPT9">Who is the player with most FIFA Ballon d`Or?</string>
+
+    <string name ="SPT9a" translatable="false">Maradona</string>
+    <string name ="SPT9b" translatable="false">Pelé</string>
+    <string name ="SPT9c" translatable="false">Cristiano Ronaldo</string>
+    <string name ="SPT9d" translatable="false">Lionel Messi</string>
+
+    <string name ="SPT10">How long can a tennis match last?</string>
+
+    <string name ="SPT10a">12 hours</string>
+    <string name ="SPT10b">6 hours</string>
+    <string name ="SPT10c">undefined</string>
+    <string name ="SPT10d">8 hours</string>
+
+
+    <string name ="SPT11">¿Cuál es el club de futbol mas antiguo de España?</string>
+
+    <string name ="SPT11a" translatable="false">Atlético de Madrid</string>
+    <string name ="SPT11b" translatable="false">Real Madrid</string>
+    <string name ="SPT11c" translatable="false">FC Barcelona</string>
+    <string name ="SPT11d" translatable="false">Recreativo de Huelva</string>
+
+    <string name ="SPT12">¿Cuál es el segundo apellido de Gerard Pique?</string>
+
+    <string name ="SPT12a" translatable="false">Más</string>
+    <string name ="SPT12b" translatable="false">Milán</string>
+    <string name ="SPT12c" translatable="false">Delofeu</string>
+    <string name ="SPT12d" translatable="false">Bernabeu</string>
+
+    <string name ="SPT13">¿Cuál de estos equipos de la Liga de Futbol Española nunca han bajado a 2 División?</string>
+
+    <string name ="SPT13a" translatable="false">Atlético de Madrid</string>
+    <string name ="SPT13b" translatable="false">Real Betis CF</string>
+    <string name ="SPT13c" translatable="false">Sevilla CF</string>
+    <string name ="SPT13d" translatable="false">Atletic Club Bilbao</string>
+
+    <string name ="SPT14">¿Cuántos anillos ganó Michael Jordan durante su carrera?</string>
+
+    <string name ="SPT14a" translatable="false">3</string>
+    <string name ="SPT14b" translatable="false">5</string>
+    <string name ="SPT14c" translatable="false">6</string>
+    <string name ="SPT14d" translatable="false">8</string>
+
+    <string name ="SPT15">¿Qué selección de Fútbol ganó el Mundial de Fútbol de 2010?</string>
+
+    <string name ="SPT15a" translatable="false">Zimbawe</string>
+    <string name ="SPT15b" translatable="false">Holanda</string>
+    <string name ="SPT15c" translatable="false">España</string>
+    <string name ="SPT15d" translatable="false">Alemania</string>
+
+    <string name ="SPT16">¿Qué selección posee más Campeonatos Mundiales de Fútbol?</string>
+
+    <string name ="SPT16a" translatable="false">Brasil</string>
+    <string name ="SPT16b" translatable="false">Holanda</string>
+    <string name ="SPT16c" translatable="false">España</string>
+    <string name ="SPT16d" translatable="false">Alemania</string>
+
+    <string name ="SPT17">¿Cómo se conocía a Ronaldo de Assis Moreira?</string>
+
+    <string name ="SPT17a" translatable="false">Roberto Carlos</string>
+    <string name ="SPT17b" translatable="false">Ronaldinho</string>
+    <string name ="SPT17c" translatable="false">Cristiano Ronaldo</string>
+    <string name ="SPT17d" translatable="false">Ronaldo</string>
+
+    <string name ="SPT18">Si en una jugada de Poker tengo 4 cartas del mismo valor, ¿qué jugada tengo?</string>
+
+    <string name ="SPT18a" translatable="false">Full</string>
+    <string name ="SPT18b" translatable="false">Poker</string>
+    <string name ="SPT18c" translatable="false">Trio</string>
+    <string name ="SPT18d" translatable="false">Escalera</string>
+
+    <string name ="SPT19">¿Cuál ha sido el fichaje mas barato y mas rentable de la historia del FC Barcelona?</string>
+
+    <string name ="SPT19a" translatable="false">Cesc Fabregas</string>
+    <string name ="SPT19b" translatable="false">Ronaldinho</string>
+    <string name ="SPT19c" translatable="false">Zlatan Ibrahimovich</string>
+    <string name ="SPT19d" translatable="false">Lionel Messi</string>
+
+    <string name ="SPT20">¿Qué piloto ha ganado 4 mundiales consecutivos?</string>
+
+    <string name ="SPT20a" translatable="false">Sebastian Vettel</string>
+    <string name ="SPT20b" translatable="false">Lewis Hamilton</string>
+    <string name ="SPT20c" translatable="false">Kimi Raikkonen</string>
+    <string name ="SPT20d" translatable="false">Fernando Alonso</string>
 
 
 
@@ -371,12 +721,115 @@
     <string name ="ETT5c" translatable="false">Star Wars</string>
     <string name ="ETT5d" translatable="false">Jumper</string>
 
-    <string name ="ETT6">Who sold more albums</string>
+    <string name ="ETT6">Who sold more albums?</string>
 
     <string name ="ETT6a" translatable="false">The Beattles</string>
     <string name ="ETT6b" translatable="false">Michael Jackson</string>
     <string name ="ETT6c" translatable="false">Julio Iglesias</string>
     <string name ="ETT6d" translatable="false">Elvis Presley</string>
+
+    <string name ="ETT7">What is the name of the Main Character of House of Cards?</string>
+
+    <string name ="ETT7a" translatable="false">Peter Russo</string>
+    <string name ="ETT7b" translatable="false">Frank Underwood</string>
+    <string name ="ETT7c" translatable="false">Doug Stamper</string>
+    <string name ="ETT7d" translatable="false">Remy Danton</string>
+
+    <string name ="ETT8">How many colors do a Rubrik´s cube have?</string>
+
+    <string name ="ETT8a" translatable="false">4</string>
+    <string name ="ETT8b" translatable="false">5</string>
+    <string name ="ETT8c" translatable="false">6</string>
+    <string name ="ETT8d" translatable="false">8</string>
+
+    <string name ="ETT9">At what time did Stevie Wonder become blind?</string>
+
+    <string name ="ETT9a">In his childhood</string>
+    <string name ="ETT9b">In 70s</string>
+    <string name ="ETT9c">In 80s</string>
+    <string name ="ETT9d">In 90s</string>
+
+    <string name ="ETT10">In what cartoon does a cosmic cat appear?</string>
+
+    <string name ="ETT10a">Ninja Turtles</string>
+    <string name ="ETT10b" translatable="false">Pokemon</string>
+    <string name ="ETT10c" translatable="false">Doraemon</string>
+    <string name ="ETT10d">Spongebob</string>
+
+    <string name ="ETT11">¿Cómo se llamaba el primer gato de los Simpsons?</string>
+
+    <string name ="ETT11a">Bola de Nieve</string>
+    <string name ="ETT11b" translatable="false">Gatete</string>
+    <string name ="ETT11c" translatable="false">Gato</string>
+    <string name ="ETT11d">Ayudante de Santa Claus</string>
+
+    <string name ="ETT12">¿Cúantos años tenía Mozart cuando murió?</string>
+
+    <string name ="ETT12a" translatable="false">42</string>
+    <string name ="ETT12b" translatable="false">43</string>
+    <string name ="ETT12c" translatable="false">35</string>
+    <string name ="ETT12d" translatable="false">28</string>
+
+    <string name ="ETT13">¿Cúantas categorías tiene el famoso juego?</string>
+
+    <string name ="ETT13a" translatable="false">4</string>
+    <string name ="ETT13b" translatable="false">5</string>
+    <string name ="ETT13c" translatable="false">6</string>
+    <string name ="ETT13d" translatable="false">7</string>
+
+    <string name ="ETT14">¿Cómo se llamaba el perro de Anakin Skywalker?</string>
+
+    <string name ="ETT14a" translatable="false">Eusebio</string>
+    <string name ="ETT14b" translatable="false">Luke</string>
+    <string name ="ETT14c" translatable="false">No tenía</string>
+    <string name ="ETT14d" translatable="false">Yoda</string>
+
+    <string name ="ETT15">¿Cúantas partes tiene el Padrino?</string>
+
+    <string name ="ETT15a" translatable="false">1</string>
+    <string name ="ETT15b" translatable="false">2</string>
+    <string name ="ETT15c" translatable="false">3</string>
+    <string name ="ETT15d">El Padrino no existe</string>
+
+    <string name ="ETT16">¿Quién vivía en el 221B de Backer Street?</string>
+
+    <string name ="ETT16a" translatable="false">Sherlock Holmes</string>
+    <string name ="ETT16b" translatable="false">El Hombre del Saco</string>
+    <string name ="ETT16c" translatable="false">Arthur Conan Doyle</string>
+    <string name ="ETT16d" translatable="false">Leticia Sabater</string>
+
+    <string name ="ETT17">¿Quién escribió el Manifesto Comunista?</string>
+
+    <string name ="ETT17a" translatable="false">Iosif Stalin y Vladimir Lenin</string>
+    <string name ="ETT17b" translatable="false">Karl Marx y Friedrich Engels</string>
+    <string name ="ETT17c" translatable="false">Hugo Chavez y Fidel Castro</string>
+    <string name ="ETT17d" translatable="false">Albert Rivera y Pablo Iglesias</string>
+
+    <string name ="ETT18">¿Quién es el protagonista del Código Da Vinci?</string>
+
+    <string name ="ETT18a" translatable="false">Nicolas Cage</string>
+    <string name ="ETT18b" translatable="false">Benjamin Gates</string>
+    <string name ="ETT18c" translatable="false">Tom Hanks</string>
+    <string name ="ETT18d" translatable="false">Robert Langdom</string>
+
+    <string name ="ETT19">¿Qué película ganó junto a 50 Sombras de Grey el premio Razzie a la Peor Película del Año?</string>
+
+    <string name ="ETT19a" translatable="false">El destino de Júpiter</string>
+    <string name ="ETT19b" translatable="false">Los 4 Fantásticos</string>
+    <string name ="ETT19c" translatable="false">Terminator Genesis</string>
+    <string name ="ETT19d" translatable="false">Pixels</string>
+
+    <string name ="ETT20">¿Cómo se llaman los humanos corrientes en Harry Potter?</string>
+
+    <string name ="ETT20a" translatable="false">Pitufos</string>
+    <string name ="ETT20b" translatable="false">Impuros</string>
+    <string name ="ETT20c" translatable="false">Humanos</string>
+    <string name ="ETT20d" translatable="false">Muggles</string>
+
+
+
+
+
 
 
     <!--  Menu or Button strings. -->
@@ -389,7 +842,44 @@
     <string name ="mainPage">RESTART</string>
     <string name ="chooseQ">Please, select the number of questions</string>
     <string name ="errorCategory">Error choosing category</string>
-
+    <string name="signin_other_error" translatable="false">There was an issue with sign in. Please try again later.</string>
+    <string name="app_id" translatable="false">1066857102717</string>
     <string name="fMsg">You can select another category by clicking in one of the buttons above.\nThanks for using me and check my RSS on the button below to stay informed about the app!"</string>
+    <string name="sign_in_failed" translatable="false">Failed to sign in. Please check your network connection and try again.</string>
+    <string name="app_misconfigured" translatable="false">The application is incorrectly configured. Check that the package name and signing certificate match the client ID created in Developer Console. Also, if the application is not yet published, check that the account you are trying to sign in with is listed as a tester account. See logs for more information.</string>
+    <string name="license_failed" translatable="false">License check failed.</string>
+    <string name="unknown_error" translatable="false">Unknown error.</string>
+    <string name="GT11a">Spain</string>
+
+
+    <string-array name="selector_array">
+        <item>Question</item>
+        <item>General Feedback</item>
+        <item>Bug</item>
+        <item>Suggestion</item>
+    </string-array>
+
+    <string name="subMessage">Thank you for trying to make the app better. Please be so kind to select one of the following options</string>
+
+    <string name="qTitle">Title of the Question</string>
+    <string name="q1">Correct Answer(optional)</string>
+    <string name="q2">Answer 2(optional)</string>
+    <string name="q3">Answer 3(optional)</string>
+    <string name="q4">Answer 4(optional)</string>
+
+    <string name="gFeedback">What could we do better?</string>
+
+    <string name="bugPlace">Where did you find the bug?</string>
+    <string name="bugExpl">Could you explain briefly the bug?</string>
+
+    <string name="sugg">Any suggestion is good.</string>
+
+    <string name="qTErr">At least, you have to write the Title of the Question</string>
+    <string name="gErr">At least, you have to write 1 character</string>
+    <string name="bPErr">Please tell us where did you find the bug</string>
+    <string name="bEErr">Please, explain the bug so that we can fix it</string>
+
+    <string name="ThankY">Thank you very much for trying to make this app better</string>
+
 
 </resources>

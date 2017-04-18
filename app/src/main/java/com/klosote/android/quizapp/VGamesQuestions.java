@@ -34,6 +34,7 @@ public class VGamesQuestions extends AppCompatActivity{
     int corrAns;
     int nQ;
     String name;
+    int beta;
 
     float maxH, maxS, maxVG, maxE, maxSpt, maxG;
 
@@ -49,6 +50,7 @@ public class VGamesQuestions extends AppCompatActivity{
         maxSpt = getIntent().getFloatExtra("spoP", 0);
         maxE = getIntent().getFloatExtra("entP", 0);
         maxVG = getIntent().getFloatExtra("vgP", 0);
+        beta= getIntent().getIntExtra("beta",0);
 
         super.onCreate(savedInstanceState);
 
@@ -68,36 +70,59 @@ public class VGamesQuestions extends AppCompatActivity{
         CardView vg4  = (CardView) findViewById(R.id.vga4);
         CardView vg5  = (CardView) findViewById(R.id.vga5);
         CardView vg6  = (CardView) findViewById(R.id.vga6);
+        CardView vg7  = (CardView) findViewById(R.id.vga7);
+        CardView vg8  = (CardView) findViewById(R.id.vga8);
+        CardView vg9  = (CardView) findViewById(R.id.vga9);
+        CardView vg10  = (CardView) findViewById(R.id.vga10);
+
+        if(beta != 1) {
 
 
-        vg1.setVisibility(GONE);
-        vg2.setVisibility(GONE);
-        vg3.setVisibility(GONE);
-        vg4.setVisibility(GONE);
-        vg5.setVisibility(GONE);
-        vg6.setVisibility(GONE);
+            vg1.setVisibility(GONE);
+            vg2.setVisibility(GONE);
+            vg3.setVisibility(GONE);
+            vg4.setVisibility(GONE);
+            vg5.setVisibility(GONE);
+            vg6.setVisibility(GONE);
+            vg7.setVisibility(GONE);
+            vg8.setVisibility(GONE);
+            vg9.setVisibility(GONE);
+            vg10.setVisibility(GONE);
 
-        chooseRandomQuestions(nQ,6);
-        for(int el : selected){
-            switch (el){
-                case 1:
-                    vg1.setVisibility(VISIBLE);
-                    break;
-                case 2:
-                    vg2.setVisibility(VISIBLE);
-                    break;
-                case 3:
-                    vg3.setVisibility(VISIBLE);
-                    break;
-                case 4:
-                    vg4.setVisibility(VISIBLE);
-                    break;
-                case 5:
-                    vg5.setVisibility(VISIBLE);
-                    break;
-                case 6:
-                    vg6.setVisibility(VISIBLE);
-                    break;
+            chooseRandomQuestions(nQ, 10);
+            for (int el : selected) {
+                switch (el) {
+                    case 1:
+                        vg1.setVisibility(VISIBLE);
+                        break;
+                    case 2:
+                        vg2.setVisibility(VISIBLE);
+                        break;
+                    case 3:
+                        vg3.setVisibility(VISIBLE);
+                        break;
+                    case 4:
+                        vg4.setVisibility(VISIBLE);
+                        break;
+                    case 5:
+                        vg5.setVisibility(VISIBLE);
+                        break;
+                    case 6:
+                        vg6.setVisibility(VISIBLE);
+                        break;
+                    case 7:
+                        vg7.setVisibility(VISIBLE);
+                        break;
+                    case 8:
+                        vg8.setVisibility(VISIBLE);
+                        break;
+                    case 9:
+                        vg9.setVisibility(VISIBLE);
+                        break;
+                    case 10:
+                        vg10.setVisibility(VISIBLE);
+                        break;
+                }
             }
         }
 
@@ -114,8 +139,12 @@ public class VGamesQuestions extends AppCompatActivity{
         CardView vg2  = (CardView) findViewById(R.id.vga2);
         CardView vg3  = (CardView) findViewById(R.id.vga3);
         CardView vg4  = (CardView) findViewById(R.id.vga4);
-        CardView vg5  = (CardView) findViewById(R.id.vga4);
-        CardView vg6  = (CardView) findViewById(R.id.vga4);
+        CardView vg5  = (CardView) findViewById(R.id.vga5);
+        CardView vg6  = (CardView) findViewById(R.id.vga6);
+        CardView vg7  = (CardView) findViewById(R.id.vga7);
+        CardView vg8  = (CardView) findViewById(R.id.vga8);
+        CardView vg9  = (CardView) findViewById(R.id.vga9);
+        CardView vg10  = (CardView) findViewById(R.id.vga10);
 
         if(vg1.getVisibility() == VISIBLE){
             //Solution is c
@@ -248,6 +277,102 @@ public class VGamesQuestions extends AppCompatActivity{
             }
             if(c.isChecked()){
                 c.setBackgroundColor(Color.parseColor("#f44141"));
+            }
+            if(d.isChecked()){
+                d.setBackgroundColor(Color.parseColor("#f44141"));
+            }
+
+        }
+
+        if(vg7.getVisibility() == VISIBLE){
+            //Solution is c
+            RadioButton a = (RadioButton) findViewById(R.id.v7a);
+            RadioButton b = (RadioButton) findViewById(R.id.v7b);
+            RadioButton c = (RadioButton) findViewById(R.id.v7c);
+            RadioButton d = (RadioButton) findViewById(R.id.v7d);
+
+            b.setBackgroundColor(Color.parseColor("#42f45c"));
+
+            if(a.isChecked()){
+                a.setBackgroundColor(Color.parseColor("#f44141"));
+            }
+            if(b.isChecked()){
+                corrAns ++;
+            }
+            if(c.isChecked()){
+                c.setBackgroundColor(Color.parseColor("#f44141"));
+            }
+            if(d.isChecked()){
+                d.setBackgroundColor(Color.parseColor("#f44141"));
+            }
+
+        }
+
+        if(vg8.getVisibility() == VISIBLE){
+            //Solution is c
+            RadioButton a = (RadioButton) findViewById(R.id.v8a);
+            RadioButton b = (RadioButton) findViewById(R.id.v8b);
+            RadioButton c = (RadioButton) findViewById(R.id.v8c);
+            RadioButton d = (RadioButton) findViewById(R.id.v8d);
+
+            b.setBackgroundColor(Color.parseColor("#42f45c"));
+
+            if(a.isChecked()){
+                a.setBackgroundColor(Color.parseColor("#f44141"));
+            }
+            if(b.isChecked()){
+                corrAns ++;
+            }
+            if(c.isChecked()){
+                c.setBackgroundColor(Color.parseColor("#f44141"));
+            }
+            if(d.isChecked()){
+                d.setBackgroundColor(Color.parseColor("#f44141"));
+            }
+
+        }
+
+        if(vg9.getVisibility() == VISIBLE){
+            //Solution is c
+            RadioButton a = (RadioButton) findViewById(R.id.v9a);
+            RadioButton b = (RadioButton) findViewById(R.id.v9b);
+            RadioButton c = (RadioButton) findViewById(R.id.v9c);
+            RadioButton d = (RadioButton) findViewById(R.id.v9d);
+
+            b.setBackgroundColor(Color.parseColor("#42f45c"));
+
+            if(a.isChecked()){
+                a.setBackgroundColor(Color.parseColor("#f44141"));
+            }
+            if(b.isChecked()){
+                corrAns ++;
+            }
+            if(c.isChecked()){
+                c.setBackgroundColor(Color.parseColor("#f44141"));
+            }
+            if(d.isChecked()){
+                d.setBackgroundColor(Color.parseColor("#f44141"));
+            }
+
+        }
+
+        if(vg10.getVisibility() == VISIBLE){
+            //Solution is c
+            RadioButton a = (RadioButton) findViewById(R.id.v10a);
+            RadioButton b = (RadioButton) findViewById(R.id.v10b);
+            RadioButton c = (RadioButton) findViewById(R.id.v10c);
+            RadioButton d = (RadioButton) findViewById(R.id.v10d);
+
+            a.setBackgroundColor(Color.parseColor("#42f45c"));
+
+            if(c.isChecked()){
+                c.setBackgroundColor(Color.parseColor("#f44141"));
+            }
+            if(a.isChecked()){
+                corrAns ++;
+            }
+            if(b.isChecked()){
+                b.setBackgroundColor(Color.parseColor("#f44141"));
             }
             if(d.isChecked()){
                 d.setBackgroundColor(Color.parseColor("#f44141"));

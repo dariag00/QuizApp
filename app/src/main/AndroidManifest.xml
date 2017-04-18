@@ -18,6 +18,9 @@
         android:hardwareAccelerated="false"
         android:largeHeap="true">
 
+        <meta-data android:name="com.google.android.gms.games.APP_ID"
+            android:value="@string/app_id" />
+
         <activity android:name="com.klosote.android.quizapp.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -97,6 +100,14 @@
 
             </intent-filter>
         </activity>
+        <activity android:name="com.klosote.android.quizapp.SendQuestions">
+        <intent-filter>
+            <action android:name="com.klosote.android.quizapp.SendQuestions" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+
+        </intent-filter>
+    </activity>
     </application>
 
 

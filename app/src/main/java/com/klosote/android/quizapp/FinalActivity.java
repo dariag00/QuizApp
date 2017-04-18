@@ -17,7 +17,7 @@ import com.example.android.quizapp.R;
  * Created by Diego on 05/04/2017.
  */
 
-public class FinalActivity extends AppCompatActivity {
+public class FinalActivity extends AppCompatActivity{
 
     String name;
     int nQ;
@@ -262,6 +262,11 @@ public class FinalActivity extends AppCompatActivity {
     public void mainP(View view){
         Intent i=new Intent(this, MainActivity.class);
         i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        startActivity(i);
+    }
+
+    public void toSendQ(View view){
+        Intent i=new Intent(this, SendQuestions.class);
         startActivity(i);
     }
 
