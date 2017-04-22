@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background = "#f4d802">
+<LinearLayout
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background = "#f4d802"
+    tools:context="com.example.android.quizapp.com.klosote.android.quizapp.MainActivity">
+
+    <ImageView
+        style="@style/MainImageView"
+        android:src="@drawable/br4"
+        />
+
+    <TextView
+        android:id="@+id/xd"
+        android:text="@string/app_name"
+        style="@style/AppNameStyle" />
+    <EditText
+        android:id="@+id/name"
+        android:hint = "@string/Name"
+        style="@style/EditTextStyle" />
+    <TextView
+        android:id="@+id/selectNQ"
+        android:text="@string/SelectNQuestions"
+        style="@style/QuestionsTextStyle" />
+
+
+    <RadioGroup style="@style/RadioGroupMainActivity">
+
+        <RadioButton
+            android:id="@+id/Q4Quest"
+            android:text="@string/nQ4"
+            style="@style/RadioButtonMainActivity"/>
+        <RadioButton
+            android:id="@+id/Q5Quest"
+            android:text="@string/nQ5"
+            style="@style/RadioButtonMainActivity" />
+        <RadioButton
+            android:id="@+id/Q6Quest"
+            android:text="@string/nQ6"
+            style="@style/RadioButtonMainActivity"/>
+    </RadioGroup>
+
+
+
+    <Button
+        android:id="@+id/startButton"
+        android:text="@string/startButton"
+        android:onClick="begin"
+        style="@style/GeneralButton" />
+
+    <CheckBox
+        android:id="@+id/betaCheckBox"
+        android:text="Ver todas las preguntas(Solo beta)"
+        style="@style/GeneralButton" />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/sign_in_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
+    </ScrollView>

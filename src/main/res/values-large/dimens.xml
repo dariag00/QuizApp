@@ -1,0 +1,103 @@
+<resources>
+    <!-- Example customization of dimensions originally defined in res/values/dimens.xml
+         (such as screen margins) for screens with more than 820dp of available width. This
+         would include 7" and 10" devices in landscape (~960dp and ~1280dp respectively). -->
+    <dimen name="activity_horizontal_margin">64dp</dimen>
+    <dimen name="MainImageViewpadTop">80dp</dimen>
+    <dimen name="MainImageViewpadBot">16dp</dimen>
+
+    <dimen name="questionsVpad">16dp</dimen>
+    <dimen name="questionsTextSize">30sp</dimen>
+
+    <dimen name="RBMActTextSize">35sp</dimen>
+
+    <dimen name="EditTextVpad">16dp</dimen>
+    <dimen name="EditTextSize">32sp</dimen>
+
+    <dimen name="AppNameTextSize">70sp</dimen>
+    <dimen name="AppNamepadding">16dp</dimen>
+
+    <dimen name="RGrouppRight">16dp</dimen>
+    <dimen name="RGroupLayoutLeft">75dp</dimen>
+
+    <dimen name="GenButtonTextSize">32sp</dimen>
+    <dimen name="GenButtonPadding">24dp</dimen>
+    <dimen name="GenButtonMargin">32dp</dimen>
+
+
+    <!-- Category Selection -->
+
+    <dimen name = "FVCSmargin">20dp</dimen>
+    <dimen name = "Vheight">3dp</dimen>
+
+    <dimen name = "ButtonCSelectionTextSize">30sp</dimen>
+    <dimen name = "ButtonCSelectionmargin">16dp</dimen>
+    <dimen name = "ButtonCSelectionpadding">60dp</dimen>
+    <dimen name = "ButtonCSelectionpaddingTop">16dp</dimen>
+
+    <dimen name = "LinearMarginCS">16dp</dimen>
+
+    <dimen name ="CSTextSize">24sp</dimen>
+    <dimen name ="CSTextPadding">16dp</dimen>
+
+    <!--Questions Activities -->
+
+    <dimen name ="ViewHeightQ">3dp</dimen>
+    <dimen name ="ViewMarginQ">16sp</dimen>
+
+    <dimen name ="TextQView">28sp</dimen>
+    <dimen name ="TextQVpadding">8dp</dimen>
+
+    <dimen name="CardViewL">20dp</dimen>
+
+    <dimen name = "RGroupQpL">25dp</dimen>
+    <dimen name = "RGroupQpB">16dp</dimen>
+
+    <dimen name = "TextViewCardHeight">50dp</dimen>
+    <dimen name = "TextViewCardMargin">20dp</dimen>
+    <dimen name = "TextViewCardMarginBot">8dp</dimen>
+
+    <dimen name = "ImageViewCardHeight">250dp</dimen>
+    <dimen name = "ImageViewCardWidth">600dp</dimen>
+    <dimen name = "ImageViewCardB">15dp</dimen>
+
+    <dimen name = "QuestionButtonL">16dp</dimen>
+
+    <dimen name = "CheckBoxLL">25dp</dimen>
+    <dimen name = "CheckBoxLB">8dp</dimen>
+
+    <dimen name = "CheckBoxTextSize">22sp</dimen>
+    <dimen name = "QuestTitleSize">20sp</dimen>
+    <dimen name = "RbuttonQTextSize">22sp</dimen>
+
+    <dimen name="QuestButtonTextSize">20sp</dimen>
+
+    <!--FinalActivity-->
+
+    <dimen name="FVTextViewpadding">16dp</dimen>
+    <dimen name="FVTextViewTextSize">24sp</dimen>
+
+    <dimen name="FVViewmargin">16dp</dimen>
+    <dimen name="FVViewheight">3dp</dimen>
+
+    <dimen name="FVLinear">10dp</dimen>
+
+    <dimen name="FVButtonMarg">8dp</dimen>
+    <dimen name="FVButtonRight">20dp</dimen>
+    <dimen name="FVButtonPLeft">15dp</dimen>
+    <dimen name="FVButtonPadd">20dp</dimen>
+    <dimen name="FVButtonWidth">65dp</dimen>
+    <dimen name="FVButtonTSize">20dp</dimen>
+
+    <dimen name="RatingMargin">16dp</dimen>
+    <dimen name="RatingMarginP">16dp</dimen>
+
+    <dimen name="TwitterPadding">64dp</dimen>
+    <dimen name="RestartPad">25dp</dimen>
+    <dimen name="GBTextSize">20sp</dimen>
+    <dimen name="GBTextPadd">16dp</dimen>
+
+
+
+
+</resources>

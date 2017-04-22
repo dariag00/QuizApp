@@ -1,0 +1,954 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id = "@+id/scrollQuestions"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background = "#f4d802">
+
+    <!-- PLAN:
+    Crear ImageView con Opacidad como cabecera
+    Crear un View por pregunta y rellenarlo de un color con opacidad alta
+    Sobre que hacerlo?-->
+
+
+    <LinearLayout
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:orientation = "vertical">
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/CategoryName"
+            card_view:cardElevation="10dp"
+            style="@style/CatNameCardStyle">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View style="@style/ViewLeftQ" />
+
+                <TextView
+                    android:id="@+id/CatName"
+                    android:text = "@string/vgames"
+                    style="@style/QuestionsMainTextView"/>
+
+                <View style="@style/ViewR" />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <!-- Videogames Questions -->
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/vga1"
+            card_view:cardCornerRadius="15dp"
+            card_view:cardElevation="10dp"
+            style="@style/CardViewStyle">
+            <LinearLayout style="@style/CardLinearStyle">
+                <TextView
+                    android:text="@string/VGT1"
+                    style="@style/TextViewCardStyle"/>
+                <ImageView
+                    android:src="@drawable/rpg"
+                    style="@style/ImageCardStyle" />
+
+                <RadioGroup style="@style/RadioGroupQStyle">
+
+                    <RadioButton
+                        android:id="@+id/v1a"
+                        android:text="@string/VGT1a"
+                        style="@style/RButtonQStyle"/>
+                    <RadioButton
+                        android:id="@+id/v1b"
+                        android:text="@string/VGT1b"
+                        style="@style/RButtonQStyle"/>
+                    <RadioButton
+                        android:id="@+id/v1c"
+                        android:text="@string/VGT1c"
+                        style="@style/RButtonQStyle"/>
+                    <RadioButton
+                        android:id="@+id/v1d"
+                        android:text="@string/VGT1d"
+                        style="@style/RButtonQStyle"/>
+                </RadioGroup>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/vga2"
+            card_view:cardCornerRadius="15dp"
+            card_view:cardElevation="10dp"
+            style="@style/CardViewStyle">
+            <LinearLayout style="@style/CardLinearStyle">
+                <TextView
+                    android:text="@string/VGT2"
+                    style="@style/TextViewCardStyle"/>
+                <ImageView
+                    android:src="@drawable/asscreed"
+                    style="@style/ImageCardStyle" />
+
+                <RadioGroup style="@style/RadioGroupQStyle">
+
+                    <RadioButton
+                        android:id="@+id/v2a"
+                        android:text="@string/VGT2a"
+                        style="@style/RButtonQStyle"/>
+                    <RadioButton
+                        android:id="@+id/v2b"
+                        android:text="@string/VGT2b"
+                        style="@style/RButtonQStyle"/>
+                    <RadioButton
+                        android:id="@+id/v2c"
+                        android:text="@string/VGT2c"
+                        style="@style/RButtonQStyle"/>
+                    <RadioButton
+                        android:id="@+id/v2d"
+                        android:text="@string/VGT2d"
+                        style="@style/RButtonQStyle"/>
+                </RadioGroup>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/vga3"
+            card_view:cardCornerRadius="15dp"
+            card_view:cardElevation="10dp"
+            style="@style/CardViewStyle">
+            <LinearLayout style="@style/CardLinearStyle">
+                <TextView
+                    android:text="@string/VGT3"
+                    style="@style/TextViewCardStyle"/>
+                <ImageView
+                    android:src="@drawable/larac"
+                    style="@style/ImageCardStyle" />
+
+                <RadioGroup style="@style/RadioGroupQStyle">
+
+                    <RadioButton
+                        android:id="@+id/v3a"
+                        android:text="@string/VGT3a"
+                        style="@style/RButtonQStyle"/>
+                    <RadioButton
+                        android:id="@+id/v3b"
+                        android:text="@string/VGT3b"
+                        style="@style/RButtonQStyle"/>
+                    <RadioButton
+                        android:id="@+id/v3c"
+                        android:text="@string/VGT3c"
+                        style="@style/RButtonQStyle"/>
+                    <RadioButton
+                        android:id="@+id/v3d"
+                        android:text="@string/VGT3d"
+                        style="@style/RButtonQStyle"/>
+                </RadioGroup>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/vga4"
+            card_view:cardCornerRadius="15dp"
+            card_view:cardElevation="10dp"
+            style="@style/CardViewStyle">
+            <LinearLayout style="@style/CardLinearStyle">
+                <TextView
+                    android:text="@string/VGT4"
+                    style="@style/TextViewCardStyle"/>
+                <ImageView
+                    android:src="@drawable/sandbox"
+                    style="@style/ImageCardStyle" />
+
+                <CheckBox
+                    android:id="@+id/vch1"
+                    android:text="@string/VGT4a"
+                    style="@style/checkBoxStyle" />
+                <CheckBox
+                    android:id="@+id/vch2"
+                    android:text="@string/VGT4b"
+                    style="@style/checkBoxStyle"  />
+                <CheckBox
+                    android:id="@+id/vch3"
+                    android:text="@string/VGT4c"
+                    style="@style/checkBoxStyle" />
+                <CheckBox
+                    android:id="@+id/vch4"
+                    android:text="@string/VGT4d"
+                    style="@style/checkBoxStyle" />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/vga5"
+            card_view:cardCornerRadius="15dp"
+            card_view:cardElevation="10dp"
+            style="@style/CardViewStyle">
+            <LinearLayout style="@style/CardLinearStyle">
+                <TextView
+                    android:text="@string/VGT5"
+                    style="@style/TextViewCardStyle"/>
+                <ImageView
+                    android:src="@drawable/lcs"
+                    style="@style/ImageCardStyle" />
+
+                <RadioGroup style="@style/RadioGroupQStyle">
+
+                    <RadioButton
+                        android:id="@+id/v5a"
+                        android:text="@string/VGT5a"
+                        style="@style/RButtonQStyle"/>
+                    <RadioButton
+                        android:id="@+id/v5b"
+                        android:text="@string/VGT5b"
+                        style="@style/RButtonQStyle"/>
+                    <RadioButton
+                        android:id="@+id/v5c"
+                        android:text="@string/VGT5c"
+                        style="@style/RButtonQStyle"/>
+                    <RadioButton
+                        android:id="@+id/v5d"
+                        android:text="@string/VGT5d"
+                        style="@style/RButtonQStyle"/>
+                </RadioGroup>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/vga6"
+            card_view:cardCornerRadius="15dp"
+            card_view:cardElevation="10dp"
+            style="@style/CardViewStyle">
+            <LinearLayout style="@style/CardLinearStyle">
+                <TextView
+                    android:text="@string/VGT6"
+                    style="@style/TextViewCardStyle"/>
+                <ImageView
+                    android:src="@drawable/worlds"
+                    style="@style/ImageCardStyle" />
+
+                <RadioGroup style="@style/RadioGroupQStyle">
+
+                    <RadioButton
+                        android:id="@+id/v6a"
+                        android:text="@string/VGT6a"
+                        style="@style/RButtonQStyle"/>
+                    <RadioButton
+                        android:id="@+id/v6b"
+                        android:text="@string/VGT6b"
+                        style="@style/RButtonQStyle"/>
+                    <RadioButton
+                        android:id="@+id/v6c"
+                        android:text="@string/VGT6c"
+                        style="@style/RButtonQStyle"/>
+                    <RadioButton
+                        android:id="@+id/v6d"
+                        android:text="@string/VGT6d"
+                        style="@style/RButtonQStyle"/>
+                </RadioGroup>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/vga7"
+            card_view:cardCornerRadius="15dp"
+            card_view:cardElevation="10dp"
+            style="@style/CardViewStyle">
+            <LinearLayout style="@style/CardLinearStyle">
+                <TextView
+                    android:text="@string/VGT7"
+                    style="@style/TextViewCardStyle"/>
+
+                <RadioGroup style="@style/RadioGroupQStyle">
+
+                    <RadioButton
+                        android:id="@+id/v7a"
+                        android:text="@string/VGT7a"
+                        style="@style/RButtonQStyle"/>
+                    <RadioButton
+                        android:id="@+id/v7b"
+                        android:text="@string/VGT7b"
+                        style="@style/RButtonQStyle"/>
+                    <RadioButton
+                        android:id="@+id/v7c"
+                        android:text="@string/VGT7c"
+                        style="@style/RButtonQStyle"/>
+                    <RadioButton
+                        android:id="@+id/v7d"
+                        android:text="@string/VGT7d"
+                        style="@style/RButtonQStyle"/>
+                </RadioGroup>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/vga8"
+            card_view:cardCornerRadius="15dp"
+            card_view:cardElevation="10dp"
+            style="@style/CardViewStyle">
+            <LinearLayout style="@style/CardLinearStyle">
+                <TextView
+                    android:text="@string/VGT8"
+                    style="@style/TextViewCardStyle"/>
+                <ImageView
+                    android:src="@drawable/pokemonb"
+                    style="@style/ImageCardStyle" />
+
+                <RadioGroup style="@style/RadioGroupQStyle">
+
+                    <RadioButton
+                        android:id="@+id/v8a"
+                        android:text="@string/VGT8a"
+                        style="@style/RButtonQStyle"/>
+                    <RadioButton
+                        android:id="@+id/v8b"
+                        android:text="@string/VGT8b"
+                        style="@style/RButtonQStyle"/>
+                    <RadioButton
+                        android:id="@+id/v8c"
+                        android:text="@string/VGT8c"
+                        style="@style/RButtonQStyle"/>
+                    <RadioButton
+                        android:id="@+id/v8d"
+                        android:text="@string/VGT8d"
+                        style="@style/RButtonQStyle"/>
+                </RadioGroup>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/vga9"
+            card_view:cardCornerRadius="15dp"
+            card_view:cardElevation="10dp"
+            style="@style/CardViewStyle">
+            <LinearLayout style="@style/CardLinearStyle">
+                <TextView
+                    android:text="@string/VGT9"
+                    style="@style/TextViewCardStyle"/>
+                <ImageView
+                    android:src="@drawable/vgames"
+                    style="@style/ImageCardStyle" />
+
+                <RadioGroup style="@style/RadioGroupQStyle">
+
+                    <RadioButton
+                        android:id="@+id/v9a"
+                        android:text="@string/VGT9a"
+                        style="@style/RButtonQStyle"/>
+                    <RadioButton
+                        android:id="@+id/v9b"
+                        android:text="@string/VGT9b"
+                        style="@style/RButtonQStyle"/>
+                    <RadioButton
+                        android:id="@+id/v9c"
+                        android:text="@string/VGT9c"
+                        style="@style/RButtonQStyle"/>
+                    <RadioButton
+                        android:id="@+id/v9d"
+                        android:text="@string/VGT9d"
+                        style="@style/RButtonQStyle"/>
+                </RadioGroup>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/vga10"
+            card_view:cardCornerRadius="15dp"
+            card_view:cardElevation="10dp"
+            style="@style/CardViewStyle">
+            <LinearLayout style="@style/CardLinearStyle">
+                <TextView
+                    android:text="@string/VGT10"
+                    style="@style/TextViewCardStyle"/>
+                <ImageView
+                    android:src="@drawable/lol"
+                    style="@style/ImageCardStyle" />
+
+                <RadioGroup style="@style/RadioGroupQStyle">
+
+                    <RadioButton
+                        android:id="@+id/v10a"
+                        android:text="@string/VGT10a"
+                        style="@style/RButtonQStyle"/>
+                    <RadioButton
+                        android:id="@+id/v10b"
+                        android:text="@string/VGT10b"
+                        style="@style/RButtonQStyle"/>
+                    <RadioButton
+                        android:id="@+id/v10c"
+                        android:text="@string/VGT10c"
+                        style="@style/RButtonQStyle"/>
+                    <RadioButton
+                        android:id="@+id/v10d"
+                        android:text="@string/VGT10d"
+                        style="@style/RButtonQStyle"/>
+                </RadioGroup>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/vga11"
+            card_view:cardCornerRadius="15dp"
+            card_view:cardElevation="10dp"
+            style="@style/CardViewStyle">
+            <LinearLayout style="@style/CardLinearStyle">
+                <TextView
+                    android:text="@string/VGT11"
+                    style="@style/TextViewCardStyle"/>
+                <ImageView
+                    android:src="@drawable/consolas"
+                    style="@style/ImageCardStyle" />
+
+                <RadioGroup style="@style/RadioGroupQStyle">
+
+                    <RadioButton
+                        android:id="@+id/v11a"
+                        android:text="@string/VGT11a"
+                        style="@style/RButtonQStyle"/>
+                    <RadioButton
+                        android:id="@+id/v11b"
+                        android:text="@string/VGT11b"
+                        style="@style/RButtonQStyle"/>
+                    <RadioButton
+                        android:id="@+id/v11c"
+                        android:text="@string/VGT11c"
+                        style="@style/RButtonQStyle"/>
+                    <RadioButton
+                        android:id="@+id/v11d"
+                        android:text="@string/VGT11d"
+                        style="@style/RButtonQStyle"/>
+                </RadioGroup>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/vga12"
+            card_view:cardCornerRadius="15dp"
+            card_view:cardElevation="10dp"
+            style="@style/CardViewStyle">
+            <LinearLayout style="@style/CardLinearStyle">
+                <TextView
+                    android:text="@string/VGT12"
+                    style="@style/TextViewCardStyle"/>
+                <ImageView
+                    android:src="@drawable/dinerob"
+                    style="@style/ImageCardStyle" />
+
+                <RadioGroup style="@style/RadioGroupQStyle">
+
+                    <RadioButton
+                        android:id="@+id/v12a"
+                        android:text="@string/VGT12a"
+                        style="@style/RButtonQStyle"/>
+                    <RadioButton
+                        android:id="@+id/v12b"
+                        android:text="@string/VGT12b"
+                        style="@style/RButtonQStyle"/>
+                    <RadioButton
+                        android:id="@+id/v12c"
+                        android:text="@string/VGT12c"
+                        style="@style/RButtonQStyle"/>
+                    <RadioButton
+                        android:id="@+id/v12d"
+                        android:text="@string/VGT12d"
+                        style="@style/RButtonQStyle"/>
+                </RadioGroup>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/vga13"
+            card_view:cardCornerRadius="15dp"
+            card_view:cardElevation="10dp"
+            style="@style/CardViewStyle">
+            <LinearLayout style="@style/CardLinearStyle">
+                <TextView
+                    android:text="@string/VGT13"
+                    style="@style/TextViewCardStyle"/>
+                <ImageView
+                    android:src="@drawable/dinero"
+                    style="@style/ImageCardStyle" />
+
+                <RadioGroup style="@style/RadioGroupQStyle">
+
+                    <RadioButton
+                        android:id="@+id/v13a"
+                        android:text="@string/VGT13a"
+                        style="@style/RButtonQStyle"/>
+                    <RadioButton
+                        android:id="@+id/v13b"
+                        android:text="@string/VGT13b"
+                        style="@style/RButtonQStyle"/>
+                    <RadioButton
+                        android:id="@+id/v13c"
+                        android:text="@string/VGT13c"
+                        style="@style/RButtonQStyle"/>
+                    <RadioButton
+                        android:id="@+id/v13d"
+                        android:text="@string/VGT13d"
+                        style="@style/RButtonQStyle"/>
+                </RadioGroup>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/vga14"
+            card_view:cardCornerRadius="15dp"
+            card_view:cardElevation="10dp"
+            style="@style/CardViewStyle">
+            <LinearLayout style="@style/CardLinearStyle">
+                <TextView
+                    android:text="@string/VGT14"
+                    style="@style/TextViewCardStyle"/>
+                <ImageView
+                    android:src="@drawable/witcher"
+                    style="@style/ImageCardStyle" />
+
+                <RadioGroup style="@style/RadioGroupQStyle">
+
+                    <RadioButton
+                        android:id="@+id/v14a"
+                        android:text="@string/VGT14a"
+                        style="@style/RButtonQStyle"/>
+                    <RadioButton
+                        android:id="@+id/v14b"
+                        android:text="@string/VGT14b"
+                        style="@style/RButtonQStyle"/>
+                    <RadioButton
+                        android:id="@+id/v14c"
+                        android:text="@string/VGT14c"
+                        style="@style/RButtonQStyle"/>
+                    <RadioButton
+                        android:id="@+id/v14d"
+                        android:text="@string/VGT14d"
+                        style="@style/RButtonQStyle"/>
+                </RadioGroup>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/vga15"
+            card_view:cardCornerRadius="15dp"
+            card_view:cardElevation="10dp"
+            style="@style/CardViewStyle">
+            <LinearLayout style="@style/CardLinearStyle">
+                <TextView
+                    android:text="@string/VGT15"
+                    style="@style/TextViewCardStyle"/>
+                <ImageView
+                    android:src="@drawable/battlefield"
+                    style="@style/ImageCardStyle" />
+
+                <RadioGroup style="@style/RadioGroupQStyle">
+
+                    <RadioButton
+                        android:id="@+id/v15a"
+                        android:text="@string/VGT15a"
+                        style="@style/RButtonQStyle"/>
+                    <RadioButton
+                        android:id="@+id/v15b"
+                        android:text="@string/VGT15b"
+                        style="@style/RButtonQStyle"/>
+                    <RadioButton
+                        android:id="@+id/v15c"
+                        android:text="@string/VGT15c"
+                        style="@style/RButtonQStyle"/>
+                    <RadioButton
+                        android:id="@+id/v15d"
+                        android:text="@string/VGT15d"
+                        style="@style/RButtonQStyle"/>
+                </RadioGroup>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/vga16"
+            card_view:cardCornerRadius="15dp"
+            card_view:cardElevation="10dp"
+            style="@style/CardViewStyle">
+            <LinearLayout style="@style/CardLinearStyle">
+                <TextView
+                    android:text="@string/VGT16"
+                    style="@style/TextViewCardStyle"/>
+                <ImageView
+                    android:src="@drawable/goty"
+                    style="@style/ImageCardStyle" />
+
+                <RadioGroup style="@style/RadioGroupQStyle">
+
+                    <RadioButton
+                        android:id="@+id/v16a"
+                        android:text="@string/VGT16a"
+                        style="@style/RButtonQStyle"/>
+                    <RadioButton
+                        android:id="@+id/v16b"
+                        android:text="@string/VGT16b"
+                        style="@style/RButtonQStyle"/>
+                    <RadioButton
+                        android:id="@+id/v16c"
+                        android:text="@string/VGT16c"
+                        style="@style/RButtonQStyle"/>
+                    <RadioButton
+                        android:id="@+id/v16d"
+                        android:text="@string/VGT16d"
+                        style="@style/RButtonQStyle"/>
+                </RadioGroup>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/vga17"
+            card_view:cardCornerRadius="15dp"
+            card_view:cardElevation="10dp"
+            style="@style/CardViewStyle">
+            <LinearLayout style="@style/CardLinearStyle">
+                <TextView
+                    android:text="@string/VGT17"
+                    style="@style/TextViewCardStyle"/>
+                <ImageView
+                    android:src="@drawable/ass"
+                    style="@style/ImageCardStyle" />
+
+                <RadioGroup style="@style/RadioGroupQStyle">
+
+                    <RadioButton
+                        android:id="@+id/v17a"
+                        android:text="@string/VGT17a"
+                        style="@style/RButtonQStyle"/>
+                    <RadioButton
+                        android:id="@+id/v17b"
+                        android:text="@string/VGT17b"
+                        style="@style/RButtonQStyle"/>
+                    <RadioButton
+                        android:id="@+id/v17c"
+                        android:text="@string/VGT17c"
+                        style="@style/RButtonQStyle"/>
+                    <RadioButton
+                        android:id="@+id/v17d"
+                        android:text="@string/VGT17d"
+                        style="@style/RButtonQStyle"/>
+                </RadioGroup>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/vga18"
+        card_view:cardCornerRadius="15dp"
+        card_view:cardElevation="10dp"
+        style="@style/CardViewStyle">
+        <LinearLayout style="@style/CardLinearStyle">
+            <TextView
+                android:text="@string/VGT18"
+                style="@style/TextViewCardStyle"/>
+            <ImageView
+                android:src="@drawable/pokemon"
+                style="@style/ImageCardStyle" />
+
+            <RadioGroup style="@style/RadioGroupQStyle">
+
+                <RadioButton
+                    android:id="@+id/v18a"
+                    android:text="@string/VGT18a"
+                    style="@style/RButtonQStyle"/>
+                <RadioButton
+                    android:id="@+id/v18b"
+                    android:text="@string/VGT18b"
+                    style="@style/RButtonQStyle"/>
+                <RadioButton
+                    android:id="@+id/v18c"
+                    android:text="@string/VGT18c"
+                    style="@style/RButtonQStyle"/>
+                <RadioButton
+                    android:id="@+id/v18d"
+                    android:text="@string/VGT18d"
+                    style="@style/RButtonQStyle"/>
+            </RadioGroup>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/vga19"
+            card_view:cardCornerRadius="15dp"
+            card_view:cardElevation="10dp"
+            style="@style/CardViewStyle">
+            <LinearLayout style="@style/CardLinearStyle">
+                <TextView
+                    android:text="@string/VGT19"
+                    style="@style/TextViewCardStyle"/>
+                <ImageView
+                    android:src="@drawable/mafia"
+                    style="@style/ImageCardStyle" />
+
+                <RadioGroup style="@style/RadioGroupQStyle">
+
+                    <RadioButton
+                        android:id="@+id/v19a"
+                        android:text="@string/VGT19a"
+                        style="@style/RButtonQStyle"/>
+                    <RadioButton
+                        android:id="@+id/v19b"
+                        android:text="@string/VGT19b"
+                        style="@style/RButtonQStyle"/>
+                    <RadioButton
+                        android:id="@+id/v19c"
+                        android:text="@string/VGT19c"
+                        style="@style/RButtonQStyle"/>
+                    <RadioButton
+                        android:id="@+id/v19d"
+                        android:text="@string/VGT19d"
+                        style="@style/RButtonQStyle"/>
+                </RadioGroup>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/vga20"
+            card_view:cardCornerRadius="15dp"
+            card_view:cardElevation="10dp"
+            style="@style/CardViewStyle">
+            <LinearLayout style="@style/CardLinearStyle">
+                <TextView
+                    android:text="@string/VGT20"
+                    style="@style/TextViewCardStyle"/>
+                <ImageView
+                    android:src="@drawable/fifa"
+                    style="@style/ImageCardStyle" />
+
+                <RadioGroup style="@style/RadioGroupQStyle">
+
+                    <RadioButton
+                        android:id="@+id/v20a"
+                        android:text="@string/VGT20a"
+                        style="@style/RButtonQStyle"/>
+                    <RadioButton
+                        android:id="@+id/v20b"
+                        android:text="@string/VGT20b"
+                        style="@style/RButtonQStyle"/>
+                    <RadioButton
+                        android:id="@+id/v20c"
+                        android:text="@string/VGT20c"
+                        style="@style/RButtonQStyle"/>
+                    <RadioButton
+                        android:id="@+id/v20d"
+                        android:text="@string/VGT20d"
+                        style="@style/RButtonQStyle"/>
+                </RadioGroup>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/vga21"
+            card_view:cardCornerRadius="15dp"
+            card_view:cardElevation="10dp"
+            style="@style/CardViewStyle">
+            <LinearLayout style="@style/CardLinearStyle">
+                <TextView
+                    android:text="@string/VGT21"
+                    style="@style/TextViewCardStyle"/>
+                <ImageView
+                    android:src="@drawable/esports"
+                    style="@style/ImageCardStyle" />
+
+                <RadioGroup style="@style/RadioGroupQStyle">
+
+                    <RadioButton
+                        android:id="@+id/v21a"
+                        android:text="@string/VGT21a"
+                        style="@style/RButtonQStyle"/>
+                    <RadioButton
+                        android:id="@+id/v21b"
+                        android:text="@string/VGT21b"
+                        style="@style/RButtonQStyle"/>
+                    <RadioButton
+                        android:id="@+id/v21c"
+                        android:text="@string/VGT21c"
+                        style="@style/RButtonQStyle"/>
+                    <RadioButton
+                        android:id="@+id/v21d"
+                        android:text="@string/VGT21d"
+                        style="@style/RButtonQStyle"/>
+                </RadioGroup>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/vga22"
+            card_view:cardCornerRadius="15dp"
+            card_view:cardElevation="10dp"
+            style="@style/CardViewStyle">
+            <LinearLayout style="@style/CardLinearStyle">
+                <TextView
+                    android:text="@string/VGT22"
+                    style="@style/TextViewCardStyle"/>
+                <ImageView
+                    android:src="@drawable/glados"
+                    style="@style/ImageCardStyle" />
+
+                <RadioGroup style="@style/RadioGroupQStyle">
+
+                    <RadioButton
+                        android:id="@+id/v22a"
+                        android:text="@string/VGT22a"
+                        style="@style/RButtonQStyle"/>
+                    <RadioButton
+                        android:id="@+id/v22b"
+                        android:text="@string/VGT22b"
+                        style="@style/RButtonQStyle"/>
+                    <RadioButton
+                        android:id="@+id/v22c"
+                        android:text="@string/VGT22c"
+                        style="@style/RButtonQStyle"/>
+                    <RadioButton
+                        android:id="@+id/v22d"
+                        android:text="@string/VGT22d"
+                        style="@style/RButtonQStyle"/>
+                </RadioGroup>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/vga23"
+            card_view:cardCornerRadius="15dp"
+            card_view:cardElevation="10dp"
+            style="@style/CardViewStyle">
+            <LinearLayout style="@style/CardLinearStyle">
+                <TextView
+                    android:text="@string/VGT23"
+                    style="@style/TextViewCardStyle"/>
+                <ImageView
+                    android:src="@drawable/lolign"
+                    style="@style/ImageCardStyle" />
+
+                <RadioGroup style="@style/RadioGroupQStyle">
+
+                    <RadioButton
+                        android:id="@+id/v23a"
+                        android:text="@string/VGT23a"
+                        style="@style/RButtonQStyle"/>
+                    <RadioButton
+                        android:id="@+id/v23b"
+                        android:text="@string/VGT23b"
+                        style="@style/RButtonQStyle"/>
+                    <RadioButton
+                        android:id="@+id/v23c"
+                        android:text="@string/VGT23c"
+                        style="@style/RButtonQStyle"/>
+                    <RadioButton
+                        android:id="@+id/v23d"
+                        android:text="@string/VGT23d"
+                        style="@style/RButtonQStyle"/>
+                </RadioGroup>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/vga24"
+            card_view:cardCornerRadius="15dp"
+            card_view:cardElevation="10dp"
+            style="@style/CardViewStyle">
+            <LinearLayout style="@style/CardLinearStyle">
+                <TextView
+                    android:text="@string/VGT24"
+                    style="@style/TextViewCardStyle"/>
+                <ImageView
+                    android:src="@drawable/cod"
+                    style="@style/ImageCardStyle" />
+
+                <RadioGroup style="@style/RadioGroupQStyle">
+
+                    <RadioButton
+                        android:id="@+id/v24a"
+                        android:text="@string/VGT24a"
+                        style="@style/RButtonQStyle"/>
+                    <RadioButton
+                        android:id="@+id/v24b"
+                        android:text="@string/VGT24b"
+                        style="@style/RButtonQStyle"/>
+                    <RadioButton
+                        android:id="@+id/v24c"
+                        android:text="@string/VGT24c"
+                        style="@style/RButtonQStyle"/>
+                    <RadioButton
+                        android:id="@+id/v24d"
+                        android:text="@string/VGT24d"
+                        style="@style/RButtonQStyle"/>
+                </RadioGroup>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/vga25"
+            card_view:cardCornerRadius="15dp"
+            card_view:cardElevation="10dp"
+            style="@style/CardViewStyle">
+            <LinearLayout style="@style/CardLinearStyle">
+                <TextView
+                    android:text="@string/VGT25"
+                    style="@style/TextViewCardStyle"/>
+                <ImageView
+                    android:src="@drawable/fvgames"
+                    style="@style/ImageCardStyle" />
+
+                <RadioGroup style="@style/RadioGroupQStyle">
+
+                    <RadioButton
+                        android:id="@+id/v25a"
+                        android:text="@string/VGT25a"
+                        style="@style/RButtonQStyle"/>
+                    <RadioButton
+                        android:id="@+id/v25b"
+                        android:text="@string/VGT25b"
+                        style="@style/RButtonQStyle"/>
+                    <RadioButton
+                        android:id="@+id/v25c"
+                        android:text="@string/VGT25c"
+                        style="@style/RButtonQStyle"/>
+                    <RadioButton
+                        android:id="@+id/v25d"
+                        android:text="@string/VGT25d"
+                        style="@style/RButtonQStyle"/>
+                </RadioGroup>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <Button
+            android:id = "@+id/submit"
+            android:text ="@string/submit"
+            android:onClick = "submit"
+            style="@style/questButton" />
+
+        <Button
+            android:id = "@+id/continueAc"
+            android:text ="@string/continAc"
+            android:onClick = "continueAc"
+            style="@style/questButton"/>
+
+    </LinearLayout>
+
+</ScrollView>

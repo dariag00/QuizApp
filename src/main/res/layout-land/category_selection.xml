@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background = "#f4d802">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id = "@+id/welcomeMessage"
+            android:text="@string/chooseCategory"
+            style="@style/CategoryTextView"/>
+
+        <View style="@style/ViewLineCategory" />
+
+        <LinearLayout style="@style/LinearCategory">
+
+            <Button
+                android:id = "@+id/geography"
+                android:text =  "@string/geo"
+                android:onClick = "selected"
+                android:drawableRight="@drawable/geography"
+                android:drawableLeft="@drawable/geography"
+                android:background="@drawable/round_shape_button"
+                style="@style/ButtonCategoryS" />
+            <Button
+                android:id = "@+id/history"
+                android:text =  "@string/hist"
+                style="@style/ButtonCategoryS"
+                android:drawableRight="@drawable/prueba"
+                android:drawableLeft="@drawable/prueba"
+                android:background="@drawable/round_history"
+                android:onClick = "selected"/>
+            <Button
+                android:id = "@+id/sports"
+                android:text =  "@string/sports"
+                android:drawableRight="@drawable/sports"
+                android:drawableLeft="@drawable/sports"
+                style="@style/ButtonCategoryS"
+                android:onClick = "selected"
+                android:background="@drawable/music"/>
+            <Button
+                android:id = "@+id/videogames"
+                android:text =  "@string/vgames"
+                android:drawableRight="@drawable/gamesicon"
+                android:drawableLeft="@drawable/gamesicon"
+                android:onClick = "selected"
+                android:background="@drawable/round_videogames"
+                style="@style/ButtonCategoryS"/>
+            <Button
+                android:id = "@+id/entertainment"
+                android:text =  "@string/entr"
+                android:drawableRight="@drawable/cultureicon"
+                android:drawableLeft="@drawable/cultureicon"
+                android:onClick = "selected"
+                android:background="@drawable/round_language"
+                style="@style/ButtonCategoryS"/>
+            <Button
+                android:id = "@+id/science"
+                android:text =  "@string/science"
+                android:drawableRight="@drawable/atomic"
+                android:drawableLeft="@drawable/atomic"
+                android:onClick = "selected"
+                android:background="@drawable/science"
+                style="@style/ButtonCategoryS"/>
+
+            <Button
+                android:id = "@+id/random"
+                android:text =  "@string/random"
+                android:drawableRight="@drawable/randomicon"
+                android:drawableLeft="@drawable/randomicon"
+                android:onClick = "selected"
+                android:background="@drawable/random"
+                style="@style/ButtonCategoryS"/>
+
+        </LinearLayout>
+
+        <View style="@style/FinalViewCategoryS" />
+
+    </LinearLayout>
+</ScrollView>

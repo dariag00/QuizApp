@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background = "#f4d802">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id = "@+id/finalMsg"
+            android:text="@string/finalMesg"
+            style="@style/FVTextView" />
+
+        <View style="@style/FVViewTop" />
+
+        <LinearLayout style="@style/FVLinearLayout">
+
+            <LinearLayout style="@style/ButtRatLinearStyle">
+
+                <Button
+                    android:id = "@+id/geography"
+                    android:onClick = "selected"
+                    android:drawableLeft="@drawable/geography"
+                    android:background="@drawable/round_shape_button"
+                    style="@style/FVButton" />
+
+                <RatingBar
+                    android:id="@+id/geoRatingBar"
+                    style="@style/RatingBar" />
+
+            </LinearLayout>
+
+            <LinearLayout style="@style/ButtRatLinearStyle">
+
+                <Button
+                    android:id = "@+id/history"
+                    android:onClick = "selected"
+                    android:drawableLeft="@drawable/prueba"
+                    android:background="@drawable/round_history"
+                    style="@style/FVButton" />
+
+                <RatingBar
+                    android:id="@+id/histRatingBar"
+                    style="@style/RatingBar"/>
+
+            </LinearLayout>
+            <LinearLayout style="@style/ButtRatLinearStyle">
+
+                <Button
+                    android:id = "@+id/sports"
+                    android:onClick = "selected"
+                    android:drawableLeft="@drawable/sports"
+                    android:background="@drawable/music"
+                    style="@style/FVButton" />
+
+                <RatingBar
+                    android:id="@+id/sportsRatingBar"
+                    style="@style/RatingBar"/>
+
+            </LinearLayout>
+            <LinearLayout style="@style/ButtRatLinearStyle">
+
+                <Button
+                    android:id = "@+id/videogames"
+                    android:onClick = "selected"
+                    android:drawableLeft="@drawable/gamesicon"
+                    android:background="@drawable/round_videogames"
+                    style="@style/FVButton" />
+
+                <RatingBar
+                    android:id="@+id/vGRatingBar"
+                    style="@style/RatingBar"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id = "@+id/entert"
+                    android:onClick = "selected"
+                    android:drawableLeft="@drawable/cultureicon"
+                    android:background="@drawable/round_language"
+                    style="@style/FVButton" />
+
+                <RatingBar
+                    android:id="@+id/entRatingBar"
+                    style="@style/RatingBar"/>
+
+            </LinearLayout>
+            <LinearLayout style="@style/ButtRatLinearStyle">
+
+                <Button
+                    android:id = "@+id/science"
+                    android:onClick = "selected"
+                    android:drawableLeft="@drawable/atomic"
+                    android:background="@drawable/science"
+                    style="@style/FVButton" />
+
+                <RatingBar
+                    android:id="@+id/sciRatingBar"
+                    style="@style/RatingBar"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View style="@style/FVViewBot" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="@string/fMsg"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation = "horizontal"
+            android:layout_marginRight = "16dp"
+            android:layout_marginLeft = "16dp">
+
+            <Button
+                android:id = "@+id/tw"
+                android:onClick = "link"
+                style="@style/TwitterButton" />
+            <Button
+                android:id = "@+id/playAg"
+                android:onClick = "mainP"
+                android:text="@string/mainPage"
+                style="@style/RestartButton" />
+
+        </LinearLayout>
+
+
+            />
+
+    </LinearLayout>
+    
+    
+</ScrollView>

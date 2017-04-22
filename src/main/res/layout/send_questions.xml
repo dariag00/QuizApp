@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background = "#f4d802">
+    <LinearLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background = "#f4d802"
+        tools:context="com.example.android.quizapp.com.klosote.android.quizapp.MainActivity">
+
+
+        <TextView
+            android:id="@+id/h"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="@string/subMessage" />
+
+        <Spinner
+            android:layout_margin="16dp"
+            android:id="@+id/spinner"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/qTitle"
+            android:hint = "@string/qTitle"
+            android:layout_margin="8dp"
+            style="@style/EditTextStyle" />
+        <EditText
+            android:id="@+id/qAns1"
+            android:hint = "@string/q1"
+            android:layout_margin="8dp"
+            style="@style/EditTextStyle" />
+        <EditText
+            android:id="@+id/qAns2"
+            android:hint = "@string/q2"
+            android:layout_margin="8dp"
+            style="@style/EditTextStyle" />
+        <EditText
+            android:id="@+id/qAns3"
+            android:hint = "@string/q3"
+            android:layout_margin="8dp"
+            style="@style/EditTextStyle" />
+        <EditText
+            android:id="@+id/qAns4"
+            android:hint = "@string/q4"
+            android:layout_margin="8dp"
+            style="@style/EditTextStyle" />
+
+        <EditText
+            android:id="@+id/generalFeedback"
+            android:hint = "@string/gFeedback"
+            android:layout_margin="8dp"
+            style="@style/EditTextStyle" />
+
+        <EditText
+            android:id="@+id/BugPlace"
+            android:hint = "@string/bugPlace"
+            android:layout_margin="8dp"
+            style="@style/EditTextStyle" />
+        <EditText
+            android:id="@+id/BugExplan"
+            android:hint = "@string/bugExpl"
+            android:layout_margin="8dp"
+            style="@style/EditTextStyle" />
+        <EditText
+            android:id="@+id/Suggestion"
+            android:hint = "@string/sugg"
+            android:layout_margin="8dp"
+            style="@style/EditTextStyle" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:onClick="send"/>
+    </LinearLayout>
+</ScrollView>
