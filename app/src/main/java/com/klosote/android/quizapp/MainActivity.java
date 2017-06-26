@@ -5,16 +5,18 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.Toast;
 
 import com.example.android.quizapp.R;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
 
 
 public class MainActivity extends AppCompatActivity {
 
+    Intent intent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,30 +24,37 @@ public class MainActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_main);
 
+        AdView mAdView = (AdView) findViewById(R.id.adViewMain);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
+
     }
+
 
 
 
     public void begin(View view) {
 
         EditText edittext = (EditText) findViewById(R.id.name);
-        RadioButton four = (RadioButton) findViewById(R.id.Q4Quest);
-        RadioButton five = (RadioButton) findViewById(R.id.Q5Quest);
-        RadioButton six = (RadioButton) findViewById(R.id.Q6Quest);
-        CheckBox beta = (CheckBox) findViewById(R.id.betaCheckBox);
-
+        RadioButton five = (RadioButton) findViewById(R.id.Q4Quest);
+        RadioButton eight = (RadioButton) findViewById(R.id.Q5Quest);
+        RadioButton ten = (RadioButton) findViewById(R.id.Q6Quest);
 
         int nQuestions = 0;
 
-        if (four.isChecked()) {
-            nQuestions = 4;
-        } else if (five.isChecked()) {
+        Context context = getApplicationContext();
+
+        if (five.isChecked()) {
             nQuestions = 5;
-        } else if (six.isChecked()) {
-            nQuestions = 6;
+            Toast.makeText(context, R.string.chooseEasy, Toast.LENGTH_LONG).show();
+        } else if (eight.isChecked()) {
+            nQuestions = 10;
+            Toast.makeText(context, R.string.chooseMed, Toast.LENGTH_LONG).show();
+        } else if (ten.isChecked()) {
+            nQuestions = 20;
+            Toast.makeText(context, R.string.chooseHard, Toast.LENGTH_LONG).show();
         } else {
             //Sends a warning to select the number of Questions
-            Context context = getApplicationContext();
             Toast.makeText(context, R.string.chooseQ, Toast.LENGTH_LONG).show();
 
         }
@@ -54,11 +63,8 @@ public class MainActivity extends AppCompatActivity {
 
             String name = edittext.getText().toString();
             name = name.trim();
-            Intent intent = new Intent(this, CategorySelection.class);
+            intent = new Intent(this, CategorySelection.class);
             intent.putExtra("Name", name);
-            if(beta.isChecked()){
-                intent.putExtra("beta", 1);
-            }
             intent.putExtra("nQuestions", nQuestions);
             startActivity(intent);
         }

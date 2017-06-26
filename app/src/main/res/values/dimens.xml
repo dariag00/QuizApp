@@ -64,7 +64,7 @@
     <dimen name = "FVCSmargin">16dp</dimen>
     <dimen name = "Vheight">2dp</dimen>
 
-    <dimen name = "ButtonCSelectionTextSize">13sp</dimen>
+    <dimen name = "ButtonCSelectionTextSize">12sp</dimen>
     <dimen name = "ButtonCSelectionmargin">8dp</dimen>
     <dimen name = "ButtonCSelectionpadding">50dp</dimen>
     <dimen name = "ButtonCSelectionpaddingTop">8dp</dimen>

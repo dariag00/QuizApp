@@ -116,8 +116,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="@dimen/GBTextPadd"
-            android:textSize="@dimen/GBTextSize"
+            android:padding="8dp"
             android:text="@string/fMsg"/>
 
         <LinearLayout
@@ -139,10 +138,12 @@
 
         </LinearLayout>
 
-
-            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="toSendQ"
+            android:text="@string/EnviarPreguntas"/>
 
     </LinearLayout>
-    
-    
+
 </ScrollView>

@@ -2,6 +2,7 @@
 
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -26,6 +27,8 @@
     <EditText
         android:id="@+id/name"
         android:hint = "@string/Name"
+        android:maxLines="1"
+        android:inputType="text"
         style="@style/EditTextStyle" />
     <TextView
         android:id="@+id/selectNQ"
@@ -50,22 +53,23 @@
     </RadioGroup>
 
 
-
     <Button
         android:id="@+id/startButton"
         android:text="@string/startButton"
         android:onClick="begin"
         style="@style/GeneralButton" />
 
-    <CheckBox
-        android:id="@+id/betaCheckBox"
-        android:text="Ver todas las preguntas(Solo beta)"
-        style="@style/GeneralButton" />
-
-    <com.google.android.gms.common.SignInButton
-        android:id="@+id/sign_in_button"
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adViewMain"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop ="5dp"
+        android:layout_marginBottom ="5dp"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
 
 </LinearLayout>
     </ScrollView>

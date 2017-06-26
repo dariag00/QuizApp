@@ -17,22 +17,53 @@
 
         <TextView
             android:id="@+id/h"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="16dp"
-            android:text="@string/subMessage" />
+            android:text="@string/subMessage"
+            style="@style/SubmitMessTextView" />
 
         <Spinner
-            android:layout_margin="16dp"
             android:id="@+id/spinner"
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content" />
+            style="@style/Spinner" />
 
         <EditText
             android:id="@+id/qTitle"
             android:hint = "@string/qTitle"
             android:layout_margin="8dp"
             style="@style/EditTextStyle" />
+
+        <HorizontalScrollView style="@style/HorizontalScrollView">
+
+            <RadioGroup
+                android:id="@+id/selector"
+                style="@style/RadioGroupHorizontal">
+                <RadioButton
+                    android:id="@+id/geoQ"
+                    android:text="@string/geo"
+                    style="@style/SubButton"/>
+                <RadioButton
+                    android:id="@+id/scienceQ"
+                    style="@style/SubButton"
+                    android:text="@string/science"/>
+                <RadioButton
+                    android:id="@+id/histQ"
+                    style="@style/SubButton"
+                    android:text="@string/hist"/>
+
+                <RadioButton
+                    android:id="@+id/vgamesQ"
+                    android:text="@string/vgames"
+                    style="@style/SubButton" />
+                <RadioButton
+                    android:id="@+id/sportsQ"
+                    android:text="@string/sports"
+                    style="@style/SubButton"/>
+                <RadioButton
+                    android:id="@+id/entrQ"
+                    style="@style/SubButton"
+                    android:text="@string/entr"/>
+
+            </RadioGroup>
+        </HorizontalScrollView>
+
         <EditText
             android:id="@+id/qAns1"
             android:hint = "@string/q1"

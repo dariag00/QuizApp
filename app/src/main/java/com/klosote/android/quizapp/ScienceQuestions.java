@@ -15,6 +15,10 @@ import android.widget.ScrollView;
 import android.widget.Toast;
 
 import com.example.android.quizapp.R;
+import com.google.android.gms.ads.AdListener;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.InterstitialAd;
 
 import java.util.ArrayList;
 import java.util.Random;
@@ -34,9 +38,12 @@ public class ScienceQuestions extends AppCompatActivity{
     int corrAns;
     int nQ;
     String name;
-    int beta;
 
     float maxH, maxS, maxVG, maxE, maxSpt, maxG;
+    private InterstitialAd mInterstitialAd;
+    Button contin;
+
+    CardView s1,s2,s3,s4,s5,s6,s7,s8,s9,s10, s11,s12,s13,s14,s15,s16,s17,s18,s19,s20,s21,s22,s23,s24,s25,s26,s27,s28,s29,s30;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,7 +57,6 @@ public class ScienceQuestions extends AppCompatActivity{
         maxSpt = getIntent().getFloatExtra("spoP", 0);
         maxE = getIntent().getFloatExtra("entP", 0);
         maxVG = getIntent().getFloatExtra("vgP", 0);
-        beta= getIntent().getIntExtra("beta",0);
 
         super.onCreate(savedInstanceState);
 
@@ -58,44 +64,80 @@ public class ScienceQuestions extends AppCompatActivity{
 
         setContentView(R.layout.sci_questions);
 
+        AdView mAdView = (AdView) findViewById(R.id.adViewSci);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
+
+        contin = (Button) findViewById(R.id.continueAc);
+
+        contin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                showInterstitial();
+            }
+        });
+
+        mInterstitialAd = new InterstitialAd(this);
+        // Defined in res/values/strings.xml
+        mInterstitialAd.setAdUnitId(getString(R.string.inter_ad_unit_id));
+
+        mInterstitialAd.setAdListener(new AdListener() {
+            @Override
+            public void onAdClosed() {
+                continueAc();
+            }
+        });
+
+        AdRequest adRequest1 = new AdRequest.Builder().build();
+        mInterstitialAd.loadAd(adRequest1);
+
+
         ScrollView scQ = (ScrollView) findViewById(R.id.scrollQuestions);
         scQ.setBackgroundColor(Color.parseColor("#0de045"));
 
-        Button cont = (Button) findViewById(R.id.continueAc);
-        cont.setVisibility(GONE);
+        contin.setVisibility(GONE);
 
-        CardView s1  = (CardView) findViewById(R.id.sci1);
-        CardView s2  = (CardView) findViewById(R.id.sci2);
-        CardView s3  = (CardView) findViewById(R.id.sci3);
-        CardView s4  = (CardView) findViewById(R.id.sci4);
-        CardView s5  = (CardView) findViewById(R.id.sci5);
-        CardView s6  = (CardView) findViewById(R.id.sci6);
-        CardView s7  = (CardView) findViewById(R.id.sci7);
-        CardView s8  = (CardView) findViewById(R.id.sci8);
-        CardView s9  = (CardView) findViewById(R.id.sci9);
-        CardView s10  = (CardView) findViewById(R.id.sci10);
-        CardView s11  = (CardView) findViewById(R.id.sci11);
-        CardView s12  = (CardView) findViewById(R.id.sci12);
-        CardView s13  = (CardView) findViewById(R.id.sci13);
-        CardView s14  = (CardView) findViewById(R.id.sci14);
-        CardView s15  = (CardView) findViewById(R.id.sci15);
-        CardView s16  = (CardView) findViewById(R.id.sci16);
-        CardView s17  = (CardView) findViewById(R.id.sci17);
-        CardView s18  = (CardView) findViewById(R.id.sci18);
-        CardView s19  = (CardView) findViewById(R.id.sci19);
-        CardView s20  = (CardView) findViewById(R.id.sci20);
+        s1  = (CardView) findViewById(R.id.sci1);
+        s2  = (CardView) findViewById(R.id.sci2);
+        s3  = (CardView) findViewById(R.id.sci3);
+        s4  = (CardView) findViewById(R.id.sci4);
+        s5  = (CardView) findViewById(R.id.sci5);
+        s6  = (CardView) findViewById(R.id.sci6);
+        s7  = (CardView) findViewById(R.id.sci7);
+        s8  = (CardView) findViewById(R.id.sci8);
+        s9  = (CardView) findViewById(R.id.sci9);
+        s10  = (CardView) findViewById(R.id.sci10);
+        s11  = (CardView) findViewById(R.id.sci11);
+        s12  = (CardView) findViewById(R.id.sci12);
+        s13  = (CardView) findViewById(R.id.sci13);
+        s14  = (CardView) findViewById(R.id.sci14);
+        s15  = (CardView) findViewById(R.id.sci15);
+        s16  = (CardView) findViewById(R.id.sci16);
+        s17  = (CardView) findViewById(R.id.sci17);
+        s18  = (CardView) findViewById(R.id.sci18);
+        s19  = (CardView) findViewById(R.id.sci19);
+        s20  = (CardView) findViewById(R.id.sci20);
+        s21  = (CardView) findViewById(R.id.sci21);
+        s22  = (CardView) findViewById(R.id.sci22);
+        s23  = (CardView) findViewById(R.id.sci23);
+        s24  = (CardView) findViewById(R.id.sci24);
+        s25  = (CardView) findViewById(R.id.sci25);
+        s26  = (CardView) findViewById(R.id.sci26);
+        s27  = (CardView) findViewById(R.id.sci27);
+        s28  = (CardView) findViewById(R.id.sci28);
+        s29  = (CardView) findViewById(R.id.sci29);
+        s30  = (CardView) findViewById(R.id.sci30);
 
-        if(beta != 1) {
-            s1.setVisibility(GONE);
-            s2.setVisibility(GONE);
-            s3.setVisibility(GONE);
-            s4.setVisibility(GONE);
-            s5.setVisibility(GONE);
-            s6.setVisibility(GONE);
-            s7.setVisibility(GONE);
-            s8.setVisibility(GONE);
-            s9.setVisibility(GONE);
-            s10.setVisibility(GONE);
+        s1.setVisibility(GONE);
+        s2.setVisibility(GONE);
+        s3.setVisibility(GONE);
+        s4.setVisibility(GONE);
+        s5.setVisibility(GONE);
+        s6.setVisibility(GONE);
+        s7.setVisibility(GONE);
+        s8.setVisibility(GONE);
+        s9.setVisibility(GONE);
+        s10.setVisibility(GONE);
         s11.setVisibility(GONE);
         s12.setVisibility(GONE);
         s13.setVisibility(GONE);
@@ -106,76 +148,126 @@ public class ScienceQuestions extends AppCompatActivity{
         s18.setVisibility(GONE);
         s19.setVisibility(GONE);
         s20.setVisibility(GONE);
+        s21.setVisibility(GONE);
+        s22.setVisibility(GONE);
+        s23.setVisibility(GONE);
+        s24.setVisibility(GONE);
+        s25.setVisibility(GONE);
+        s26.setVisibility(GONE);
+        s27.setVisibility(GONE);
+        s28.setVisibility(GONE);
+        s29.setVisibility(GONE);
+        s30.setVisibility(GONE);
 
-            chooseRandomQuestions(nQ, 20);
-            for (int el : selected) {
-                switch (el) {
-                    case 1:
-                        s1.setVisibility(VISIBLE);
-                        break;
-                    case 2:
-                        s2.setVisibility(VISIBLE);
-                        break;
-                    case 3:
-                        s3.setVisibility(VISIBLE);
-                        break;
-                    case 4:
-                        s4.setVisibility(VISIBLE);
-                        break;
-                    case 5:
-                        s5.setVisibility(VISIBLE);
-                        break;
-                    case 6:
-                        s6.setVisibility(VISIBLE);
-                        break;
-                    case 7:
-                        s7.setVisibility(VISIBLE);
-                        break;
-                    case 8:
-                        s8.setVisibility(VISIBLE);
-                        break;
-                    case 9:
-                        s9.setVisibility(VISIBLE);
-                        break;
-                    case 10:
-                        s10.setVisibility(VISIBLE);
-                        break;
-                    case 11:
-                        s11.setVisibility(VISIBLE);
-                        break;
-                    case 12:
-                        s12.setVisibility(VISIBLE);
-                        break;
-                    case 13:
-                        s13.setVisibility(VISIBLE);
-                        break;
-                    case 14:
-                        s14.setVisibility(VISIBLE);
-                        break;
-                    case 15:
-                        s15.setVisibility(VISIBLE);
-                        break;
-                    case 16:
-                        s16.setVisibility(VISIBLE);
-                        break;
-                    case 17:
-                        s17.setVisibility(VISIBLE);
-                        break;
-                    case 18:
-                        s18.setVisibility(VISIBLE);
-                        break;
-                    case 19:
-                        s19.setVisibility(VISIBLE);
-                        break;
-                    case 20:
-                        s20.setVisibility(VISIBLE);
-                        break;
-                }
+        chooseRandomQuestions(nQ, 30);
+        for (int el : selected) {
+            switch (el) {
+                case 1:
+                    s1.setVisibility(VISIBLE);
+                    break;
+                case 2:
+                    s2.setVisibility(VISIBLE);
+                    break;
+                case 3:
+                    s3.setVisibility(VISIBLE);
+                    break;
+                case 4:
+                    s4.setVisibility(VISIBLE);
+                    break;
+                case 5:
+                    s5.setVisibility(VISIBLE);
+                    break;
+                case 6:
+                    s6.setVisibility(VISIBLE);
+                    break;
+                case 7:
+                    s7.setVisibility(VISIBLE);
+                    break;
+                case 8:
+                    s8.setVisibility(VISIBLE);
+                    break;
+                case 9:
+                    s9.setVisibility(VISIBLE);
+                    break;
+                case 10:
+                    s10.setVisibility(VISIBLE);
+                    break;
+                case 11:
+                    s11.setVisibility(VISIBLE);
+                    break;
+                case 12:
+                    s12.setVisibility(VISIBLE);
+                    break;
+                case 13:
+                    s13.setVisibility(VISIBLE);
+                    break;
+                case 14:
+                    s14.setVisibility(VISIBLE);
+                    break;
+                case 15:
+                    s15.setVisibility(VISIBLE);
+                    break;
+                case 16:
+                    s16.setVisibility(VISIBLE);
+                    break;
+                case 17:
+                    s17.setVisibility(VISIBLE);
+                    break;
+                case 18:
+                    s18.setVisibility(VISIBLE);
+                    break;
+                case 19:
+                    s19.setVisibility(VISIBLE);
+                    break;
+                case 20:
+                    s20.setVisibility(VISIBLE);
+                    break;
+                case 21:
+                    s21.setVisibility(VISIBLE);
+                    break;
+                case 22:
+                    s22.setVisibility(VISIBLE);
+                    break;
+                case 23:
+                    s23.setVisibility(VISIBLE);
+                    break;
+                case 24:
+                    s24.setVisibility(VISIBLE);
+                    break;
+                case 25:
+                    s25.setVisibility(VISIBLE);
+                    break;
+                case 26:
+                    s26.setVisibility(VISIBLE);
+                    break;
+                case 27:
+                    s27.setVisibility(VISIBLE);
+                    break;
+                case 28:
+                    s28.setVisibility(VISIBLE);
+                    break;
+                case 29:
+                    s29.setVisibility(VISIBLE);
+                    break;
+                case 30:
+                    s30.setVisibility(VISIBLE);
+                    break;
             }
+
         }
 
 
 
+    }
+
+    private void showInterstitial() {
+        // Show the ad if it's ready. Otherwise toast and restart the game.
+        if (mInterstitialAd != null && mInterstitialAd.isLoaded()) {
+            mInterstitialAd.show();
+        } else {
+            Toast.makeText(this, "Ad did not load", Toast.LENGTH_SHORT).show();
+            continueAc();
+        }
     }
 
     public void submit(View view){
@@ -184,27 +276,6 @@ public class ScienceQuestions extends AppCompatActivity{
         Button cont = (Button) findViewById(R.id.continueAc);
         cont.setVisibility(View.VISIBLE);
         view.setVisibility(GONE);
-
-        CardView s1  = (CardView) findViewById(R.id.sci1);
-        CardView s2  = (CardView) findViewById(R.id.sci2);
-        CardView s3  = (CardView) findViewById(R.id.sci3);
-        CardView s4  = (CardView) findViewById(R.id.sci4);
-        CardView s5 = (CardView) findViewById(R.id.sci5);
-        CardView s6  = (CardView) findViewById(R.id.sci6);
-        CardView s7 = (CardView) findViewById(R.id.sci7);
-        CardView s8 = (CardView) findViewById(R.id.sci8);
-        CardView s9 = (CardView) findViewById(R.id.sci9);
-        CardView s10 = (CardView) findViewById(R.id.sci10);
-        CardView s11 = (CardView) findViewById(R.id.sci11);
-        CardView s12 = (CardView) findViewById(R.id.sci12);
-        CardView s13 = (CardView) findViewById(R.id.sci13);
-        CardView s14 = (CardView) findViewById(R.id.sci14);
-        CardView s15 = (CardView) findViewById(R.id.sci15);
-        CardView s16 = (CardView) findViewById(R.id.sci16);
-        CardView s17 = (CardView) findViewById(R.id.sci17);
-        CardView s18 = (CardView) findViewById(R.id.sci18);
-        CardView s19 = (CardView) findViewById(R.id.sci19);
-        CardView s20 = (CardView) findViewById(R.id.sci20);
 
         if(s1.getVisibility() == VISIBLE){
             //Solution is d
@@ -289,7 +360,7 @@ public class ScienceQuestions extends AppCompatActivity{
             c.setBackgroundColor(Color.parseColor("#42f45c"));
 
             if(d.isChecked()){
-                a.setBackgroundColor(Color.parseColor("#f44141"));
+                d.setBackgroundColor(Color.parseColor("#f44141"));
             }
             if(b.isChecked()){
                 b.setBackgroundColor(Color.parseColor("#f44141"));
@@ -669,6 +740,221 @@ public class ScienceQuestions extends AppCompatActivity{
                 a.setBackgroundColor(Color.parseColor("#f44141"));
             }
         }
+        if(s21.getVisibility() == VISIBLE){
+            //Solution is c
+            RadioButton a = (RadioButton) findViewById(R.id.s21a);
+            RadioButton b = (RadioButton) findViewById(R.id.s21b);
+            RadioButton c = (RadioButton) findViewById(R.id.s21c);
+            RadioButton d = (RadioButton) findViewById(R.id.s21d);
+
+            c.setBackgroundColor(Color.parseColor("#42f45c"));
+
+            if(b.isChecked()){
+                b.setBackgroundColor(Color.parseColor("#f44141"));
+            }
+            if(d.isChecked()){
+                d.setBackgroundColor(Color.parseColor("#f44141"));
+            }
+            if(c.isChecked()){
+
+                corrAns ++;
+            }
+            if(a.isChecked()){
+                a.setBackgroundColor(Color.parseColor("#f44141"));
+            }
+        }
+        if(s22.getVisibility() == VISIBLE){
+            //Solution is c
+            RadioButton a = (RadioButton) findViewById(R.id.s22a);
+            RadioButton b = (RadioButton) findViewById(R.id.s22b);
+            RadioButton c = (RadioButton) findViewById(R.id.s22c);
+            RadioButton d = (RadioButton) findViewById(R.id.s22d);
+
+            d.setBackgroundColor(Color.parseColor("#42f45c"));
+
+            if(a.isChecked()){
+                a.setBackgroundColor(Color.parseColor("#f44141"));
+            }
+            if(b.isChecked()){
+                b.setBackgroundColor(Color.parseColor("#f44141"));
+            }
+            if(d.isChecked()){
+                corrAns ++;
+            }
+            if(c.isChecked()){
+                c.setBackgroundColor(Color.parseColor("#f44141"));
+            }
+        }
+        if(s23.getVisibility() == VISIBLE){
+            //Solution is c
+            RadioButton a = (RadioButton) findViewById(R.id.s23a);
+            RadioButton b = (RadioButton) findViewById(R.id.s23b);
+            RadioButton c = (RadioButton) findViewById(R.id.s23c);
+            RadioButton d = (RadioButton) findViewById(R.id.s23d);
+            b.setBackgroundColor(Color.parseColor("#42f45c"));
+
+            if(a.isChecked()){
+                a.setBackgroundColor(Color.parseColor("#f44141"));
+            }
+            if(d.isChecked()){
+                d.setBackgroundColor(Color.parseColor("#f44141"));
+            }
+            if(b.isChecked()){
+                corrAns ++;
+            }
+            if(c.isChecked()){
+                c.setBackgroundColor(Color.parseColor("#f44141"));
+            }
+        }
+        if(s24.getVisibility() == VISIBLE){
+            //Solution is c
+            RadioButton a = (RadioButton) findViewById(R.id.s24a);
+            RadioButton b = (RadioButton) findViewById(R.id.s24b);
+            RadioButton c = (RadioButton) findViewById(R.id.s24c);
+            RadioButton d = (RadioButton) findViewById(R.id.s24d);
+
+            a.setBackgroundColor(Color.parseColor("#42f45c"));
+
+            if(b.isChecked()){
+                b.setBackgroundColor(Color.parseColor("#f44141"));
+            }
+            if(d.isChecked()){
+                d.setBackgroundColor(Color.parseColor("#f44141"));
+            }
+            if(a.isChecked()){
+                corrAns ++;
+            }
+            if(c.isChecked()){
+                c.setBackgroundColor(Color.parseColor("#f44141"));
+            }
+        }
+        if(s25.getVisibility() == VISIBLE){
+            //Solution is c
+            RadioButton a = (RadioButton) findViewById(R.id.s25a);
+            RadioButton b = (RadioButton) findViewById(R.id.s25b);
+            RadioButton c = (RadioButton) findViewById(R.id.s25c);
+            RadioButton d = (RadioButton) findViewById(R.id.s25d);
+            d.setBackgroundColor(Color.parseColor("#42f45c"));
+
+            if(a.isChecked()){
+                a.setBackgroundColor(Color.parseColor("#f44141"));
+            }
+            if(b.isChecked()){
+                b.setBackgroundColor(Color.parseColor("#f44141"));
+            }
+            if(d.isChecked()){
+                corrAns ++;
+            }
+            if(c.isChecked()){
+                c.setBackgroundColor(Color.parseColor("#f44141"));
+            }
+        }
+        if(s26.getVisibility() == VISIBLE){
+            //Solution is c
+            RadioButton a = (RadioButton) findViewById(R.id.s26a);
+            RadioButton b = (RadioButton) findViewById(R.id.s26b);
+            RadioButton c = (RadioButton) findViewById(R.id.s26c);
+            RadioButton d = (RadioButton) findViewById(R.id.s26d);
+            d.setBackgroundColor(Color.parseColor("#42f45c"));
+
+            if(a.isChecked()){
+                a.setBackgroundColor(Color.parseColor("#f44141"));
+            }
+            if(b.isChecked()){
+                b.setBackgroundColor(Color.parseColor("#f44141"));
+            }
+            if(d.isChecked()){
+                corrAns ++;
+            }
+            if(c.isChecked()){
+                c.setBackgroundColor(Color.parseColor("#f44141"));
+            }
+        }
+        if(s27.getVisibility() == VISIBLE){
+            //Solution is c
+            RadioButton a = (RadioButton) findViewById(R.id.s27a);
+            RadioButton b = (RadioButton) findViewById(R.id.s27b);
+            RadioButton c = (RadioButton) findViewById(R.id.s27c);
+            RadioButton d = (RadioButton) findViewById(R.id.s27d);
+            c.setBackgroundColor(Color.parseColor("#42f45c"));
+
+            if(b.isChecked()){
+                b.setBackgroundColor(Color.parseColor("#f44141"));
+            }
+            if(d.isChecked()){
+                d.setBackgroundColor(Color.parseColor("#f44141"));
+            }
+            if(c.isChecked()){
+                corrAns ++;
+            }
+            if(a.isChecked()){
+                a.setBackgroundColor(Color.parseColor("#f44141"));
+            }
+        }
+        if(s28.getVisibility() == VISIBLE){
+            //Solution is c
+            RadioButton a = (RadioButton) findViewById(R.id.s28a);
+            RadioButton b = (RadioButton) findViewById(R.id.s28b);
+            RadioButton c = (RadioButton) findViewById(R.id.s28c);
+            RadioButton d = (RadioButton) findViewById(R.id.s28d);
+            c.setBackgroundColor(Color.parseColor("#42f45c"));
+
+            if(b.isChecked()){
+                b.setBackgroundColor(Color.parseColor("#f44141"));
+            }
+            if(d.isChecked()){
+                d.setBackgroundColor(Color.parseColor("#f44141"));
+            }
+            if(c.isChecked()){
+
+                corrAns ++;
+            }
+            if(a.isChecked()){
+                a.setBackgroundColor(Color.parseColor("#f44141"));
+            }
+        }
+        if(s29.getVisibility() == VISIBLE){
+            //Solution is d
+            RadioButton a = (RadioButton) findViewById(R.id.s29a);
+            RadioButton b = (RadioButton) findViewById(R.id.s29b);
+            RadioButton c = (RadioButton) findViewById(R.id.s29c);
+            RadioButton d = (RadioButton) findViewById(R.id.s29d);
+            d.setBackgroundColor(Color.parseColor("#42f45c"));
+
+            if(a.isChecked()){
+                a.setBackgroundColor(Color.parseColor("#f44141"));
+            }
+            if(b.isChecked()){
+                b.setBackgroundColor(Color.parseColor("#f44141"));
+            }
+            if(d.isChecked()){
+                corrAns ++;
+            }
+            if(c.isChecked()){
+                c.setBackgroundColor(Color.parseColor("#f44141"));
+            }
+        }
+        if(s30.getVisibility() == VISIBLE){
+            //Solution is a
+            RadioButton a = (RadioButton) findViewById(R.id.s30a);
+            RadioButton b = (RadioButton) findViewById(R.id.s30b);
+            RadioButton c = (RadioButton) findViewById(R.id.s30c);
+            RadioButton d = (RadioButton) findViewById(R.id.s30d);
+            a.setBackgroundColor(Color.parseColor("#42f45c"));
+
+            if(d.isChecked()){
+                d.setBackgroundColor(Color.parseColor("#f44141"));
+            }
+            if(b.isChecked()){
+                b.setBackgroundColor(Color.parseColor("#f44141"));
+            }
+            if(a.isChecked()){
+                corrAns ++;
+            }
+            if(c.isChecked()){
+                c.setBackgroundColor(Color.parseColor("#f44141"));
+            }
+        }
 
 
 
@@ -676,7 +962,12 @@ public class ScienceQuestions extends AppCompatActivity{
         Toast.makeText(context,"Has respondido a "+ corrAns + " correctamente.", Toast.LENGTH_LONG).show();
     }
 
-    public void continueAc(View view){
+    public void continueAc(){
+
+        if (!mInterstitialAd.isLoading() && !mInterstitialAd.isLoaded()) {
+            AdRequest adRequest = new AdRequest.Builder().build();
+            mInterstitialAd.loadAd(adRequest);
+        }
 
         Intent intent = new Intent(this, FinalActivity.class);
         intent.putExtra("Category", categ);

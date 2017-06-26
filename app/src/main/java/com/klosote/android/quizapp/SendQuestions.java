@@ -9,6 +9,8 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.Spinner;
 import android.widget.Toast;
 
@@ -42,6 +44,12 @@ public class SendQuestions extends AppCompatActivity implements AdapterView.OnIt
 
         spinner.setOnItemSelectedListener(this);
 
+        RadioButton hist = (RadioButton) findViewById(R.id.histQ);
+        RadioButton sci = (RadioButton) findViewById(R.id.scienceQ);
+        RadioButton geo = (RadioButton) findViewById(R.id.geoQ);
+        RadioButton vg = (RadioButton) findViewById(R.id.vgamesQ);
+        RadioButton entr = (RadioButton) findViewById(R.id.entrQ);
+        RadioButton sports = (RadioButton) findViewById(R.id.sportsQ);
 
     }
 
@@ -58,6 +66,8 @@ public class SendQuestions extends AppCompatActivity implements AdapterView.OnIt
         EditText bE = (EditText) findViewById(R.id.BugExplan);
         EditText sugg = (EditText) findViewById(R.id.Suggestion);
         EditText gFeedback = (EditText) findViewById(R.id.generalFeedback);
+        RadioGroup sel = (RadioGroup) findViewById(R.id.selector);
+
 
         qT.setVisibility(GONE);
         q1.setVisibility(GONE);
@@ -68,6 +78,7 @@ public class SendQuestions extends AppCompatActivity implements AdapterView.OnIt
         bE.setVisibility(GONE);
         sugg.setVisibility(GONE);
         gFeedback.setVisibility(GONE);
+        sel.setVisibility(GONE);
 
 
         if(pos == 0){
@@ -77,6 +88,7 @@ public class SendQuestions extends AppCompatActivity implements AdapterView.OnIt
             q2.setVisibility(VISIBLE);
             q3.setVisibility(VISIBLE);
             q4.setVisibility(VISIBLE);
+            sel.setVisibility(VISIBLE);
 
         }else if(pos == 1){
             gFeedback.setVisibility(VISIBLE);
@@ -106,6 +118,12 @@ public class SendQuestions extends AppCompatActivity implements AdapterView.OnIt
         EditText bE = (EditText) findViewById(R.id.BugExplan);
         EditText sugg = (EditText) findViewById(R.id.Suggestion);
         EditText gFeedback = (EditText) findViewById(R.id.generalFeedback);
+        RadioButton hist = (RadioButton) findViewById(R.id.histQ);
+        RadioButton sci = (RadioButton) findViewById(R.id.scienceQ);
+        RadioButton geo = (RadioButton) findViewById(R.id.geoQ);
+        RadioButton vg = (RadioButton) findViewById(R.id.vgamesQ);
+        RadioButton entr = (RadioButton) findViewById(R.id.entrQ);
+        RadioButton sports = (RadioButton) findViewById(R.id.sportsQ);
 
         String subject = null, message = null;
         boolean enviable = false;
@@ -125,6 +143,32 @@ public class SendQuestions extends AppCompatActivity implements AdapterView.OnIt
 
                 subject = "QuizzApp: Envío de Pregunta";
                 message = "Título: " + qT.getText().toString();
+                boolean check = false;
+
+                if(sci.isChecked()){
+                    message = message + "\n" + "Categoría: Ciencia";
+                    check = true;
+                }else if(hist.isChecked()){
+                    message = message + "\n" + "Categoría: Historia";
+                    check = true;
+                }else if(geo.isChecked()){
+                    message = message + "\n" + "Categoría: Geografia";
+                    check = true;
+                }else if(vg.isChecked()){
+                    message = message + "\n" + "Categoría: Videojuegos";
+                    check = true;
+                }else if(entr.isChecked()){
+                    message = message + "\n" + "Categoría: Entretenimiento";
+                    check = true;
+                }else if(sports.isChecked()){
+                    message = message + "\n" + "Categoría: Deportes";
+                    check = true;
+                }
+
+                if(check == false){
+                    Context context = getApplicationContext();
+                    Toast.makeText(context, R.string.noCat, Toast.LENGTH_LONG).show();
+                }
 
                 sUsername = q1.getText().toString();
                 if(!sUsername.matches("")){
@@ -138,7 +182,7 @@ public class SendQuestions extends AppCompatActivity implements AdapterView.OnIt
                 if(!sUsername.matches("")){
                     message = message + "\n" + "Respuesta 3: " + sUsername;
                 }
-                sUsername = q3.getText().toString();
+                sUsername = q4.getText().toString();
                 if(!sUsername.matches("")){
                     message = message + "\n" + "Respuesta 4: " + sUsername;
                 }
